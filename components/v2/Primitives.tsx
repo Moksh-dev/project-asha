@@ -63,7 +63,7 @@ export function CTAButton({
 }) {
   const styles = {
     dark: "bg-asha-green text-white hover:bg-asha-blue-dark",
-    light: "border border-asha-green bg-white text-asha-green hover:bg-asha-cloud",
+    light: "border-2 border-[#1F5EFF] bg-white !text-[#1F5EFF] hover:bg-[#EAF3FF] hover:!text-[#174BD6]",
     coral: "bg-gradient-to-r from-asha-green to-asha-coral text-white hover:shadow-coral",
   };
   return (

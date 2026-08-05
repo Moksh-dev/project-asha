@@ -46,7 +46,7 @@ export function PublicNav() {
             );
           })}
         </nav>
-        <Link href="/get-involved#volunteer" className="hidden rounded-full bg-gradient-to-r from-asha-green to-asha-coral px-5 py-3 text-sm font-black text-white shadow-coral transition hover:-translate-y-0.5 lg:inline-flex">
+        <Link href="/get-involved#volunteer-form" className="hidden rounded-full bg-gradient-to-r from-asha-green to-asha-coral px-5 py-3 text-sm font-black text-white shadow-coral transition hover:-translate-y-0.5 lg:inline-flex">
           Start helping
         </Link>
         <button
@@ -79,11 +79,11 @@ export function PublicNav() {
 export function PublicFooter() {
   return (
     <footer className="bg-asha-ink text-white">
-      <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 md:px-8 lg:grid-cols-[1.3fr_1fr_1fr]">
+      <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 md:px-8 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
         <div>
           <LogoMark />
           <p className="mt-6 max-w-md text-base leading-8 text-slate-300">
-            A youth-led social impact platform building awareness, chapters, partnerships, and action against exploitation across India.
+            A global youth-led initiative advancing human-trafficking prevention through education, advocacy, and community awareness.
           </p>
           <div className="mt-6 flex flex-wrap gap-2">
             {footerTagline.map((word) => (
@@ -96,11 +96,7 @@ export function PublicFooter() {
             ))}
           </div>
           <div className="mt-8 flex flex-wrap gap-2">
-            {contactDetails.map((detail) => (
-              <span key={detail} className="rounded-full border border-white/10 px-4 py-2 text-sm text-slate-300">
-                {detail}
-              </span>
-            ))}
+            {contactDetails.map((detail) => detail.startsWith("Instagram:") ? <a key={detail} href="https://www.instagram.com/project.a.s.h.a/?hl=en" target="_blank" rel="noreferrer" className="rounded-full border border-white/10 px-4 py-2 text-sm text-slate-300 transition hover:border-white/30 hover:text-white">{detail}</a> : <span key={detail} className="rounded-full border border-white/10 px-4 py-2 text-sm text-slate-300">{detail}</span>)}
           </div>
         </div>
         {footerColumns.map((column) => (

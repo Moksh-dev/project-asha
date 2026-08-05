@@ -1,74 +1,61 @@
-import Link from "next/link";
+import PublicShell from "@/components/v2/PublicShell";
+import { PageHero, Section } from "@/components/v2/Primitives";
 
 const blogs = [
   {
-    slug: "ending-human-trafficking",
-    title: "Ending Human Trafficking Starts With Awareness",
+    url: "https://localnewsmatters.org/2026/07/15/east-bay-teens-anti-human-trafficking-effort-expands-globally-tackling-often-taboo-topic/",
+    title: "High School Students Launch Human Trafficking Prevention Initiative",
     excerpt:
-      "Discover how awareness and youth leadership can help combat human trafficking.",
-    date: "July 2026",
+      "Regional coverage of Project A.S.H.A.'s youth-led trafficking prevention work.",
+    date: "Local News Matters",
   },
   {
-    slug: "power-of-youth",
-    title: "The Power of Youth Leadership",
+    url: "https://patch.com/california/livermore/livermore-student-founds-human-trafficking-awareness-nonprofit",
+    title: "Livermore Student Founds Human Trafficking Awareness Nonprofit",
     excerpt:
-      "How student-led initiatives are creating measurable social impact across India.",
-    date: "June 2026",
+      "A feature on the beginning and mission of Project A.S.H.A.",
+    date: "Patch",
   },
   {
-    slug: "community-action",
-    title: "Communities Create Change",
+    url: "https://www.independentnews.com/news/livermore_news/students-build-anti-trafficking-awareness-organization/article_250e8056-9d71-40bc-a5d2-a9ce466b7967.html",
+    title: "Students Build Anti-Trafficking Awareness Organization",
     excerpt:
-      "Why every local community plays an important role in prevention and awareness.",
-    date: "May 2026",
+      "Independent News coverage of students building awareness and prevention education.",
+    date: "The Independent",
   },
 ];
 
 export default function BlogsPage() {
   return (
-    <main className="min-h-screen bg-slate-100">
+    <PublicShell><main>
 
-      <section className="mx-auto max-w-[1280px] px-6 py-20">
+      <PageHero eyebrow="Blog & features" title="Stories and educational articles." body="Articles, podcast features, and media mentions will be added here as they are shared by the Project A.S.H.A. team." />
+      <section className="px-5 pb-8 md:px-8"><div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-5 rounded-[2rem] bg-asha-ink p-7 text-white md:flex-row md:items-center"><div><p className="font-hand text-asha-gold">Contribute</p><h2 className="font-display mt-2 text-2xl font-black">Interested in writing for Project A.S.H.A.?</h2><p className="mt-2 text-white/75">Submit your interest through our blog contributor form.</p></div><a href="https://docs.google.com/forms/d/e/1FAIpQLSfVsWCWdAxJr6YZE6032-Itx3NOcMbBiuo3oLg77tDrBpY0uw/viewform?usp=publish-editor" target="_blank" rel="noreferrer" className="shrink-0 rounded-full border-2 border-[#1F5EFF] bg-white px-6 py-3 text-sm font-black !text-[#1F5EFF] shadow-soft transition hover:bg-[#EAF3FF] hover:!text-[#174BD6]">Blog interest form</a></div></section>
 
-        <div className="text-center">
+      <Section className="pt-0"><div className="mx-auto max-w-7xl">
 
-          <h1 className="text-5xl font-bold text-white">
-            Latest Blogs
-          </h1>
-
-          <p className="mt-5 text-lg text-slate-300">
-            Stories, updates and awareness articles from Project A.S.H.A.
-          </p>
-
-        </div>
-
-        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
           {blogs.map((blog) => (
 
             <article
-              key={blog.slug}
+              key={blog.url}
               className="rounded-3xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
             >
 
-              <p className="text-sm font-semibold text-blue-600">
+              <p className="text-sm font-semibold text-asha-green">
                 {blog.date}
               </p>
 
-              <h2 className="mt-4 text-2xl font-bold text-white">
+              <h2 className="font-display mt-4 text-2xl font-black text-asha-ink">
                 {blog.title}
               </h2>
 
-              <p className="mt-4 leading-7 text-slate-300">
+              <p className="mt-4 leading-7 text-asha-muted">
                 {blog.excerpt}
               </p>
 
-              <Link
-                href={`/blogs/${blog.slug}`}
-                className="mt-8 inline-block rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700"
-              >
-                Read Article
-              </Link>
+              <a href={blog.url} target="_blank" rel="noreferrer" className="mt-8 inline-block rounded-full bg-asha-green px-5 py-3 text-sm font-black text-white shadow-soft transition hover:bg-asha-blue-dark">Read feature</a>
 
             </article>
 
@@ -76,8 +63,8 @@ export default function BlogsPage() {
 
         </div>
 
-      </section>
+      </div></Section>
 
-    </main>
+    </main></PublicShell>
   );
 }

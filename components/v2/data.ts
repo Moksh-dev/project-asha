@@ -66,6 +66,7 @@ export const chapters = [
     summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.",
     image: "linear-gradient(135deg, #1F5EFF, #00AEF0)",
     events: ["Instagram link coming soon"],
+    instagram: "https://www.instagram.com/projecta.s.h.a_haryana/?hl=en",
   },
   {
     city: "Tamil Nadu",
@@ -74,37 +75,40 @@ export const chapters = [
     summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.",
     image: "linear-gradient(135deg, #1F5EFF, #67C7FF)",
     events: ["Instagram link coming soon"],
+    instagram: "https://www.instagram.com/projectasha.tamilnadu/?hl=en",
   },
   {
-    city: "Bangalore",
+    city: "Bengaluru",
     state: "India",
     lead: "Saidiya Kodali",
     summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.",
     image: "linear-gradient(135deg, #2563EB, #00AEF0)",
     events: ["Instagram link coming soon"],
+    instagram: "https://www.instagram.com/a.s.h.a.bengaluru/?hl=en",
   },
   {
-    city: "Hyderabad",
+    city: "Telangana",
     state: "India",
     lead: "Bhuvana Kavya Yallapragada",
     summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.",
     image: "linear-gradient(135deg, #1F5EFF, #8BDCFF)",
     events: ["Instagram link coming soon"],
+    instagram: "https://www.instagram.com/projecta.s.h.a.telangana/?hl=en",
   },
   {
-    city: "West Bengal", state: "India", lead: "Arushi Chatterjee", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #00AEF0)", events: ["Instagram link coming soon"]
+    city: "West Bengal", state: "India", lead: "Arushi Chatterjee", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #00AEF0)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/projecta.s.h.a_westbengal/?hl=en"
   },
   {
     city: "Hong Kong", state: "Hong Kong", lead: "Julia", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #67C7FF)", events: ["Instagram link coming soon"]
   },
   {
-    city: "Canada", state: "Canada", lead: "Yogitha Machina", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #2563EB, #00AEF0)", events: ["Instagram link coming soon"]
+    city: "Canada", state: "Canada", lead: "Yogitha Machina", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #2563EB, #00AEF0)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/a.s.h.a_canada/?hl=en"
   },
   {
     city: "Australia", state: "Australia", lead: "May Thandar", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #8BDCFF)", events: ["Instagram link coming soon"]
   },
   {
-    city: "Southern California", state: "United States", lead: "Ava Mendez", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #00AEF0)", events: ["Instagram link coming soon"]
+    city: "Southern California", state: "United States", lead: "Ava Mendez", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #00AEF0)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/asha.projectsc/?hl=en"
   },
   {
     city: "Virginia", state: "United States", lead: "Korinne Brooks", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #67C7FF)", events: ["Instagram link coming soon"]
@@ -116,7 +120,16 @@ export const chapters = [
     city: "Westchester, New York", state: "United States", lead: "Lauren Crispino", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #8BDCFF)", events: ["Instagram link coming soon"]
   },
   {
-    city: "New Jersey", state: "United States", lead: "Aarna Mallidi", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #00AEF0)", events: ["Instagram link coming soon"]
+    city: "New Jersey", state: "United States", lead: "Aarna Mallidi", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #00AEF0)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/projectasha.nj/?hl=en"
+  },
+  {
+    city: "New York City", state: "United States", lead: "Project A.S.H.A. Chapter", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #2563EB, #00AEF0)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/project_a.s.h.a_nys/?hl=en"
+  },
+  {
+    city: "Indore", state: "India", lead: "Project A.S.H.A. Chapter", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #67C7FF)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/project.asha_indore/?hl=en"
+  },
+  {
+    city: "Maryland", state: "United States", lead: "Project A.S.H.A. Chapter", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #8BDCFF)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/project.a.s.h.a_maryland/?hl=en"
   },
 ];
 
@@ -128,11 +141,13 @@ export const teamGroups = [
         name: "Archismita Mukherjee",
         role: "Founder & Executive Director",
         bio: "Project A.S.H.A. was founded on her belief that prevention is education, and that young people should learn how to stay safe before harm occurs.",
+        image: "/content-images/image1.jpg",
       },
       {
         name: "Afnaan Islam",
         role: "Co-Founder",
         bio: "Inspired to turn awareness into action, Afnaan advocates for vulnerable communities and the power of young people to create meaningful change.",
+        image: "/content-images/image6.jpg",
       },
     ],
   },
@@ -215,8 +230,17 @@ export const footerColumns = [
     title: "Action",
     links: [
       { label: "Get Involved", href: "/get-involved" },
+      { label: "Events", href: "/events" },
+      { label: "Blog", href: "/blogs" },
       { label: "Gallery", href: "/gallery" },
-      { label: "Admin", href: "/admin/login" },
+    ],
+  },
+  {
+    title: "Information",
+    links: [
+      { label: "Privacy Policy", href: "/privacy-policy" },
+      { label: "Cookie Policy", href: "/cookie-policy" },
+      { label: "Terms & Conditions", href: "/terms" },
     ],
   },
 ];

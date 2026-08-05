@@ -1,30 +1,7 @@
 import PublicShell from "@/components/v2/PublicShell";
-import { Field, PageHero, Section, SelectField, SubmitButton, TextArea } from "@/components/v2/Primitives";
-import { contactDetails, formTopics, involvementSections } from "@/components/v2/data";
+import { PageHero, Section } from "@/components/v2/Primitives";
+import { contactDetails } from "@/components/v2/data";
 import { AtSign, HelpCircle, Instagram, MapPin, Phone } from "lucide-react";
-
-function SmartForm({ id, title, button }: { id: string; title: string; button: string }) {
-  return (
-    <form id={id} className="grid gap-5 rounded-[2rem] border border-asha-line bg-white p-6 shadow-soft">
-      <h2 className="font-display text-2xl font-black text-asha-ink">{title}</h2>
-      <Field label="Full name" placeholder="Your name" />
-      <Field label="Email" type="email" placeholder="you@example.com" />
-      <Field label="Phone" placeholder="+91 XXXXX XXXXX" />
-      <SelectField label="Topic" options={formTopics} />
-      <TextArea label="Message" placeholder="Tell us what you need..." />
-      <SubmitButton>{button}</SubmitButton>
-    </form>
-  );
-}
-
-const formCards = [
-  ["volunteer-form", "Volunteer Form", "Submit volunteer request"],
-  ["become-a-chapter-member", "Become a Chapter Member", "Apply for chapter membership"],
-  ["partnership-form", "Partnership Form", "Start partnership conversation"],
-  ["contact-form", "Contact Form", "Send message"],
-  ["report-an-issue", "Report an Issue", "Report securely"],
-  ["support-request", "Support Request", "Request support"],
-] as const;
 
 export default function GetInvolvedPage() {
   return (
@@ -32,23 +9,16 @@ export default function GetInvolvedPage() {
       <main>
         <PageHero
           eyebrow="Get involved"
-          title="One page for volunteering, chapters, partnerships, contact, and support."
-          body="Choose the path that fits you. The page is structured for smooth scrolling and future backend form wiring without splitting the user journey."
+          title="Choose a real way to get involved."
+          body="Use the official Project A.S.H.A. forms below to join the network, request a presentation, or contact the team."
         />
         <Section className="pt-0">
-          <div className="mx-auto grid max-w-7xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {involvementSections.map((section) => (
-              <a key={section} href={`#${section.toLowerCase().replaceAll(" ", "-")}`} className="rounded-2xl border border-asha-line bg-white px-5 py-4 font-black text-asha-muted shadow-soft transition hover:-translate-y-1 hover:bg-asha-ink hover:text-white">
-                {section}
-              </a>
-            ))}
-          </div>
-        </Section>
-        <Section className="bg-white">
-          <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-2">
-            {formCards.map(([id, title, button]) => (
-              <SmartForm key={id} id={id} title={title} button={button} />
-            ))}
+          <div className="mx-auto grid max-w-7xl gap-4 md:grid-cols-3">
+            {[
+              ["A.S.H.A. Interest Form", "Join the growing youth-led network.", "https://docs.google.com/forms/d/e/1FAIpQLSdFnc5Mj_u6wcPB2H7ghqvzT5m1OCtvYktXWzH8VNUuvfoebQ/viewform"],
+              ["Book a Presentation", "Request an educational presentation for your school or organization.", "https://docs.google.com/forms/d/e/1FAIpQLSeH0IP95wW2_-cyU9TAPVPe7JCYzuA7MYe-kNgHII6QF08a5Q/viewform"],
+              ["General Inquiry", "Contact the Project A.S.H.A. team directly.", "https://docs.google.com/forms/d/e/1FAIpQLSdm4aV-2orsS2RSQWMhHkQCJs2nXbd7VBo5dPpU7fOkYodt9g/viewform"],
+            ].map(([title, body, href]) => <a key={title} href={href} target="_blank" rel="noreferrer" className="rounded-[1.75rem] border border-asha-line bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:bg-asha-cloud"><h2 className="font-display text-xl font-black text-asha-ink">{title}</h2><p className="mt-3 leading-7 text-asha-muted">{body}</p><span className="mt-6 inline-block rounded-full bg-asha-green px-4 py-2 text-sm font-black text-white">Open form</span></a>)}
           </div>
         </Section>
         <Section>

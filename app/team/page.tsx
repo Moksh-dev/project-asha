@@ -18,12 +18,10 @@ export default function TeamPage() {
               <SectionHeader title={group.title} body="Profiles are designed for images, social links, short introductions, and expandable biographies as the team directory grows." />
               <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
                 {group.people.map((person, index) => (
-                  <article key={person.name} className="group overflow-hidden rounded-[2rem] border border-asha-line bg-asha-surface shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
+                  <article key={`${group.title}-${person.role}-${person.name}`} className="group overflow-hidden rounded-[2rem] border border-asha-line bg-asha-surface shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
                     <div className="relative h-72 bg-[linear-gradient(135deg,#1F5EFF,#1877FF_58%,#00AEF0)] p-6 text-white">
                       <div className="absolute inset-0 bg-[radial-gradient(circle_at_24%_20%,rgba(255,255,255,.3),transparent_26%)]" />
-                      <div className="relative grid h-24 w-24 place-items-center rounded-full bg-white/18 text-4xl font-black backdrop-blur">
-                        {index + 1}
-                      </div>
+                      {"image" in person ? <img src={person.image} alt={person.name} className="relative h-28 w-28 rounded-full border-4 border-white/50 object-cover shadow-soft" /> : <div className="relative grid h-24 w-24 place-items-center rounded-full bg-white/18 text-4xl font-black backdrop-blur">{index + 1}</div>}
                       <p className="font-hand relative mt-24 text-lg text-white/82">{person.role}</p>
                     </div>
                     <div className="p-7">

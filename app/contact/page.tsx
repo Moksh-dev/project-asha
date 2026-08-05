@@ -14,9 +14,7 @@ export default function ContactPage() {
           title="Reach the Project ASHA team."
           body="For volunteering, partnerships, chapter support, event coordination, media, or general questions, use the official contact details below."
         >
-          <CTAButton href="/get-involved#contact-form" tone="coral">
-            Send a message
-          </CTAButton>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdm4aV-2orsS2RSQWMhHkQCJs2nXbd7VBo5dPpU7fOkYodt9g/viewform" target="_blank" rel="noreferrer" className="inline-flex rounded-full bg-asha-green px-6 py-3 text-sm font-black text-white shadow-soft transition hover:bg-asha-blue-dark">Send a message</a>
         </PageHero>
 
         <Section className="pt-0">

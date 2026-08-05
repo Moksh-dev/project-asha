@@ -138,7 +138,7 @@ The current website has forms ready in the design, but they are not yet configur
 5. Find the `project-asha` repository and click **Import**.
 6. On the configuration screen:
    - Project Name: `project-asha`
-   - Framework Preset: **Next.js** (Vercel should detect it automatically)
+   - Framework Preset: **Next.js** (Vercel should detex`ct it automatically)
    - Root Directory: leave as `./`
    - Build Command: leave the default
    - Output Directory: leave the default
