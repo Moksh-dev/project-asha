@@ -19,10 +19,20 @@ export default function TeamPage() {
               <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
                 {group.people.map((person, index) => (
                   <article key={`${group.title}-${person.role}-${person.name}`} className="group overflow-hidden rounded-[2rem] border border-asha-line bg-asha-surface shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
-                    <div className="relative h-72 bg-[linear-gradient(135deg,#1F5EFF,#1877FF_58%,#00AEF0)] p-6 text-white">
-                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_24%_20%,rgba(255,255,255,.3),transparent_26%)]" />
-                      {"image" in person ? <img src={person.image} alt={person.name} className="relative h-28 w-28 rounded-full border-4 border-white/50 object-cover shadow-soft" /> : <div className="relative grid h-24 w-24 place-items-center rounded-full bg-white/18 text-4xl font-black backdrop-blur">{index + 1}</div>}
-                      <p className="font-hand relative mt-24 text-lg text-white/82">{person.role}</p>
+                    <div className="relative h-72 overflow-hidden bg-[linear-gradient(135deg,#1F5EFF,#1877FF_58%,#00AEF0)] p-6 text-white">
+                      {"image" in person ? (
+                        <>
+                          <img src={person.image} alt={person.name} className="absolute inset-0 h-full w-full object-cover" />
+                          <div className="absolute inset-0 bg-gradient-to-t from-asha-ink/80 via-asha-ink/10 to-transparent" />
+                          <p className="font-hand absolute bottom-8 left-8 right-8 text-lg text-white">{person.role}</p>
+                        </>
+                      ) : (
+                        <>
+                          <div className="absolute inset-0 bg-[radial-gradient(circle_at_24%_20%,rgba(255,255,255,.3),transparent_26%)]" />
+                          <div className="relative grid h-24 w-24 place-items-center rounded-full bg-white/18 text-4xl font-black backdrop-blur">{index + 1}</div>
+                          <p className="font-hand relative mt-24 text-lg text-white/82">{person.role}</p>
+                        </>
+                      )}
                     </div>
                     <div className="p-7">
                       <h2 className="font-display text-2xl font-black text-asha-ink">{person.name}</h2>

@@ -48,14 +48,14 @@ export const focusAreas = [
 ];
 
 export const partnerTypes = [
-  { name: "NGO Partners", icon: HandHeart },
-  { name: "Schools", icon: School },
-  { name: "Colleges", icon: GraduationCap },
-  { name: "Universities", icon: BookOpen },
-  { name: "Sponsors", icon: Sparkles },
-  { name: "Corporate Partners", icon: Building2 },
-  { name: "Government Bodies", icon: Landmark },
-  { name: "Community Organizations", icon: Network },
+  { name: "NGO Partners", icon: HandHeart, href: "/get-involved#general-inquiry" },
+  { name: "Schools", icon: School, href: "/get-involved#book-a-presentation" },
+  { name: "Colleges", icon: GraduationCap, href: "/get-involved#book-a-presentation" },
+  { name: "Universities", icon: BookOpen, href: "/get-involved#book-a-presentation" },
+  { name: "Sponsors", icon: Sparkles, href: "/get-involved#general-inquiry" },
+  { name: "Corporate Partners", icon: Building2, href: "/get-involved#general-inquiry" },
+  { name: "Government Bodies", icon: Landmark, href: "/get-involved#general-inquiry" },
+  { name: "Community Organizations", icon: Network, href: "/get-involved#general-inquiry" },
 ];
 
 export const chapters = [
@@ -147,7 +147,7 @@ export const teamGroups = [
         name: "Afnaan Islam",
         role: "Co-Founder",
         bio: "Inspired to turn awareness into action, Afnaan advocates for vulnerable communities and the power of young people to create meaningful change.",
-        image: "/content-images/image6.jpg",
+        image: "/content-images/image9.png",
       },
     ],
   },
@@ -174,7 +174,28 @@ export const timeline = [
 
 export const events = ["Representing Project A.S.H.A. at the United Nations Headquarters", "Advocating with ACLU in Washington, D.C.", "Assembling opioid overdose response kits with NCAPDA", "School staff trafficking-awareness presentation", "BraveMaker Film Screening", "Love Never Fails Freedom Walk"];
 
-export const resources = ["Understanding Human Trafficking", "Who Is Most at Risk?", "Myths vs. Facts", "Stay Safe Online", "Global Support Resources"];
+export const resources = [
+  {
+    title: "Understanding Human Trafficking",
+    description: "Learn how trafficking happens, who may be at risk, and how exploitation can take place online and offline.",
+    href: "/resources/understanding-human-trafficking.pdf",
+  },
+  {
+    title: "How You Can Help",
+    description: "Practical guidance for noticing warning signs, starting conversations, and supporting safer communities.",
+    href: "/resources/how-you-can-help.pdf",
+  },
+  {
+    title: "Safety Literacy",
+    description: "Why knowing how to recognize risks, resist manipulation, and seek help is as important as academic literacy.",
+    href: "/resources/safety-literacy.pdf",
+  },
+  {
+    title: "Resources",
+    description: "A collection of support resources and useful information for awareness, learning, and outreach.",
+    href: "/resources/support-resources.pdf",
+  },
+];
 
 export const galleryItems = [
   "Awareness Campaign",
@@ -256,11 +277,13 @@ export const contactCards = [
     label: "Email",
     value: "project.asha.team@gmail.com",
     helper: "For partnerships, chapters, resources, and general enquiries.",
+    href: "mailto:project.asha.team@gmail.com",
   },
   {
     label: "Instagram",
     value: "@project.a.s.h.a",
     helper: "Follow updates and chapter activity on Instagram.",
+    href: "https://www.instagram.com/project.a.s.h.a/?hl=en",
   },
   {
     label: "Service notice",

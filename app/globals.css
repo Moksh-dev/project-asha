@@ -99,6 +99,13 @@ img {
   text-transform: uppercase;
 }
 
+.font-card-message {
+  font-family: "Arial Rounded MT Bold", "Trebuchet MS", "Arial Black", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
 .font-hand {
   font-family: var(--font-hand-local);
   font-weight: 700;

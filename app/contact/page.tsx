@@ -21,23 +21,31 @@ export default function ContactPage() {
           <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-3">
             {contactCards.map((card, index) => {
               const Icon = contactIcons[index];
+              const content = (
+                <>
+                  <div className="grid h-12 w-12 place-items-center rounded-2xl bg-asha-cloud text-asha-green">
+                    <Icon size={22} />
+                  </div>
+                  <p className="font-hand mt-8 text-lg text-asha-coral">{card.label}</p>
+                  <h2 className="font-display mt-3 text-xl font-black text-asha-ink">{card.value}</h2>
+                  <p className="mt-4 leading-7 text-asha-muted">{card.helper}</p>
+                </>
+              );
+
+              if (card.href) {
+                return (
+                  <a key={card.label} href={card.href} target={card.href.startsWith("http") ? "_blank" : undefined} rel={card.href.startsWith("http") ? "noreferrer" : undefined} className="block rounded-[2rem] border border-asha-line bg-white p-7 shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
+                    {content}
+                  </a>
+                );
+              }
+
               return (
                 <article
                   key={card.label}
                   className="rounded-[2rem] border border-asha-line bg-white p-7 shadow-soft transition hover:-translate-y-1 hover:shadow-lift"
                 >
-                  <div className="grid h-12 w-12 place-items-center rounded-2xl bg-asha-cloud text-asha-green">
-                    <Icon size={22} />
-                  </div>
-                  <p className="font-hand mt-8 text-lg text-asha-coral">
-                    {card.label}
-                  </p>
-                  <h2 className="font-display mt-3 text-xl font-black text-asha-ink">
-                    {card.value}
-                  </h2>
-                  <p className="mt-4 leading-7 text-asha-muted">
-                    {card.helper}
-                  </p>
+                  {content}
                 </article>
               );
             })}

@@ -44,7 +44,7 @@ export default function Home() {
               <div className="relative rounded-[2.5rem] bg-white p-5 text-white shadow-lift">
                 <div className="rounded-[2rem] border border-white/25 bg-[linear-gradient(135deg,#1F5EFF,#1877FF_52%,#00AEF0)] p-7">
                   <Sparkles className="text-white/80" />
-                  <p className="font-display mt-20 text-3xl font-black leading-tight md:text-4xl">
+                  <p className="font-card-message mt-20 text-3xl leading-tight md:text-4xl">
                     Prevention begins with knowledge.
                   </p>
                   <div className="mt-8 grid grid-cols-2 gap-3">
@@ -116,12 +116,12 @@ export default function Home() {
           <div className="mx-auto max-w-7xl">
             <SectionHeader eyebrow="Partnerships" title="Built for institutions that want real impact." />
             <Stagger className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {partnerTypes.map(({ name, icon: Icon }) => (
+              {partnerTypes.map(({ name, icon: Icon, href }) => (
                 <StaggerItem key={name}>
-                  <div className="group rounded-[1.75rem] border border-asha-line bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:bg-asha-green hover:text-white">
+                  <a href={href} className="group block rounded-[1.75rem] border border-asha-line bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:bg-asha-green hover:text-white">
                     <Icon size={24} />
                     <p className="mt-8 text-xl font-black">{name}</p>
-                  </div>
+                  </a>
                 </StaggerItem>
               ))}
             </Stagger>
@@ -160,10 +160,10 @@ export default function Home() {
             </Reveal>
             <div className="grid gap-4">
               {events.map((event) => (
-                <div key={event} className="flex items-center justify-between rounded-[1.5rem] border border-asha-line bg-white p-5 shadow-soft">
+                <a href="/events" key={event} className="flex items-center justify-between rounded-[1.5rem] border border-asha-line bg-white p-5 shadow-soft transition hover:-translate-y-1 hover:bg-asha-cloud">
                   <span className="font-black text-asha-ink">{event}</span>
                   <ArrowRight size={18} className="text-asha-coral" />
-                </div>
+                </a>
               ))}
             </div>
           </div>

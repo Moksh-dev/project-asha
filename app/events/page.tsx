@@ -4,6 +4,7 @@ import { CalendarDays, MapPin } from "lucide-react";
 
 const eventPhotos = [
   { image: "/content-images/image10.png", alt: "Project A.S.H.A. founders at the United Nations", caption: "Founder and Co-Founder represented Project A.S.H.A. at the United Nations Headquarters in New York." },
+  { image: "/content-images/image6.jpg", alt: "Project A.S.H.A. featured on Fox 2 News", caption: "Project A.S.H.A. founders shared the initiative's student-led mission to fight trafficking on Fox 2 News." },
   { image: "/content-images/image3.png", alt: "BraveMaker film screenings", caption: "Co-founders at BraveMaker film screenings hosted by Love Never Fails in Redwood City." },
   { image: "/content-images/image4.png", alt: "Hong Kong chapter presentation", caption: "The Hong Kong Chapter delivers an educational presentation to middle-school students." },
   { image: "/content-images/image2.png", alt: "NCAPDA opioid rescue kit assembly", caption: "Core Team members and Founder assemble opioid overdose rescue kits with NCAPDA." },
