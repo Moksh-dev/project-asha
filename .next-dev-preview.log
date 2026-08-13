@@ -728,3 +728,3580 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
  GET /admin/chapters 200 in 62ms (next.js: 13ms, application-code: 49ms)
  GET /admin/analytics 200 in 108ms (next.js: 9ms, application-code: 99ms)
  GET /about 200 in 32ms (next.js: 9ms, application-code: 24ms)
+ GET / 200 in 25ms (next.js: 9ms, application-code: 16ms)
+ GET / 200 in 3.1s (next.js: 7ms, application-code: 3.1s)
+ GET /admin/chapters 200 in 819ms (next.js: 4ms, application-code: 815ms)
+ GET /admin/analytics 200 in 638ms (next.js: 19ms, application-code: 619ms)
+ GET /admin/chapters 200 in 766ms (next.js: 496ms, application-code: 270ms)
+ GET /admin/analytics 200 in 212ms (next.js: 46ms, application-code: 166ms)
+ GET / 200 in 200ms (next.js: 50ms, application-code: 149ms)
+ GET / 200 in 1385ms (next.js: 64ms, application-code: 1321ms)
+ GET / 200 in 3.8s (next.js: 33ms, application-code: 3.8s)
+ GET /admin/chapters 200 in 2.4s (next.js: 82ms, application-code: 2.4s)
+ GET /admin/analytics 200 in 3.0s (next.js: 220ms, application-code: 2.8s)
+○ Compiling /admin/dashboard ...
+ GET / 200 in 914ms (next.js: 21ms, application-code: 893ms)
+ GET / 200 in 32.0s (next.js: 27.8s, application-code: 4.2s)
+ GET /admin/dashboard 200 in 1098ms (next.js: 173ms, application-code: 925ms)
+ GET /admin/analytics 200 in 2.0s (next.js: 165ms, application-code: 1856ms)
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../app-call-server'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../app-call-server'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../assign-location'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Module not found: Can't resolve '../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Module not found: Can't resolve '../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve '../../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/image-external.js
+Module not found: Can't resolve '../../client/image-component'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/api/image.js
+./components/v2/PublicShell.tsx 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs:2:1
+Module not found: Can't resolve 'next/navigation.js'
+  1 | 'use client';
+> 2 | import { useParams, usePathname, useSearchParams } from 'next/navigation.js';
+    | ^
+  3 | import { computeRoute } from '../utils';
+  4 |
+  5 | export const useRoute = (): {
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./
+Module not found: Can't resolve 'C:\project\project-asha\node_modules\next\dist\compiled\mini-css-extract-plugin/loader.js'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/build/polyfills/process.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\build\polyfills\process.js'
+
+Import trace for requested module:
+./node_modules/next/dist/build/polyfills/process.js
+./node_modules/motion-utils/dist/es/errors.mjs
+./node_modules/motion-utils/dist/es/index.mjs
+./node_modules/framer-motion/dist/es/index.mjs
+./components/v2/Reveal.tsx 
+[browser] ./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:33:1
+Module not found: Can't resolve 'next/dist/compiled/react-refresh/runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/runtime.js 
+[browser] ./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/runtime.js:6:1
+Module not found: Can't resolve 'next/dist/compiled/react-refresh/runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/compiled/picomatch/index.js:1:207
+Module not found: Can't resolve 'process'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/shared/lib/match-remote-pattern.js
+./node_modules/next/dist/shared/lib/image-loader.js
+./node_modules/next/dist/shared/lib/image-external.js
+./node_modules/next/dist/api/image.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/compiled/strip-ansi/index.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\strip-ansi\index.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/strip-ansi/index.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/lib/metadata/generate/icon-mark.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/app-dev-overlay-error-boundary.js:13:1
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/app-dev-overlay-error-boundary.js:14:1
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/app-dev-overlay-error-boundary.js:15:1
+Module not found: Can't resolve 'next/dist/compiled/next-devtools'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/errors/replay-ssr-only-errors.js:11:1
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/errors/stitched-error.js:36:1
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/next-devtools/userspace/app/errors/use-error-handler.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/errors/use-error-handler.js:32:1
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js
+Module not found: Can't resolve 'next/dist/compiled/next-devtools'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/server/app-render/instant-validation/boundary-impl.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/instant-validation/impl.js
+./node_modules/next/dist/client/components/instant-validation/boundary.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/server/app-render/instant-validation/boundary-impl.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/instant-validation/impl.js
+./node_modules/next/dist/client/components/instant-validation/boundary.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/app-dir/link.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\app-dir\link.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/app-dir/link.js 
+[browser] ./node_modules/next/dist/client/components/app-router-headers.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\app-router-headers.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/app-router-headers.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/app-router-instance.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\app-router-instance.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/bfcache-state-manager.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\bfcache-state-manager.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/bfcache-state-manager.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/builtin/error-styles.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/builtin/global-error.js 
+[browser] ./node_modules/next/dist/client/components/builtin/error-styles.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/builtin/global-error.js 
+[browser] ./node_modules/next/dist/client/components/builtin/global-error.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/builtin/global-error.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/client-page.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\client-page.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/client-page.js 
+[browser] ./node_modules/next/dist/client/components/client-segment.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\client-segment.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/client-segment.js 
+[browser] ./node_modules/next/dist/client/components/error-boundary.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\error-boundary.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/error-boundary.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/handle-isr-error.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\handle-isr-error.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/handle-isr-error.js
+./node_modules/next/dist/client/components/builtin/global-error.js 
+[browser] ./node_modules/next/dist/client/components/http-access-fallback/error-boundary.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/http-access-fallback/error-boundary.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/is-next-router-error.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\is-next-router-error.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/is-next-router-error.js
+./node_modules/next/dist/next-devtools/userspace/app/errors/replay-ssr-only-errors.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/layout-router.js:29:21
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/layout-router.js:30:58
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/layout-router.js:31:60
+Module not found: Can't resolve 'react-dom'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/links.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\links.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/links.js
+./node_modules/next/dist/client/components/segment-cache/navigation.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/match-segments.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\match-segments.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/match-segments.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/navigation-devtools.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\navigation-devtools.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/navigation-devtools.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/navigation-untracked.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\navigation-untracked.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/navigation-untracked.js
+./node_modules/next/dist/client/components/http-access-fallback/error-boundary.js 
+[browser] ./node_modules/next/dist/client/components/navigation.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\navigation.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/navigation.js
+./node_modules/next/dist/api/navigation.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/client/components/not-found.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\not-found.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/not-found.js
+./node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js 
+[browser] ./node_modules/next/dist/client/components/offline.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\offline.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/offline.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/readonly-url-search-params.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\readonly-url-search-params.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/readonly-url-search-params.js
+./node_modules/next/dist/shared/lib/hooks-client-context.shared-runtime.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/redirect-boundary.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\redirect-boundary.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/redirect-boundary.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/render-from-template-context.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/render-from-template-context.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve 'react-server-dom-webpack/client'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../app-call-server'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js:208:9
+Module not found: Can't resolve 'process'
+  206 |     // If the fetch succeeds while we're in the offline state, notify the
+  207 |     // offline module so it can short-circuit the polling loop.
+> 208 |     if (process.env.__NEXT_USE_OFFLINE) {
+      |         ^
+  209 |       const { notifyOnline } =
+  210 |         require('../offline') as typeof import('../offline')
+  211 |       notifyOnline()
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Module not found: Can't resolve '../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Module not found: Can't resolve '../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js:2271:9
+Module not found: Can't resolve 'process'
+  2269 |     // entry immediately expires and gets retried once the scheduler is
+  2270 |     // re-pinged after connectivity is restored.
+> 2271 |     if (process.env.__NEXT_USE_OFFLINE) {
+       |         ^
+  2272 |       const { checkOfflineError } =
+  2273 |         require('../offline') as typeof import('../offline')
+  2274 |       if (checkOfflineError(error)) {
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/scheduler.js:463:7
+Module not found: Can't resolve 'process'
+  461 |   // When offline, don't issue any prefetch requests. The scheduler will be
+  462 |   // re-pinged when connectivity is restored.
+> 463 |   if (process.env.__NEXT_USE_OFFLINE) {
+      |       ^
+  464 |     const { getOffline } = require('../offline') as typeof import('../offline')
+  465 |     if (getOffline()) {
+  466 |       return false
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/segment-cache/navigation.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/unresolved-thenable.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\unresolved-thenable.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/unresolved-thenable.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/use-action-queue.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\use-action-queue.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/use-action-queue.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/debug-channel.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\dev\debug-channel.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/debug-channel.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve 'next/dist/compiled/next-devtools'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve 'react-server-dom-webpack/client'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve '../../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/web-socket.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/noop-turbopack-hmr.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\dev\noop-turbopack-hmr.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/noop-turbopack-hmr.js
+./node_modules/next/dist/client/dev/hot-reloader/app/web-socket.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/report-hmr-latency.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\dev\report-hmr-latency.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/report-hmr-latency.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/runtime-error-handler.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\dev\runtime-error-handler.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/runtime-error-handler.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/lib/console.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\lib\console.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/lib/console.js
+./node_modules/next/dist/next-devtools/userspace/app/errors/use-error-handler.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/lib/javascript-url.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\lib\javascript-url.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/lib/javascript-url.js
+./node_modules/next/dist/client/components/segment-cache/navigation.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/route-params.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\route-params.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/route-params.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/app-router-context.shared-runtime.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/render-from-template-context.js 
+[browser] ./node_modules/next/dist/shared/lib/deployment-id.js:27:10
+Module not found: Can't resolve 'process'
+  25 |
+  26 | export function getAssetToken(): string | undefined {
+> 27 |   return process.env.NEXT_SUPPORTS_IMMUTABLE_ASSETS
+     |          ^
+  28 |     ? undefined
+  29 |     : process.env.NEXT_DEPLOYMENT_ID
+  30 | }
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/format-webpack-messages.js:65:7
+Module not found: Can't resolve 'process'
+  63 |     // fall back to moduleIdentifier as a workaround
+  64 |     if (
+> 65 |       process.env.NEXT_RSPACK &&
+     |       ^
+  66 |       !message.moduleName &&
+  67 |       !message.file &&
+  68 |       message.moduleIdentifier
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/hooks-client-context.shared-runtime.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/image-external.js
+Module not found: Can't resolve '../../client/image-component'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/api/image.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/compiled/react/compiler-runtime.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\react\compiler-runtime.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/react/compiler-runtime.js
+./app/page.tsx 
+[browser] ./node_modules/next/dist/compiled/react/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\react\index.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/react/index.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/compiled/react/jsx-dev-runtime.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\react\jsx-dev-runtime.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/react/jsx-dev-runtime.js
+./app/page.tsx 
+[browser] ./node_modules/next/dist/compiled/react/jsx-runtime.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\react\jsx-runtime.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/react/jsx-runtime.js
+./node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs
+./node_modules/framer-motion/dist/es/index.mjs
+./components/v2/Reveal.tsx 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs:2:1
+Module not found: Can't resolve 'react'
+  1 | 'use client';
+> 2 | import React, { type ReactNode, Suspense } from 'react';
+    | ^
+  3 | import { Analytics as AnalyticsScript } from '../react';
+  4 | import type { AnalyticsProps, BeforeSend, BeforeSendEvent } from '../types';
+  5 | import { getBasePath, getConfigString, useRoute } from './utils';
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs:6:14
+Module not found: Can't resolve 'process'
+  4 |
+  5 | export function getBasePath(): string | undefined {
+> 6 |   if (typeof process === 'undefined' || typeof process.env === 'undefined') {
+    |              ^
+  7 |     return undefined;
+  8 |   }
+  9 |   return process.env.REACT_APP_VERCEL_OBSERVABILITY_BASEPATH;
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs:2:1
+Module not found: Can't resolve 'next/navigation.js'
+  1 | 'use client';
+> 2 | import { useParams, usePathname, useSearchParams } from 'next/navigation.js';
+    | ^
+  3 | import { computeRoute } from '../utils';
+  4 |
+  5 | export const useRoute = (): {
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] Module not found: Error: Can't resolve './node_modules/next/dist/client/app-next-dev.js' in 'C:\project\project-asha' 
+[browser] ./node_modules/next/dist/compiled/picomatch/index.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/picomatch/index.js
+./node_modules/next/dist/shared/lib/match-remote-pattern.js
+./node_modules/next/dist/shared/lib/image-loader.js
+./node_modules/next/dist/shared/lib/image-external.js
+./node_modules/next/dist/api/image.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/segment-cache/cache.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/scheduler.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/segment-cache/scheduler.js
+./node_modules/next/dist/client/components/segment-cache/navigation.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/deployment-id.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/shared/lib/deployment-id.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/format-webpack-messages.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/shared/lib/format-webpack-messages.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/@vercel/analytics/dist/next/index.mjs 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../app-call-server'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../app-call-server'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../assign-location'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Module not found: Can't resolve '../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Module not found: Can't resolve '../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve '../../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/image-external.js
+Module not found: Can't resolve '../../client/image-component'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/api/image.js
+./components/v2/PublicShell.tsx 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs:2:1
+Module not found: Can't resolve 'next/navigation.js'
+  1 | 'use client';
+> 2 | import { useParams, usePathname, useSearchParams } from 'next/navigation.js';
+    | ^
+  3 | import { computeRoute } from '../utils';
+  4 |
+  5 | export const useRoute = (): {
+
+https://nextjs.org/docs/messages/module-not-found 
+⨯ ./
+Module not found: Can't resolve 'C:\project\project-asha\node_modules\next\dist\compiled\mini-css-extract-plugin/loader.js'
+
+https://nextjs.org/docs/messages/module-not-found
+Error: Cannot find module 'next/dist/pages/_error'
+Require stack:
+- C:\project\project-asha\node_modules\next\dist\server\dev\on-demand-entry-handler.js
+- C:\project\project-asha\node_modules\next\dist\build\webpack\plugins\flight-client-entry-plugin.js
+- C:\project\project-asha\node_modules\next\dist\build\webpack-config.js
+- C:\project\project-asha\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\project\project-asha\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\project\project-asha\node_modules\next\dist\server\lib\router-server.js
+- C:\project\project-asha\node_modules\next\dist\server\lib\start-server.js
+    at ignore-listed frames {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\dev\\on-demand-entry-handler.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\build\\webpack\\plugins\\flight-client-entry-plugin.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\build\\webpack-config.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: Cannot find module 'next/dist/pages/_error'
+Require stack:
+- C:\project\project-asha\node_modules\next\dist\server\dev\on-demand-entry-handler.js
+- C:\project\project-asha\node_modules\next\dist\build\webpack\plugins\flight-client-entry-plugin.js
+- C:\project\project-asha\node_modules\next\dist\build\webpack-config.js
+- C:\project\project-asha\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\project\project-asha\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\project\project-asha\node_modules\next\dist\server\lib\router-server.js
+- C:\project\project-asha\node_modules\next\dist\server\lib\start-server.js
+    at ignore-listed frames {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\dev\\on-demand-entry-handler.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\build\\webpack\\plugins\\flight-client-entry-plugin.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\build\\webpack-config.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /admin/analytics 500 in 7.1s
+ GET /admin/analytics 500 in 7.1s
+Error: Cannot find module 'next/dist/pages/_error'
+Require stack:
+- C:\project\project-asha\node_modules\next\dist\server\dev\on-demand-entry-handler.js
+- C:\project\project-asha\node_modules\next\dist\build\webpack\plugins\flight-client-entry-plugin.js
+- C:\project\project-asha\node_modules\next\dist\build\webpack-config.js
+- C:\project\project-asha\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\project\project-asha\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\project\project-asha\node_modules\next\dist\server\lib\router-server.js
+- C:\project\project-asha\node_modules\next\dist\server\lib\start-server.js
+    at ignore-listed frames {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\dev\\on-demand-entry-handler.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\build\\webpack\\plugins\\flight-client-entry-plugin.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\build\\webpack-config.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: Cannot find module 'next/dist/pages/_error'
+Require stack:
+- C:\project\project-asha\node_modules\next\dist\server\dev\on-demand-entry-handler.js
+- C:\project\project-asha\node_modules\next\dist\build\webpack\plugins\flight-client-entry-plugin.js
+- C:\project\project-asha\node_modules\next\dist\build\webpack-config.js
+- C:\project\project-asha\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\project\project-asha\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\project\project-asha\node_modules\next\dist\server\lib\router-server.js
+- C:\project\project-asha\node_modules\next\dist\server\lib\start-server.js
+    at ignore-listed frames {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\dev\\on-demand-entry-handler.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\build\\webpack\\plugins\\flight-client-entry-plugin.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\build\\webpack-config.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: Cannot find module 'next/dist/pages/_error'
+Require stack:
+- C:\project\project-asha\node_modules\next\dist\server\dev\on-demand-entry-handler.js
+- C:\project\project-asha\node_modules\next\dist\build\webpack\plugins\flight-client-entry-plugin.js
+- C:\project\project-asha\node_modules\next\dist\build\webpack-config.js
+- C:\project\project-asha\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\project\project-asha\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\project\project-asha\node_modules\next\dist\server\lib\router-server.js
+- C:\project\project-asha\node_modules\next\dist\server\lib\start-server.js
+    at ignore-listed frames {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\dev\\on-demand-entry-handler.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\build\\webpack\\plugins\\flight-client-entry-plugin.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\build\\webpack-config.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: Cannot find module 'next/dist/pages/_error'
+Require stack:
+- C:\project\project-asha\node_modules\next\dist\server\dev\on-demand-entry-handler.js
+- C:\project\project-asha\node_modules\next\dist\build\webpack\plugins\flight-client-entry-plugin.js
+- C:\project\project-asha\node_modules\next\dist\build\webpack-config.js
+- C:\project\project-asha\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\project\project-asha\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\project\project-asha\node_modules\next\dist\server\lib\router-server.js
+- C:\project\project-asha\node_modules\next\dist\server\lib\start-server.js
+    at ignore-listed frames {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\dev\\on-demand-entry-handler.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\build\\webpack\\plugins\\flight-client-entry-plugin.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\build\\webpack-config.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\project\\project-asha\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET / 500 in 20.9s
+ GET / 500 in 20.9s
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\project\project-asha\.next\dev\cache\webpack\client-development-fallback\0.pack.gz_' -> 'C:\project\project-asha\.next\dev\cache\webpack\client-development-fallback\0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\project\project-asha\.next\dev\cache\webpack\client-development-fallback\0.pack.gz_' -> 'C:\project\project-asha\.next\dev\cache\webpack\client-development-fallback\0.pack.gz'
+○ Compiling /_error ...
+[browser] ./
+Module not found: Can't resolve 'C:\project\project-asha\node_modules\next\dist\compiled\mini-css-extract-plugin/loader.js'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/build/polyfills/process.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\build\polyfills\process.js'
+
+Import trace for requested module:
+./node_modules/next/dist/build/polyfills/process.js
+./node_modules/motion-utils/dist/es/errors.mjs
+./node_modules/motion-utils/dist/es/index.mjs
+./node_modules/framer-motion/dist/es/index.mjs
+./components/v2/Reveal.tsx 
+[browser] ./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:33:1
+Module not found: Can't resolve 'next/dist/compiled/react-refresh/runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/runtime.js 
+[browser] ./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/runtime.js:6:1
+Module not found: Can't resolve 'next/dist/compiled/react-refresh/runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/compiled/picomatch/index.js:1:207
+Module not found: Can't resolve 'process'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/shared/lib/match-local-pattern.js
+./node_modules/next/dist/shared/lib/image-loader.js
+./node_modules/next/dist/shared/lib/image-external.js
+./node_modules/next/dist/api/image.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/compiled/strip-ansi/index.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\strip-ansi\index.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/strip-ansi/index.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/lib/metadata/generate/icon-mark.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/app-dev-overlay-error-boundary.js:13:1
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/app-dev-overlay-error-boundary.js:14:1
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/app-dev-overlay-error-boundary.js:15:1
+Module not found: Can't resolve 'next/dist/compiled/next-devtools'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/errors/replay-ssr-only-errors.js:11:1
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/errors/stitched-error.js:36:1
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/next-devtools/userspace/app/errors/use-error-handler.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/errors/use-error-handler.js:32:1
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js
+Module not found: Can't resolve 'next/dist/compiled/next-devtools'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/server/app-render/instant-validation/boundary-impl.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/instant-validation/impl.js
+./node_modules/next/dist/client/components/instant-validation/boundary.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/server/app-render/instant-validation/boundary-impl.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/instant-validation/impl.js
+./node_modules/next/dist/client/components/instant-validation/boundary.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/app-dir/link.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\app-dir\link.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/app-dir/link.js 
+[browser] ./node_modules/next/dist/client/components/app-router-headers.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\app-router-headers.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/app-router-headers.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/app-router-instance.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\app-router-instance.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/bfcache-state-manager.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\bfcache-state-manager.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/bfcache-state-manager.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/builtin/error-styles.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/builtin/global-error.js 
+[browser] ./node_modules/next/dist/client/components/builtin/error-styles.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/builtin/global-error.js 
+[browser] ./node_modules/next/dist/client/components/builtin/global-error.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/builtin/global-error.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/client-page.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\client-page.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/client-page.js 
+[browser] ./node_modules/next/dist/client/components/client-segment.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\client-segment.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/client-segment.js 
+[browser] ./node_modules/next/dist/client/components/error-boundary.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\error-boundary.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/error-boundary.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/handle-isr-error.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\handle-isr-error.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/handle-isr-error.js
+./node_modules/next/dist/client/components/builtin/global-error.js 
+[browser] ./node_modules/next/dist/client/components/http-access-fallback/error-boundary.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/http-access-fallback/error-boundary.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/is-next-router-error.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\is-next-router-error.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/is-next-router-error.js
+./node_modules/next/dist/next-devtools/userspace/app/errors/replay-ssr-only-errors.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/layout-router.js:29:21
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/layout-router.js:30:58
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/layout-router.js:31:60
+Module not found: Can't resolve 'react-dom'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/links.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\links.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/links.js
+./node_modules/next/dist/client/components/segment-cache/navigation.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/match-segments.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\match-segments.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/match-segments.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/navigation-devtools.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\navigation-devtools.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/navigation-devtools.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/navigation-untracked.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\navigation-untracked.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/navigation-untracked.js
+./node_modules/next/dist/client/components/http-access-fallback/error-boundary.js 
+[browser] ./node_modules/next/dist/client/components/navigation.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\navigation.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/navigation.js
+./node_modules/next/dist/api/navigation.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/client/components/not-found.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\not-found.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/not-found.js
+./node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js 
+[browser] ./node_modules/next/dist/client/components/offline.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\offline.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/offline.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/readonly-url-search-params.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\readonly-url-search-params.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/readonly-url-search-params.js
+./node_modules/next/dist/shared/lib/hooks-client-context.shared-runtime.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/redirect-boundary.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\redirect-boundary.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/redirect-boundary.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/render-from-template-context.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/render-from-template-context.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve 'react-server-dom-webpack/client'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../app-call-server'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js:208:9
+Module not found: Can't resolve 'process'
+  206 |     // If the fetch succeeds while we're in the offline state, notify the
+  207 |     // offline module so it can short-circuit the polling loop.
+> 208 |     if (process.env.__NEXT_USE_OFFLINE) {
+      |         ^
+  209 |       const { notifyOnline } =
+  210 |         require('../offline') as typeof import('../offline')
+  211 |       notifyOnline()
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Module not found: Can't resolve '../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Module not found: Can't resolve '../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js:2271:9
+Module not found: Can't resolve 'process'
+  2269 |     // entry immediately expires and gets retried once the scheduler is
+  2270 |     // re-pinged after connectivity is restored.
+> 2271 |     if (process.env.__NEXT_USE_OFFLINE) {
+       |         ^
+  2272 |       const { checkOfflineError } =
+  2273 |         require('../offline') as typeof import('../offline')
+  2274 |       if (checkOfflineError(error)) {
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/scheduler.js:463:7
+Module not found: Can't resolve 'process'
+  461 |   // When offline, don't issue any prefetch requests. The scheduler will be
+  462 |   // re-pinged when connectivity is restored.
+> 463 |   if (process.env.__NEXT_USE_OFFLINE) {
+      |       ^
+  464 |     const { getOffline } = require('../offline') as typeof import('../offline')
+  465 |     if (getOffline()) {
+  466 |       return false
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/segment-cache/navigation.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/unresolved-thenable.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\unresolved-thenable.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/unresolved-thenable.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/use-action-queue.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\use-action-queue.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/use-action-queue.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/debug-channel.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\dev\debug-channel.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/debug-channel.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve 'next/dist/compiled/next-devtools'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve 'react-server-dom-webpack/client'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve '../../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/web-socket.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/noop-turbopack-hmr.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\dev\noop-turbopack-hmr.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/noop-turbopack-hmr.js
+./node_modules/next/dist/client/dev/hot-reloader/app/web-socket.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/report-hmr-latency.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\dev\report-hmr-latency.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/report-hmr-latency.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/runtime-error-handler.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\dev\runtime-error-handler.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/runtime-error-handler.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/lib/console.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\lib\console.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/lib/console.js
+./node_modules/next/dist/next-devtools/userspace/app/errors/use-error-handler.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/lib/javascript-url.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\lib\javascript-url.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/lib/javascript-url.js
+./node_modules/next/dist/client/components/segment-cache/navigation.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/route-params.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\route-params.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/route-params.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/app-router-context.shared-runtime.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/http-access-fallback/error-boundary.js 
+[browser] ./node_modules/next/dist/shared/lib/deployment-id.js:27:10
+Module not found: Can't resolve 'process'
+  25 |
+  26 | export function getAssetToken(): string | undefined {
+> 27 |   return process.env.NEXT_SUPPORTS_IMMUTABLE_ASSETS
+     |          ^
+  28 |     ? undefined
+  29 |     : process.env.NEXT_DEPLOYMENT_ID
+  30 | }
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/format-webpack-messages.js:65:7
+Module not found: Can't resolve 'process'
+  63 |     // fall back to moduleIdentifier as a workaround
+  64 |     if (
+> 65 |       process.env.NEXT_RSPACK &&
+     |       ^
+  66 |       !message.moduleName &&
+  67 |       !message.file &&
+  68 |       message.moduleIdentifier
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/hooks-client-context.shared-runtime.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/image-external.js
+Module not found: Can't resolve '../../client/image-component'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/api/image.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/compiled/react/compiler-runtime.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\react\compiler-runtime.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/react/compiler-runtime.js
+./app/page.tsx 
+[browser] ./node_modules/next/dist/compiled/react/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\react\index.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/react/index.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/compiled/react/jsx-dev-runtime.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\react\jsx-dev-runtime.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/react/jsx-dev-runtime.js
+./app/page.tsx 
+[browser] ./node_modules/next/dist/compiled/react/jsx-runtime.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\react\jsx-runtime.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/react/jsx-runtime.js
+./node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs
+./node_modules/framer-motion/dist/es/index.mjs
+./components/v2/Reveal.tsx 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs:2:1
+Module not found: Can't resolve 'react'
+  1 | 'use client';
+> 2 | import React, { type ReactNode, Suspense } from 'react';
+    | ^
+  3 | import { Analytics as AnalyticsScript } from '../react';
+  4 | import type { AnalyticsProps, BeforeSend, BeforeSendEvent } from '../types';
+  5 | import { getBasePath, getConfigString, useRoute } from './utils';
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs:6:14
+Module not found: Can't resolve 'process'
+  4 |
+  5 | export function getBasePath(): string | undefined {
+> 6 |   if (typeof process === 'undefined' || typeof process.env === 'undefined') {
+    |              ^
+  7 |     return undefined;
+  8 |   }
+  9 |   return process.env.REACT_APP_VERCEL_OBSERVABILITY_BASEPATH;
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs:2:1
+Module not found: Can't resolve 'next/navigation.js'
+  1 | 'use client';
+> 2 | import { useParams, usePathname, useSearchParams } from 'next/navigation.js';
+    | ^
+  3 | import { computeRoute } from '../utils';
+  4 |
+  5 | export const useRoute = (): {
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] Module not found: Error: Can't resolve './node_modules/next/dist/client/app-next-dev.js' in 'C:\project\project-asha' 
+[browser] ./node_modules/next/dist/compiled/picomatch/index.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/picomatch/index.js
+./node_modules/next/dist/shared/lib/match-local-pattern.js
+./node_modules/next/dist/shared/lib/image-loader.js
+./node_modules/next/dist/shared/lib/image-external.js
+./node_modules/next/dist/api/image.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/segment-cache/cache.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/scheduler.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/segment-cache/scheduler.js
+./node_modules/next/dist/client/components/segment-cache/navigation.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/deployment-id.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/shared/lib/deployment-id.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/format-webpack-messages.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/shared/lib/format-webpack-messages.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/@vercel/analytics/dist/next/index.mjs 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../app-call-server'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../app-call-server'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../assign-location'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Module not found: Can't resolve '../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Module not found: Can't resolve '../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve '../../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/image-external.js
+Module not found: Can't resolve '../../client/image-component'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/api/image.js
+./components/v2/PublicShell.tsx 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs:2:1
+Module not found: Can't resolve 'next/navigation.js'
+  1 | 'use client';
+> 2 | import { useParams, usePathname, useSearchParams } from 'next/navigation.js';
+    | ^
+  3 | import { computeRoute } from '../utils';
+  4 |
+  5 | export const useRoute = (): {
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./
+Module not found: Can't resolve 'C:\project\project-asha\node_modules\next\dist\compiled\mini-css-extract-plugin/loader.js'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/build/polyfills/process.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\build\polyfills\process.js'
+
+Import trace for requested module:
+./node_modules/next/dist/build/polyfills/process.js
+./node_modules/motion-utils/dist/es/errors.mjs
+./node_modules/motion-utils/dist/es/index.mjs
+./node_modules/framer-motion/dist/es/index.mjs
+./components/v2/Reveal.tsx 
+[browser] ./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:33:1
+Module not found: Can't resolve 'next/dist/compiled/react-refresh/runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/runtime.js 
+[browser] ./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/runtime.js:6:1
+Module not found: Can't resolve 'next/dist/compiled/react-refresh/runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/compiled/picomatch/index.js:1:207
+Module not found: Can't resolve 'process'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/shared/lib/match-remote-pattern.js
+./node_modules/next/dist/shared/lib/image-loader.js
+./node_modules/next/dist/shared/lib/image-external.js
+./node_modules/next/dist/api/image.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/compiled/strip-ansi/index.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\strip-ansi\index.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/strip-ansi/index.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/lib/metadata/generate/icon-mark.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/app-dev-overlay-error-boundary.js:13:1
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/app-dev-overlay-error-boundary.js:14:1
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/app-dev-overlay-error-boundary.js:15:1
+Module not found: Can't resolve 'next/dist/compiled/next-devtools'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/errors/replay-ssr-only-errors.js:11:1
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/errors/stitched-error.js:36:1
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/next-devtools/userspace/app/errors/use-error-handler.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/errors/use-error-handler.js:32:1
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js
+Module not found: Can't resolve 'next/dist/compiled/next-devtools'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/server/app-render/instant-validation/boundary-impl.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/instant-validation/impl.js
+./node_modules/next/dist/client/components/instant-validation/boundary.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/server/app-render/instant-validation/boundary-impl.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/instant-validation/impl.js
+./node_modules/next/dist/client/components/instant-validation/boundary.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/app-dir/link.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\app-dir\link.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/app-dir/link.js 
+[browser] ./node_modules/next/dist/client/components/app-router-headers.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\app-router-headers.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/app-router-headers.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/app-router-instance.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\app-router-instance.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/bfcache-state-manager.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\bfcache-state-manager.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/bfcache-state-manager.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/builtin/error-styles.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/builtin/global-error.js 
+[browser] ./node_modules/next/dist/client/components/builtin/error-styles.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/builtin/global-error.js 
+[browser] ./node_modules/next/dist/client/components/builtin/global-error.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/builtin/global-error.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/client-page.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\client-page.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/client-page.js 
+[browser] ./node_modules/next/dist/client/components/client-segment.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\client-segment.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/client-segment.js 
+[browser] ./node_modules/next/dist/client/components/error-boundary.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\error-boundary.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/error-boundary.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/handle-isr-error.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\handle-isr-error.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/handle-isr-error.js
+./node_modules/next/dist/client/components/builtin/global-error.js 
+[browser] ./node_modules/next/dist/client/components/http-access-fallback/error-boundary.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/http-access-fallback/error-boundary.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/is-next-router-error.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\is-next-router-error.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/is-next-router-error.js
+./node_modules/next/dist/next-devtools/userspace/app/errors/replay-ssr-only-errors.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/layout-router.js:29:21
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/layout-router.js:30:58
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/layout-router.js:31:60
+Module not found: Can't resolve 'react-dom'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/links.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\links.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/links.js
+./node_modules/next/dist/client/components/segment-cache/navigation.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/match-segments.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\match-segments.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/match-segments.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/navigation-devtools.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\navigation-devtools.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/navigation-devtools.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/navigation-untracked.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\navigation-untracked.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/navigation-untracked.js
+./node_modules/next/dist/client/components/http-access-fallback/error-boundary.js 
+[browser] ./node_modules/next/dist/client/components/navigation.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\navigation.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/navigation.js
+./node_modules/next/dist/api/navigation.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/client/components/not-found.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\not-found.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/not-found.js
+./node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js 
+[browser] ./node_modules/next/dist/client/components/offline.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\offline.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/offline.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/readonly-url-search-params.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\readonly-url-search-params.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/readonly-url-search-params.js
+./node_modules/next/dist/shared/lib/hooks-client-context.shared-runtime.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/redirect-boundary.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\redirect-boundary.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/redirect-boundary.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/render-from-template-context.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/render-from-template-context.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve 'react-server-dom-webpack/client'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../app-call-server'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js:208:9
+Module not found: Can't resolve 'process'
+  206 |     // If the fetch succeeds while we're in the offline state, notify the
+  207 |     // offline module so it can short-circuit the polling loop.
+> 208 |     if (process.env.__NEXT_USE_OFFLINE) {
+      |         ^
+  209 |       const { notifyOnline } =
+  210 |         require('../offline') as typeof import('../offline')
+  211 |       notifyOnline()
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Module not found: Can't resolve '../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Module not found: Can't resolve '../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js:2271:9
+Module not found: Can't resolve 'process'
+  2269 |     // entry immediately expires and gets retried once the scheduler is
+  2270 |     // re-pinged after connectivity is restored.
+> 2271 |     if (process.env.__NEXT_USE_OFFLINE) {
+       |         ^
+  2272 |       const { checkOfflineError } =
+  2273 |         require('../offline') as typeof import('../offline')
+  2274 |       if (checkOfflineError(error)) {
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/scheduler.js:463:7
+Module not found: Can't resolve 'process'
+  461 |   // When offline, don't issue any prefetch requests. The scheduler will be
+  462 |   // re-pinged when connectivity is restored.
+> 463 |   if (process.env.__NEXT_USE_OFFLINE) {
+      |       ^
+  464 |     const { getOffline } = require('../offline') as typeof import('../offline')
+  465 |     if (getOffline()) {
+  466 |       return false
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/segment-cache/navigation.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/unresolved-thenable.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\unresolved-thenable.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/unresolved-thenable.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/use-action-queue.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\use-action-queue.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/use-action-queue.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/debug-channel.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\dev\debug-channel.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/debug-channel.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve 'next/dist/compiled/next-devtools'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve 'react-server-dom-webpack/client'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve '../../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/web-socket.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/noop-turbopack-hmr.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\dev\noop-turbopack-hmr.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/noop-turbopack-hmr.js
+./node_modules/next/dist/client/dev/hot-reloader/app/web-socket.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/report-hmr-latency.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\dev\report-hmr-latency.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/report-hmr-latency.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/runtime-error-handler.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\dev\runtime-error-handler.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/runtime-error-handler.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/lib/console.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\lib\console.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/lib/console.js
+./node_modules/next/dist/next-devtools/userspace/app/errors/use-error-handler.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/lib/javascript-url.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\lib\javascript-url.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/lib/javascript-url.js
+./node_modules/next/dist/client/components/segment-cache/navigation.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/route-params.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\route-params.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/route-params.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/app-router-context.shared-runtime.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/render-from-template-context.js 
+[browser] ./node_modules/next/dist/shared/lib/deployment-id.js:27:10
+Module not found: Can't resolve 'process'
+  25 |
+  26 | export function getAssetToken(): string | undefined {
+> 27 |   return process.env.NEXT_SUPPORTS_IMMUTABLE_ASSETS
+     |          ^
+  28 |     ? undefined
+  29 |     : process.env.NEXT_DEPLOYMENT_ID
+  30 | }
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/format-webpack-messages.js:65:7
+Module not found: Can't resolve 'process'
+  63 |     // fall back to moduleIdentifier as a workaround
+  64 |     if (
+> 65 |       process.env.NEXT_RSPACK &&
+     |       ^
+  66 |       !message.moduleName &&
+  67 |       !message.file &&
+  68 |       message.moduleIdentifier
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/hooks-client-context.shared-runtime.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/image-external.js
+Module not found: Can't resolve '../../client/image-component'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/api/image.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/compiled/react/compiler-runtime.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\react\compiler-runtime.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/react/compiler-runtime.js
+./app/page.tsx 
+[browser] ./node_modules/next/dist/compiled/react/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\react\index.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/react/index.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/compiled/react/jsx-dev-runtime.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\react\jsx-dev-runtime.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/react/jsx-dev-runtime.js
+./app/page.tsx 
+[browser] ./node_modules/next/dist/compiled/react/jsx-runtime.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\react\jsx-runtime.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/react/jsx-runtime.js
+./node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs
+./node_modules/framer-motion/dist/es/index.mjs
+./components/v2/Reveal.tsx 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs:2:1
+Module not found: Can't resolve 'react'
+  1 | 'use client';
+> 2 | import React, { type ReactNode, Suspense } from 'react';
+    | ^
+  3 | import { Analytics as AnalyticsScript } from '../react';
+  4 | import type { AnalyticsProps, BeforeSend, BeforeSendEvent } from '../types';
+  5 | import { getBasePath, getConfigString, useRoute } from './utils';
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs:6:14
+Module not found: Can't resolve 'process'
+  4 |
+  5 | export function getBasePath(): string | undefined {
+> 6 |   if (typeof process === 'undefined' || typeof process.env === 'undefined') {
+    |              ^
+  7 |     return undefined;
+  8 |   }
+  9 |   return process.env.REACT_APP_VERCEL_OBSERVABILITY_BASEPATH;
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs:2:1
+Module not found: Can't resolve 'next/navigation.js'
+  1 | 'use client';
+> 2 | import { useParams, usePathname, useSearchParams } from 'next/navigation.js';
+    | ^
+  3 | import { computeRoute } from '../utils';
+  4 |
+  5 | export const useRoute = (): {
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] Module not found: Error: Can't resolve './node_modules/next/dist/client/app-next-dev.js' in 'C:\project\project-asha' 
+[browser] ./node_modules/next/dist/compiled/picomatch/index.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/picomatch/index.js
+./node_modules/next/dist/shared/lib/match-remote-pattern.js
+./node_modules/next/dist/shared/lib/image-loader.js
+./node_modules/next/dist/shared/lib/image-external.js
+./node_modules/next/dist/api/image.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/segment-cache/cache.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/scheduler.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/segment-cache/scheduler.js
+./node_modules/next/dist/client/components/segment-cache/navigation.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/deployment-id.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/shared/lib/deployment-id.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/format-webpack-messages.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/shared/lib/format-webpack-messages.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/@vercel/analytics/dist/next/index.mjs 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../app-call-server'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../app-call-server'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../assign-location'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/reducers/server-action-reducer.js
+Module not found: Can't resolve '../../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/router-reducer.js
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Module not found: Can't resolve '../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Module not found: Can't resolve '../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve '../../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/image-external.js
+Module not found: Can't resolve '../../client/image-component'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/api/image.js
+./components/v2/PublicShell.tsx 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs:2:1
+Module not found: Can't resolve 'next/navigation.js'
+  1 | 'use client';
+> 2 | import { useParams, usePathname, useSearchParams } from 'next/navigation.js';
+    | ^
+  3 | import { computeRoute } from '../utils';
+  4 |
+  5 | export const useRoute = (): {
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./
+Module not found: Can't resolve 'C:\project\project-asha\node_modules\next\dist\compiled\mini-css-extract-plugin/loader.js'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/build/polyfills/process.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\build\polyfills\process.js'
+
+Import trace for requested module:
+./node_modules/next/dist/build/polyfills/process.js
+./node_modules/motion-utils/dist/es/errors.mjs
+./node_modules/motion-utils/dist/es/index.mjs
+./node_modules/framer-motion/dist/es/index.mjs
+./components/v2/Reveal.tsx 
+[browser] ./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js:33:1
+Module not found: Can't resolve 'next/dist/compiled/react-refresh/runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/runtime.js 
+[browser] ./node_modules/next/dist/compiled/@next/react-refresh-utils/dist/runtime.js:6:1
+Module not found: Can't resolve 'next/dist/compiled/react-refresh/runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/compiled/picomatch/index.js:1:207
+Module not found: Can't resolve 'process'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/shared/lib/match-local-pattern.js
+./node_modules/next/dist/shared/lib/image-loader.js
+./node_modules/next/dist/shared/lib/image-external.js
+./node_modules/next/dist/api/image.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/compiled/strip-ansi/index.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\strip-ansi\index.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/strip-ansi/index.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/lib/metadata/generate/icon-mark.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/app-dev-overlay-error-boundary.js:13:1
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/app-dev-overlay-error-boundary.js:14:1
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/app-dev-overlay-error-boundary.js:15:1
+Module not found: Can't resolve 'next/dist/compiled/next-devtools'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/errors/replay-ssr-only-errors.js:11:1
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/errors/stitched-error.js:36:1
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/next-devtools/userspace/app/errors/use-error-handler.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/errors/use-error-handler.js:32:1
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js
+Module not found: Can't resolve 'next/dist/compiled/next-devtools'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/server/app-render/instant-validation/boundary-impl.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/instant-validation/impl.js
+./node_modules/next/dist/client/components/instant-validation/boundary.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/server/app-render/instant-validation/boundary-impl.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/instant-validation/impl.js
+./node_modules/next/dist/client/components/instant-validation/boundary.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/app-dir/link.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\app-dir\link.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/app-dir/link.js 
+[browser] ./node_modules/next/dist/client/components/app-router-headers.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\app-router-headers.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/app-router-headers.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/app-router-instance.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\app-router-instance.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/app-router-instance.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/bfcache-state-manager.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\bfcache-state-manager.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/bfcache-state-manager.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/builtin/error-styles.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/builtin/global-error.js 
+[browser] ./node_modules/next/dist/client/components/builtin/error-styles.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/builtin/global-error.js 
+[browser] ./node_modules/next/dist/client/components/builtin/global-error.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/builtin/global-error.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/client-page.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\client-page.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/client-page.js 
+[browser] ./node_modules/next/dist/client/components/client-segment.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\client-segment.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/client-segment.js 
+[browser] ./node_modules/next/dist/client/components/error-boundary.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\error-boundary.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/error-boundary.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/handle-isr-error.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\handle-isr-error.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/handle-isr-error.js
+./node_modules/next/dist/client/components/builtin/global-error.js 
+[browser] ./node_modules/next/dist/client/components/http-access-fallback/error-boundary.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/http-access-fallback/error-boundary.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/is-next-router-error.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\is-next-router-error.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/is-next-router-error.js
+./node_modules/next/dist/next-devtools/userspace/app/errors/replay-ssr-only-errors.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/layout-router.js:29:21
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/layout-router.js:30:58
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/layout-router.js:31:60
+Module not found: Can't resolve 'react-dom'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/links.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\links.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/links.js
+./node_modules/next/dist/client/components/segment-cache/navigation.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/match-segments.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\match-segments.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/match-segments.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/navigation-devtools.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\navigation-devtools.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/navigation-devtools.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/navigation-untracked.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\navigation-untracked.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/navigation-untracked.js
+./node_modules/next/dist/client/components/http-access-fallback/error-boundary.js 
+[browser] ./node_modules/next/dist/client/components/navigation.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\navigation.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/navigation.js
+./node_modules/next/dist/api/navigation.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/client/components/not-found.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\not-found.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/not-found.js
+./node_modules/next/dist/next-devtools/userspace/app/segment-explorer-node.js 
+[browser] ./node_modules/next/dist/client/components/offline.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\offline.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/offline.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/readonly-url-search-params.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\readonly-url-search-params.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/readonly-url-search-params.js
+./node_modules/next/dist/shared/lib/hooks-client-context.shared-runtime.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/redirect-boundary.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\redirect-boundary.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/redirect-boundary.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/render-from-template-context.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/render-from-template-context.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve 'react-server-dom-webpack/client'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../app-call-server'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Module not found: Can't resolve '../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js:208:9
+Module not found: Can't resolve 'process'
+  206 |     // If the fetch succeeds while we're in the offline state, notify the
+  207 |     // offline module so it can short-circuit the polling loop.
+> 208 |     if (process.env.__NEXT_USE_OFFLINE) {
+      |         ^
+  209 |       const { notifyOnline } =
+  210 |         require('../offline') as typeof import('../offline')
+  211 |       notifyOnline()
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Module not found: Can't resolve '../../flight-data-helpers'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Module not found: Can't resolve '../../navigation-build-id'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js:2271:9
+Module not found: Can't resolve 'process'
+  2269 |     // entry immediately expires and gets retried once the scheduler is
+  2270 |     // re-pinged after connectivity is restored.
+> 2271 |     if (process.env.__NEXT_USE_OFFLINE) {
+       |         ^
+  2272 |       const { checkOfflineError } =
+  2273 |         require('../offline') as typeof import('../offline')
+  2274 |       if (checkOfflineError(error)) {
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/scheduler.js:463:7
+Module not found: Can't resolve 'process'
+  461 |   // When offline, don't issue any prefetch requests. The scheduler will be
+  462 |   // re-pinged when connectivity is restored.
+> 463 |   if (process.env.__NEXT_USE_OFFLINE) {
+      |       ^
+  464 |     const { getOffline } = require('../offline') as typeof import('../offline')
+  465 |     if (getOffline()) {
+  466 |       return false
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/segment-cache/navigation.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/unresolved-thenable.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\unresolved-thenable.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/unresolved-thenable.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/use-action-queue.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\components\use-action-queue.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/use-action-queue.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/debug-channel.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\dev\debug-channel.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/debug-channel.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve 'react/jsx-runtime'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve 'next/dist/compiled/next-devtools'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve 'react-server-dom-webpack/client'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+Module not found: Can't resolve '../../../app-find-source-map-url'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/hot-reloader/app/web-socket.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/noop-turbopack-hmr.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\dev\noop-turbopack-hmr.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/noop-turbopack-hmr.js
+./node_modules/next/dist/client/dev/hot-reloader/app/web-socket.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/report-hmr-latency.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\dev\report-hmr-latency.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/report-hmr-latency.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/dev/runtime-error-handler.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\dev\runtime-error-handler.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/runtime-error-handler.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/lib/console.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\lib\console.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/lib/console.js
+./node_modules/next/dist/next-devtools/userspace/app/errors/use-error-handler.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/lib/javascript-url.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\lib\javascript-url.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/lib/javascript-url.js
+./node_modules/next/dist/client/components/segment-cache/navigation.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/route-params.js
+Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\client\route-params.js'
+
+Import trace for requested module:
+./node_modules/next/dist/client/route-params.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/app-router-context.shared-runtime.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/http-access-fallback/error-boundary.js 
+[browser] ./node_modules/next/dist/shared/lib/deployment-id.js:27:10
+Module not found: Can't resolve 'process'
+  25 |
+  26 | export function getAssetToken(): string | undefined {
+> 27 |   return process.env.NEXT_SUPPORTS_IMMUTABLE_ASSETS
+     |          ^
+  28 |     ? undefined
+  29 |     : process.env.NEXT_DEPLOYMENT_ID
+  30 | }
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/format-webpack-messages.js:65:7
+Module not found: Can't resolve 'process'
+  63 |     // fall back to moduleIdentifier as a workaround
+  64 |     if (
+> 65 |       process.env.NEXT_RSPACK &&
+     |       ^
+  66 |       !message.moduleName &&
+  67 |       !message.file &&
+  68 |       message.moduleIdentifier
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/hooks-client-context.shared-runtime.js
+Module not found: Can't resolve 'react'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/image-external.js
+Module not found: Can't resolve '../../client/image-component'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/next/dist/api/image.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/compiled/react/compiler-runtime.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\react\compiler-runtime.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/react/compiler-runtime.js
+./app/page.tsx 
+[browser] ./node_modules/next/dist/compiled/react/index.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\react\index.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/react/index.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/compiled/react/jsx-dev-runtime.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\react\jsx-dev-runtime.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/react/jsx-dev-runtime.js
+./app/page.tsx 
+[browser] ./node_modules/next/dist/compiled/react/jsx-runtime.js
+Module build failed: Error: ENOENT: no such file or directory, open 'C:\project\project-asha\node_modules\next\dist\compiled\react\jsx-runtime.js'
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/react/jsx-runtime.js
+./node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs
+./node_modules/framer-motion/dist/es/index.mjs
+./components/v2/Reveal.tsx 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs:2:1
+Module not found: Can't resolve 'react'
+  1 | 'use client';
+> 2 | import React, { type ReactNode, Suspense } from 'react';
+    | ^
+  3 | import { Analytics as AnalyticsScript } from '../react';
+  4 | import type { AnalyticsProps, BeforeSend, BeforeSendEvent } from '../types';
+  5 | import { getBasePath, getConfigString, useRoute } from './utils';
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs:6:14
+Module not found: Can't resolve 'process'
+  4 |
+  5 | export function getBasePath(): string | undefined {
+> 6 |   if (typeof process === 'undefined' || typeof process.env === 'undefined') {
+    |              ^
+  7 |     return undefined;
+  8 |   }
+  9 |   return process.env.REACT_APP_VERCEL_OBSERVABILITY_BASEPATH;
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs:2:1
+Module not found: Can't resolve 'next/navigation.js'
+  1 | 'use client';
+> 2 | import { useParams, usePathname, useSearchParams } from 'next/navigation.js';
+    | ^
+  3 | import { computeRoute } from '../utils';
+  4 |
+  5 | export const useRoute = (): {
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] Module not found: Error: Can't resolve './node_modules/next/dist/client/app-next-dev.js' in 'C:\project\project-asha' 
+[browser] ./node_modules/next/dist/compiled/picomatch/index.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/compiled/picomatch/index.js
+./node_modules/next/dist/shared/lib/match-local-pattern.js
+./node_modules/next/dist/shared/lib/image-loader.js
+./node_modules/next/dist/shared/lib/image-external.js
+./node_modules/next/dist/api/image.js
+./components/admin/v2/AdminShell.tsx 
+[browser] ./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/cache.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/segment-cache/cache.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/client/components/segment-cache/scheduler.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/client/components/segment-cache/scheduler.js
+./node_modules/next/dist/client/components/segment-cache/navigation.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/deployment-id.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/shared/lib/deployment-id.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/next/dist/shared/lib/format-webpack-messages.js
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/next/dist/shared/lib/format-webpack-messages.js
+./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js
+./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js
+./node_modules/next/dist/client/components/router-reducer/ppr-navigations.js
+./node_modules/next/dist/client/components/layout-router.js 
+[browser] ./node_modules/@vercel/analytics/dist/next/index.mjs
+Cannot read properties of undefined (reading 'module')
+
+Import trace for requested module:
+./node_modules/@vercel/analytics/dist/next/index.mjs 
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ ./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fabout%2Fpage&page=%2Fabout%2Fpage&appPaths=%2Fabout%2Fpage&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fabout%2Fpage.tsx&appDir=C%3A%5Cproject%5Cproject-asha%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5Cproject%5Cproject-asha&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!
+Attempted import error: 'isHtmlBotRequest' is not exported from 'next/dist/server/lib/streaming-metadata' (imported as 'isHtmlBotRequest').
+
+./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fadmin%2Fanalytics%2Fpage&page=%2Fadmin%2Fanalytics%2Fpage&appPaths=%2Fadmin%2Fanalytics%2Fpage&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fadmin%2Fanalytics%2Fpage.tsx&appDir=C%3A%5Cproject%5Cproject-asha%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5Cproject%5Cproject-asha&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!
+Attempted import error: 'isHtmlBotRequest' is not exported from 'next/dist/server/lib/streaming-metadata' (imported as 'isHtmlBotRequest').
+
+./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fadmin%2Fchapters%2Fpage&page=%2Fadmin%2Fchapters%2Fpage&appPaths=%2Fadmin%2Fchapters%2Fpage&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fadmin%2Fchapters%2Fpage.tsx&appDir=C%3A%5Cproject%5Cproject-asha%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5Cproject%5Cproject-asha&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!
+Attempted import error: 'isHtmlBotRequest' is not exported from 'next/dist/server/lib/streaming-metadata' (imported as 'isHtmlBotRequest').
+
+./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fchapters%2Fpage&page=%2Fchapters%2Fpage&appPaths=%2Fchapters%2Fpage&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fchapters%2Fpage.tsx&appDir=C%3A%5Cproject%5Cproject-asha%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5Cproject%5Cproject-asha&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!
+Attempted import error: 'isHtmlBotRequest' is not exported from 'next/dist/server/lib/streaming-metadata' (imported as 'isHtmlBotRequest').
+
+./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&allNormalizedAppPaths=&pagePath=private-next-app-dir%2Fpage.tsx&appDir=C%3A%5Cproject%5Cproject-asha%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5Cproject%5Cproject-asha&isDev=true&tsconfigPath=&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D&isGlobalNotFoundEnabled=!
+Attempted import error: 'isHtmlBotRequest' is not exported from 'next/dist/server/lib/streaming-metadata' (imported as 'isHtmlBotRequest').
+⨯ TypeError: (0 , next_dist_server_lib_streaming_metadata__WEBPACK_IMPORTED_MODULE_13__.isHtmlBotRequest) is not a function
+    at ignore-listed frames {
+  page: '/admin/chapters'
+}
+⨯ TypeError: (0 , next_dist_server_lib_streaming_metadata__WEBPACK_IMPORTED_MODULE_13__.isHtmlBotRequest) is not a function
+    at ignore-listed frames {
+  page: '/admin/analytics'
+}
+⨯ TypeError: (0 , next_dist_server_lib_streaming_metadata__WEBPACK_IMPORTED_MODULE_13__.isHtmlBotRequest) is not a function
+    at ignore-listed frames {
+  page: '/admin/analytics'
+}
+⨯ TypeError: (0 , next_dist_server_lib_streaming_metadata__WEBPACK_IMPORTED_MODULE_13__.isHtmlBotRequest) is not a function
+    at ignore-listed frames {
+  page: '/'
+}
+⨯ TypeError: Cannot create proxy with a non-object as target or handler
+    at ignore-listed frames
+ GET /admin/chapters 500 in 9.4s (next.js: 9.0s, application-code: 438ms)
+ GET /admin/analytics 500 in 9.4s (next.js: 9.0s, application-code: 438ms)
+ GET /admin/analytics 500 in 6.1s (next.js: 5.6s, application-code: 439ms)
+ GET / 500 in 10.0s (next.js: 9.6s, application-code: 440ms)
+ GET / 500 in 34.5s (next.js: 34.4s, application-code: 25ms)
+⨯ TypeError: (0 , next_dist_server_lib_streaming_metadata__WEBPACK_IMPORTED_MODULE_13__.isHtmlBotRequest) is not a function
+    at ignore-listed frames {
+  page: '/'
+}
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 500 in 169ms (next.js: 112ms, application-code: 57ms)
+⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⨯ TypeError: (0 , next_dist_server_lib_streaming_metadata__WEBPACK_IMPORTED_MODULE_13__.isHtmlBotRequest) is not a function
+    at ignore-listed frames {
+  page: '/'
+}
+ GET / 500 in 68ms (next.js: 46ms, application-code: 22ms)
+⨯ TypeError: (0 , next_dist_server_lib_streaming_metadata__WEBPACK_IMPORTED_MODULE_13__.isHtmlBotRequest) is not a function
+    at ignore-listed frames {
+  page: '/admin/chapters'
+}
+ GET /admin/chapters 500 in 93ms (next.js: 57ms, application-code: 36ms)
+[?25h

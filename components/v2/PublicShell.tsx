@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { Menu, Search, X } from "lucide-react";
+import { Linkedin, Menu, Search, X } from "lucide-react";
 import { useState } from "react";
 import { contactDetails, footerColumns, getCurrentYear, navLinks } from "./data";
 
@@ -98,6 +98,7 @@ export function PublicFooter() {
           </div>
           <div className="mt-8 flex flex-wrap gap-2">
             {contactDetails.map((detail) => detail.startsWith("Instagram:") ? <a key={detail} href="https://www.instagram.com/project.a.s.h.a/?hl=en" target="_blank" rel="noreferrer" className="rounded-full border border-white/10 px-4 py-2 text-sm text-slate-300 transition hover:border-white/30 hover:text-white">{detail}</a> : <span key={detail} className="rounded-full border border-white/10 px-4 py-2 text-sm text-slate-300">{detail}</span>)}
+            <a href="https://www.linkedin.com/company/project-a-s-h-a" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm text-slate-300 transition hover:border-white/30 hover:text-white"><Linkedin size={15} /> LinkedIn</a>
           </div>
         </div>
         {footerColumns.map((column) => (
