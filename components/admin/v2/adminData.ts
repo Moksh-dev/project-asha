@@ -9,6 +9,7 @@ import {
   Settings,
   Users,
 } from "lucide-react";
+import { chapters, teamGroups } from "@/components/v2/data";
 
 export const adminNav = [
   { name: "Dashboard", href: "/admin/dashboard", icon: LayoutDashboard },
@@ -22,10 +23,10 @@ export const adminNav = [
 ];
 
 export const dashboardMetrics = [
-  { label: "Editable page fields", value: "86", trend: "+18 this week" },
-  { label: "Volunteer requests", value: "126", trend: "32 pending" },
-  { label: "Active chapters", value: "18", trend: "4 onboarding" },
-  { label: "Team records", value: "63", trend: "12 chapter leads" },
+  { label: "Editable page fields", value: "--", trend: "--" },
+  { label: "Volunteer requests", value: "--", trend: "--" },
+  { label: "Active chapters", value: "--", trend: "--" },
+  { label: "Team records", value: "--", trend: "--" },
 ];
 
 export const editablePages = [
@@ -117,65 +118,28 @@ export const fieldEditorGroups = [
   },
 ];
 
-export const volunteerRequests = [
-  { name: "Priya Patel", email: "priya@gmail.com", city: "Mumbai", type: "Volunteer", chapter: "Mumbai", status: "Pending" },
-  { name: "Aarav Sharma", email: "aarav@gmail.com", city: "Delhi", type: "Chapter Member", chapter: "Delhi", status: "Approved" },
-  { name: "Rohan Verma", email: "rohan@gmail.com", city: "Hyderabad", type: "Partnership", chapter: "Hyderabad", status: "Review" },
-  { name: "Ananya Singh", email: "ananya@gmail.com", city: "Bengaluru", type: "Support", chapter: "Bengaluru", status: "Pending" },
-];
+export const volunteerRequests: { name: string; email: string; city: string; type: string; chapter: string; status: string }[] = [];
 
-export const chapterRecords = [
-  {
-    name: "Delhi",
-    state: "Delhi",
-    lead: "Aarav Sharma",
-    coLead: "Meera Kapoor",
-    members: ["Aarav Sharma", "Meera Kapoor", "Ishaan Rao", "Tara Mehta"],
-    volunteers: 52,
-    status: "Active",
-  },
-  {
-    name: "Mumbai",
-    state: "Maharashtra",
-    lead: "Riya Patel",
-    coLead: "Kabir Sethi",
-    members: ["Riya Patel", "Kabir Sethi", "Naina Shah"],
-    volunteers: 41,
-    status: "Active",
-  },
-  {
-    name: "Hyderabad",
-    state: "Telangana",
-    lead: "Rahul Verma",
-    coLead: "Anika Reddy",
-    members: ["Rahul Verma", "Anika Reddy", "Dev Nair"],
-    volunteers: 27,
-    status: "Onboarding",
-  },
-];
+export const chapterRecords = chapters.map((chapter) => ({
+  name: chapter.city,
+  state: chapter.state,
+  lead: chapter.lead,
+  coLead: "--",
+  members: [],
+  volunteers: "--",
+  status: "Published",
+}));
 
-export const organizationRows = [
-  { level: "Leadership", roles: "Founder, Co-Founder", people: "2", permissions: "Full access" },
-  { level: "Core Team", roles: "Operations, Research, Content, Partnerships", people: "8", permissions: "Website + requests" },
-  { level: "National Team", roles: "Programs, Events, Media, Training", people: "16", permissions: "Assigned modules" },
-  { level: "Chapter Leads", roles: "City leadership", people: "12", permissions: "Chapter management" },
-  { level: "Chapter Members", roles: "Volunteer coordination", people: "25", permissions: "Limited chapter access" },
-];
+export const organizationRows = teamGroups.map((group) => ({
+  level: group.title,
+  roles: group.people.map((person) => person.role).join(", "),
+  people: String(group.people.length),
+  permissions: "--",
+}));
 
-export const analyticsRows = [
-  { label: "Homepage views", value: "8,420", percent: 82 },
-  { label: "Get Involved visits", value: "2,180", percent: 64 },
-  { label: "Volunteer conversion", value: "18.4%", percent: 44 },
-  { label: "Chapter page engagement", value: "71%", percent: 71 },
-];
+export const analyticsRows: { label: string; value: string; percent: number }[] = [];
 
-export const recentActivity = [
-  "Homepage hero copy updated",
-  "Mumbai chapter lead changed",
-  "New volunteer request received",
-  "Contact phone number reviewed",
-  "Donation campaign kept hidden",
-];
+export const recentActivity: string[] = [];
 
 export const editableChecklist = [
   "Headings and subheadings",

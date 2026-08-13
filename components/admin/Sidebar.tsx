@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
   LayoutDashboard,
   Globe,
   Users,
-  Image,
+  Image as ImageIcon,
   FileText,
   FolderOpen,
   BarChart3,
@@ -33,7 +34,7 @@ const menu = [
   {
     name: "Gallery",
     href: "/admin/media",
-    icon: Image,
+    icon: ImageIcon,
   },
   {
     name: "Blogs",
@@ -70,12 +71,10 @@ export default function Sidebar() {
 
       <div className="border-b border-slate-800 p-8">
 
-        <h1 className="text-3xl font-bold">
-          A.S.H.A
-        </h1>
+        <Image src="/project-asha-logo.png" alt="Project ASHA" width={96} height={96} className="h-16 w-16 rounded-2xl bg-white object-contain" />
 
         <p className="mt-2 text-sm text-slate-400">
-          Founder OS
+          Private control room
         </p>
 
       </div>

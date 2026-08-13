@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import Image from "next/image";
+import { Menu, Search, X } from "lucide-react";
 import { useState } from "react";
 import { contactDetails, footerColumns, getCurrentYear, navLinks } from "./data";
 
@@ -11,9 +12,7 @@ const footerTagline = ["Awareness", "Safety", "Hope", "Action"];
 function LogoMark() {
   return (
     <Link href="/" className="group flex items-center gap-3" aria-label="Project ASHA home">
-      <span className="grid h-10 w-10 place-items-center rounded-full bg-asha-green text-sm font-black text-white shadow-soft transition group-hover:scale-105">
-        A
-      </span>
+      <Image src="/project-asha-logo.png" alt="Project ASHA" width={48} height={48} className="h-11 w-11 rounded-full object-cover shadow-soft transition group-hover:scale-105" />
       <span className="leading-none">
         <span className="font-display block text-lg font-black leading-none text-asha-green">A.S.H.A.</span>
         <span className="block text-[11px] font-black uppercase text-asha-muted">Project</span>
@@ -25,6 +24,9 @@ function LogoMark() {
 export function PublicNav() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [query, setQuery] = useState("");
+  const results = navLinks.filter((link) => link.label.toLowerCase().includes(query.toLowerCase()));
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4">
@@ -46,9 +48,7 @@ export function PublicNav() {
             );
           })}
         </nav>
-        <Link href="/get-involved#volunteer-form" className="hidden rounded-full bg-gradient-to-r from-asha-green to-asha-coral px-5 py-3 text-sm font-black text-white shadow-coral transition hover:-translate-y-0.5 lg:inline-flex">
-          Start helping
-        </Link>
+        <div className="hidden items-center gap-2 lg:flex"><button type="button" onClick={() => setSearchOpen((value) => !value)} aria-label="Search website" className="grid h-10 w-10 place-items-center rounded-full bg-asha-cloud text-asha-green"><Search size={18} /></button><Link href="/get-involved#volunteer-form" className="rounded-full bg-gradient-to-r from-asha-green to-asha-coral px-5 py-3 text-sm font-black text-white shadow-coral transition hover:-translate-y-0.5">Start helping</Link></div>
         <button
           type="button"
           aria-label="Open menu"
@@ -72,6 +72,7 @@ export function PublicNav() {
           ))}
         </div>
       ) : null}
+      {searchOpen ? <div className="mx-auto mt-3 max-w-xl rounded-3xl border border-asha-line bg-white p-4 shadow-soft"><input autoFocus value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search pages" className="w-full rounded-2xl bg-asha-cloud px-4 py-3 font-semibold text-asha-ink outline-none" />{query ? <div className="mt-3 grid gap-1">{results.length ? results.map((link) => <Link key={link.href} href={link.href} onClick={() => { setSearchOpen(false); setQuery(""); }} className="rounded-xl px-4 py-3 font-bold text-asha-muted hover:bg-asha-cloud hover:text-asha-green">{link.label}</Link>) : <p className="px-4 py-3 text-sm text-asha-muted">No matching pages.</p>}</div> : null}</div> : null}
     </header>
   );
 }

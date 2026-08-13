@@ -1,4 +1,7 @@
+"use client";
+
 import PublicShell from "@/components/v2/PublicShell";
+import { useHomepageContent } from "@/components/v2/liveContent";
 import Reveal, { Stagger, StaggerItem } from "@/components/v2/Reveal";
 import { CTAButton, IconCard, Section, SectionHeader, VisualTile } from "@/components/v2/Primitives";
 import { chapters, events, focusAreas, impactWords, partnerTypes, processSteps } from "@/components/v2/data";
@@ -7,6 +10,7 @@ import { ArrowRight, HeartHandshake, MapPin, Sparkles } from "lucide-react";
 const taglineWords = ["Awareness", "Safety", "Hope", "Action"];
 
 export default function Home() {
+  const homepage = useHomepageContent();
   return (
     <PublicShell>
       <main>
@@ -15,16 +19,16 @@ export default function Home() {
           <div className="mx-auto grid max-w-7xl items-end gap-12 lg:grid-cols-[1.1fr_.9fr]">
             <Reveal>
               <p className="font-hand mb-6 inline-flex rounded-full border border-asha-line bg-white px-4 py-2 text-base text-asha-green shadow-soft">
-                Youth-led action for safer communities
+                {homepage.eyebrow}
               </p>
               <h1 className="font-display max-w-5xl text-balance text-4xl font-black leading-[1.02] text-asha-ink md:text-6xl lg:text-7xl">
-                Hope that moves from awareness to action.
+                {homepage.heading}
               </h1>
               <p className="mt-8 max-w-2xl text-xl leading-9 text-asha-muted">
-                Project A.S.H.A. is a youth-led initiative dedicated to combating human trafficking through education, advocacy, and community awareness.
+                {homepage.description}
               </p>
               <div className="mt-10 flex flex-wrap gap-4">
-                <CTAButton href="/get-involved" tone="coral">Get involved</CTAButton>
+                <CTAButton href="/get-involved" tone="coral">{homepage.cta}</CTAButton>
                 <CTAButton href="/about" tone="light">Our story</CTAButton>
               </div>
               <div className="mt-10 overflow-hidden rounded-full border border-asha-line bg-white/80 px-4 py-3 shadow-soft backdrop-blur">

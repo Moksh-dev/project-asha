@@ -139,8 +139,9 @@ export function SubmitButton({ children }: { children: ReactNode }) {
 }
 
 export function VisualTile({ label, gradient }: { label: string; gradient?: string }) {
+  const isImage = gradient?.startsWith("/");
   return (
-    <div className="relative min-h-64 overflow-hidden rounded-[2rem] p-6 text-white shadow-soft" style={{ background: gradient ?? "linear-gradient(135deg,#1F5EFF,#00AEF0)" }}>
+    <div className="relative min-h-64 overflow-hidden rounded-[2rem] p-6 text-white shadow-soft" style={isImage ? { backgroundImage: `url(${gradient})`, backgroundPosition: "center", backgroundSize: "cover" } : { background: gradient ?? "linear-gradient(135deg,#1F5EFF,#00AEF0)" }}>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,.32),transparent_24%),linear-gradient(180deg,transparent,rgba(0,0,0,.28))]" />
       <div className="font-display relative mt-36 text-2xl font-black">{label}</div>
     </div>

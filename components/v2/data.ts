@@ -21,7 +21,6 @@ export const navLinks = [
   { label: "Events", href: "/events" },
   { label: "Blog", href: "/blogs" },
   { label: "Get Involved", href: "/get-involved" },
-  { label: "Contact", href: "/contact" },
 ];
 
 export const focusAreas = [
@@ -151,7 +150,26 @@ export const teamGroups = [
       },
     ],
   },
-  { title: "Chapter Leads", people: chapters.map(({ city, lead }) => ({ name: lead, role: city, bio: "Chapter lead" })) },
+  {
+    title: "Chapter Leads",
+    people: chapters.map(({ city, lead }) => ({
+      name: lead,
+      role: city,
+      bio: "Chapter lead",
+      image: ({
+        "Radhika Kapoor": "/chapter-leads/radhika-kapoor.png",
+        "Saidiya Kodali": "/chapter-leads/saidiya-kodali.png",
+        "Bhuvana Kavya Yallapragada": "/chapter-leads/bhuvana-kavya-yallapragada.png",
+        "Arushi Chatterjee": "/chapter-leads/arushi-chatterjee.png",
+        Julia: "/chapter-leads/julia.png",
+        "Yogitha Machina": "/chapter-leads/yogitha-machina.png",
+        "Ava Mendez": "/chapter-leads/ava-mendez.png",
+        "Korinne Brooks": "/chapter-leads/korinne-brooks.png",
+        "Lauren Crispino": "/chapter-leads/lauren-crispino.png",
+        "Aarna Mallidi": "/chapter-leads/aarna-mallidi.png",
+      } as Record<string, string | undefined>)[lead],
+    })),
+  },
 ];
 
 export const timeline = [
@@ -195,6 +213,12 @@ export const resources = [
     description: "A collection of support resources and useful information for awareness, learning, and outreach.",
     href: "/resources/support-resources.pdf",
   },
+];
+
+export const blogFeatures = [
+  { url: "https://localnewsmatters.org/2026/07/15/east-bay-teens-anti-human-trafficking-effort-expands-globally-tackling-often-taboo-topic/", title: "High School Students Launch Human Trafficking Prevention Initiative", excerpt: "Regional coverage of Project A.S.H.A.'s youth-led trafficking prevention work.", date: "Local News Matters" },
+  { url: "https://patch.com/california/livermore/livermore-student-founds-human-trafficking-awareness-nonprofit", title: "Livermore Student Founds Human Trafficking Awareness Nonprofit", excerpt: "A feature on the beginning and mission of Project A.S.H.A.", date: "Patch" },
+  { url: "https://www.independentnews.com/news/livermore_news/students-build-anti-trafficking-awareness-organization/article_250e8056-9d71-40bc-a5d2-a9ce466b7967.html", title: "Students Build Anti-Trafficking Awareness Organization", excerpt: "Independent News coverage of students building awareness and prevention education.", date: "The Independent" },
 ];
 
 export const galleryItems = [
@@ -244,7 +268,6 @@ export const footerColumns = [
       { label: "Chapters", href: "/chapters" },
       { label: "Team", href: "/team" },
       { label: "Resources", href: "/resources" },
-      { label: "Contact", href: "/contact" },
     ],
   },
   {
@@ -303,7 +326,7 @@ export const formTopics = [
 
 export const chapterStates = ["All", "India", "United States", "Canada", "Hong Kong", "Australia"];
 
-export const impactWords = ["Trust", "Hope", "Action", "Safety"];
+export const impactWords = ["Awareness", "Safety", "Hope", "Action"];
 
 export const hiddenDonationNotice =
   "Donation infrastructure is prepared for launch, but public navigation remains hidden until the campaign is enabled.";

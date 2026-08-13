@@ -1,29 +1,6 @@
 import PublicShell from "@/components/v2/PublicShell";
 import { PageHero, Section } from "@/components/v2/Primitives";
-
-const blogs = [
-  {
-    url: "https://localnewsmatters.org/2026/07/15/east-bay-teens-anti-human-trafficking-effort-expands-globally-tackling-often-taboo-topic/",
-    title: "High School Students Launch Human Trafficking Prevention Initiative",
-    excerpt:
-      "Regional coverage of Project A.S.H.A.'s youth-led trafficking prevention work.",
-    date: "Local News Matters",
-  },
-  {
-    url: "https://patch.com/california/livermore/livermore-student-founds-human-trafficking-awareness-nonprofit",
-    title: "Livermore Student Founds Human Trafficking Awareness Nonprofit",
-    excerpt:
-      "A feature on the beginning and mission of Project A.S.H.A.",
-    date: "Patch",
-  },
-  {
-    url: "https://www.independentnews.com/news/livermore_news/students-build-anti-trafficking-awareness-organization/article_250e8056-9d71-40bc-a5d2-a9ce466b7967.html",
-    title: "Students Build Anti-Trafficking Awareness Organization",
-    excerpt:
-      "Independent News coverage of students building awareness and prevention education.",
-    date: "The Independent",
-  },
-];
+import { blogFeatures } from "@/components/v2/data";
 
 export default function BlogsPage() {
   return (
@@ -36,7 +13,7 @@ export default function BlogsPage() {
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-          {blogs.map((blog) => (
+          {blogFeatures.map((blog) => (
 
             <article
               key={blog.url}

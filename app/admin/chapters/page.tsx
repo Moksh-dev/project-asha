@@ -1,89 +1,28 @@
+"use client";
+
+import { useState } from "react";
 import { AdminButton, AdminCard, AdminShell, StatusBadge } from "@/components/admin/v2/AdminShell";
-import { chapterRecords } from "@/components/admin/v2/adminData";
-import { Plus, UserRoundPen, UsersRound } from "lucide-react";
+import { chapters } from "@/components/v2/data";
+import { addChapter, deleteChapter, saveChapterEdit, useAddedChapters, useChapterEdits, useDeletedChapters } from "@/components/v2/liveContent";
+
+type Chapter = (typeof chapters)[number];
 
 export default function ChaptersPage() {
-  return (
-    <AdminShell
-      title="Chapter Management"
-      subtitle="Create chapters, assign leads, edit members, manage volunteers, and prepare chapter-specific public content."
-      action={<AdminButton>New chapter</AdminButton>}
-    >
-      <div className="grid gap-6 xl:grid-cols-[1fr_.85fr]">
-        <AdminCard>
-          <h3 className="text-2xl font-black">Chapters</h3>
-          <div className="mt-6 overflow-hidden rounded-2xl border border-[#E2E8F0]">
-            <table className="w-full text-left text-sm">
-              <thead className="bg-[#F8FAFC] text-[#475569]">
-                <tr>
-                  <th className="px-5 py-4">Chapter</th>
-                  <th className="px-5 py-4">Lead</th>
-                  <th className="px-5 py-4">Co-lead</th>
-                  <th className="px-5 py-4">Volunteers</th>
-                  <th className="px-5 py-4">Status</th>
-                  <th className="px-5 py-4 text-right">Edit</th>
-                </tr>
-              </thead>
-              <tbody>
-                {chapterRecords.map((chapter) => (
-                  <tr key={chapter.name} className="border-t border-[#E2E8F0]">
-                    <td className="px-5 py-4">
-                      <p className="font-black">{chapter.name}</p>
-                      <p className="text-xs font-bold text-[#64748B]">{chapter.state}</p>
-                    </td>
-                    <td className="px-5 py-4 text-[#475569]">{chapter.lead}</td>
-                    <td className="px-5 py-4 text-[#475569]">{chapter.coLead}</td>
-                    <td className="px-5 py-4 font-black text-[#1F5EFF]">{chapter.volunteers}</td>
-                    <td className="px-5 py-4"><StatusBadge value={chapter.status} /></td>
-                    <td className="px-5 py-4 text-right">
-                      <button className="rounded-xl bg-[#F5F9FF] px-4 py-2 font-black text-[#1F5EFF]">Edit</button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </AdminCard>
-
-        <div className="grid gap-6">
-          {chapterRecords.map((chapter) => (
-            <AdminCard key={chapter.name}>
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <h3 className="text-2xl font-black">{chapter.name} structure</h3>
-                  <p className="mt-1 text-[#475569]">Lead, members, and volunteer records.</p>
-                </div>
-                <UsersRound className="text-[#1F5EFF]" />
-              </div>
-              <div className="mt-5 grid gap-3">
-                <label className="grid gap-2">
-                  <span className="text-sm font-black text-[#475569]">Chapter lead</span>
-                  <input defaultValue={chapter.lead} className="rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3 font-semibold outline-none focus:border-[#1F5EFF]" />
-                </label>
-                <label className="grid gap-2">
-                  <span className="text-sm font-black text-[#475569]">Co-lead</span>
-                  <input defaultValue={chapter.coLead} className="rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3 font-semibold outline-none focus:border-[#1F5EFF]" />
-                </label>
-                <div>
-                  <span className="text-sm font-black text-[#475569]">Members</span>
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    {chapter.members.map((member) => (
-                      <span key={member} className="inline-flex items-center gap-2 rounded-full bg-[#F5F9FF] px-3 py-2 text-xs font-black text-[#1F5EFF]">
-                        <UserRoundPen size={14} />
-                        {member}
-                      </span>
-                    ))}
-                    <button className="inline-flex items-center gap-2 rounded-full bg-[#00AEF0] px-3 py-2 text-xs font-black text-white">
-                      <Plus size={14} />
-                      Add member
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </AdminCard>
-          ))}
-        </div>
-      </div>
-    </AdminShell>
-  );
+  const [createOpen, setCreateOpen] = useState(false);
+  const [editing, setEditing] = useState<Chapter | null>(null);
+  const [notice, setNotice] = useState("");
+  const [name, setName] = useState(""); const [state, setState] = useState(""); const [lead, setLead] = useState(""); const [summary, setSummary] = useState(""); const [image, setImage] = useState("");
+  const added = useAddedChapters(); const edits = useChapterEdits();
+  const deleted = useDeletedChapters();
+  const allChapters = [...added, ...chapters].filter((chapter) => !deleted.includes(chapter.city)).map((chapter) => ({ ...chapter, sourceCity: chapter.city, ...edits[chapter.city] }));
+  const create = () => { if (!name.trim() || !state.trim() || !lead.trim()) { setNotice("Add a chapter name, location, and lead before publishing."); return; } addChapter({ city: name.trim(), state: state.trim(), lead: lead.trim(), summary: summary.trim(), image: image.trim() || "linear-gradient(135deg, #1F5EFF, #00AEF0)", events: [] }); reset(); setCreateOpen(false); setNotice("Chapter created and published to the live website."); };
+  const reset = () => { setName(""); setState(""); setLead(""); setSummary(""); setImage(""); };
+  const startEdit = (chapter: Chapter) => { setEditing(chapter); setName(chapter.city); setState(chapter.state); setLead(chapter.lead); setSummary(chapter.summary); setImage(chapter.image); };
+  const publishEdit = () => { if (!editing || !name.trim() || !state.trim() || !lead.trim()) { setNotice("Add a chapter name, location, and lead before publishing."); return; } saveChapterEdit(editing.city, { city: name.trim(), state: state.trim(), lead: lead.trim(), summary: summary.trim(), image: image.trim() || editing.image }); setEditing(null); reset(); setNotice("Chapter changes published to the live website."); };
+  const remove = () => { if (!editing || !window.confirm(`Delete ${editing.city} from the live Chapters page?`)) return; deleteChapter(editing.city); setEditing(null); reset(); setNotice("Chapter deleted from the live website."); };
+  const form = (mode: "create" | "edit") => <AdminCard className="mb-6"><h3 className="text-xl font-black">{mode === "create" ? "Add a chapter" : `Edit ${editing?.city}`}</h3><p className="mt-2 text-sm text-[#64748B]">Saving publishes these details directly to the live Chapters page.</p><div className="mt-5 grid gap-4 md:grid-cols-2"><input value={name} onChange={(event) => setName(event.target.value)} placeholder="Chapter name" className="rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3 font-semibold outline-none focus:border-[#1F5EFF]" /><input value={state} onChange={(event) => setState(event.target.value)} placeholder="Country or region" className="rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3 font-semibold outline-none focus:border-[#1F5EFF]" /><input value={lead} onChange={(event) => setLead(event.target.value)} placeholder="Chapter lead" className="rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3 font-semibold outline-none focus:border-[#1F5EFF]" /><input value={image} onChange={(event) => setImage(event.target.value)} placeholder="Lead image path or URL (optional)" className="rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3 font-semibold outline-none focus:border-[#1F5EFF]" /><textarea value={summary} onChange={(event) => setSummary(event.target.value)} placeholder="Chapter description" rows={3} className="resize-none rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3 font-semibold outline-none focus:border-[#1F5EFF] md:col-span-2" /></div><div className="mt-5 flex flex-wrap gap-3"><button onClick={mode === "create" ? create : publishEdit} className="rounded-xl bg-[#1F5EFF] px-5 py-3 text-sm font-black text-white">{mode === "create" ? "Create & publish" : "Save & publish"}</button>{mode === "edit" ? <button onClick={remove} className="rounded-xl bg-[#FEE2E2] px-5 py-3 text-sm font-black text-[#B91C1C]">Delete chapter</button> : null}<button onClick={() => { setCreateOpen(false); setEditing(null); reset(); }} className="rounded-xl bg-[#F5F9FF] px-5 py-3 text-sm font-black text-[#475569]">Cancel</button></div></AdminCard>;
+  return <AdminShell title="Chapter management" subtitle="Edit chapter details and lead imagery; saved changes immediately appear on the public Chapters page." action={<AdminButton onClick={() => { setEditing(null); reset(); setCreateOpen(true); }}>New chapter</AdminButton>}>
+    {notice ? <p className="mb-6 rounded-2xl bg-[#DCFCE7] px-5 py-4 text-sm font-black text-[#15803D]">{notice}</p> : null}{createOpen ? form("create") : null}{editing ? form("edit") : null}
+    <AdminCard className="overflow-hidden p-0"><div className="px-6 py-5"><h3 className="text-2xl font-black">Chapters</h3><p className="mt-1 text-sm text-[#64748B]">{allChapters.length} chapters currently visible on the live website.</p></div><div className="overflow-x-auto"><table className="w-full min-w-[760px] text-left text-sm"><thead className="border-y border-[#E2E8F0] bg-[#F8FAFC] text-[#475569]"><tr><th className="px-6 py-4">Chapter</th><th className="px-6 py-4">Lead</th><th className="px-6 py-4">Country / region</th><th className="px-6 py-4">Status</th><th className="px-6 py-4">Edit</th></tr></thead><tbody>{allChapters.map((chapter) => <tr key={`${chapter.city}-${chapter.lead}`} className="border-b border-[#E2E8F0]"><td className="px-6 py-4 font-black">{chapter.city}</td><td className="px-6 py-4 text-[#475569]">{chapter.lead}</td><td className="px-6 py-4 text-[#475569]">{chapter.state}</td><td className="px-6 py-4"><StatusBadge value="Published" /></td><td className="px-6 py-4"><button onClick={() => startEdit({ ...chapter, city: chapter.sourceCity })} className="rounded-xl bg-[#F5F9FF] px-4 py-2 text-xs font-black text-[#1F5EFF]">Edit</button></td></tr>)}</tbody></table></div></AdminCard>
+  </AdminShell>;
 }

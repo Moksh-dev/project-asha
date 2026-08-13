@@ -1,8 +1,19 @@
 "use client";
 
 import { Bell, Search } from "lucide-react";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function Topbar() {
+  const router = useRouter();
+  const [query, setQuery] = useState("");
+  const pages = ["dashboard", "website", "team", "media", "blogs", "resources", "forms", "analytics", "settings"];
+  const submit = (event: React.FormEvent) => {
+    event.preventDefault();
+    const match = pages.find((page) => page.includes(query.trim().toLowerCase()));
+    if (match) router.push(`/admin/${match}`);
+  };
   return (
     <header className="flex items-center justify-between rounded-3xl bg-white p-6 shadow-sm">
 
@@ -20,7 +31,7 @@ export default function Topbar() {
 
       <div className="flex items-center gap-5">
 
-        <div className="flex items-center gap-3 rounded-xl border border-slate-300 bg-slate-50 px-4 py-3">
+        <form onSubmit={submit} className="flex items-center gap-3 rounded-xl border border-slate-300 bg-slate-50 px-4 py-3">
 
           <Search
             size={18}
@@ -29,11 +40,13 @@ export default function Topbar() {
 
           <input
             type="text"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
             placeholder="Search..."
             className="w-56 border-none bg-transparent p-0 text-white outline-none"
           />
 
-        </div>
+        </form>
 
         <button className="rounded-xl bg-slate-100 p-3 transition hover:bg-slate-200">
 
@@ -46,9 +59,7 @@ export default function Topbar() {
 
         <div className="flex items-center gap-3">
 
-          <div className="flex h-11 w-11 items-center justify-center rounded-full bg-blue-600 font-bold text-white">
-            A
-          </div>
+          <Image src="/project-asha-logo.png" alt="Project ASHA" width={44} height={44} className="h-11 w-11 rounded-full bg-white object-contain" />
 
           <div>
 

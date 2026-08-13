@@ -1,6 +1,6 @@
 import PublicShell from "@/components/v2/PublicShell";
 import { PageHero, Section } from "@/components/v2/Primitives";
-import { contactDetails } from "@/components/v2/data";
+import { contactCards, contactDetails } from "@/components/v2/data";
 import { AtSign, HelpCircle, Instagram, MapPin, Phone } from "lucide-react";
 
 export default function GetInvolvedPage() {
@@ -19,6 +19,17 @@ export default function GetInvolvedPage() {
               ["Book a Presentation", "Request an educational presentation for your school or organization.", "https://docs.google.com/forms/d/e/1FAIpQLSeH0IP95wW2_-cyU9TAPVPe7JCYzuA7MYe-kNgHII6QF08a5Q/viewform"],
               ["General Inquiry", "Contact the Project A.S.H.A. team directly.", "https://docs.google.com/forms/d/e/1FAIpQLSdm4aV-2orsS2RSQWMhHkQCJs2nXbd7VBo5dPpU7fOkYodt9g/viewform"],
             ].map(([title, body, href]) => <a key={title} id={title === "Book a Presentation" ? "book-a-presentation" : title === "General Inquiry" ? "general-inquiry" : undefined} href={href} target="_blank" rel="noreferrer" className="rounded-[1.75rem] border border-asha-line bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:bg-asha-cloud"><h2 className="font-display text-xl font-black text-asha-ink">{title}</h2><p className="mt-3 leading-7 text-asha-muted">{body}</p><span className="mt-6 inline-block rounded-full bg-asha-green px-4 py-2 text-sm font-black text-white">Open form</span></a>)}
+          </div>
+        </Section>
+        <Section className="bg-asha-feature">
+          <div className="mx-auto max-w-7xl">
+            <div className="max-w-3xl"><p className="font-hand text-lg text-asha-coral">Contact</p><h2 className="font-display mt-3 text-3xl font-black text-asha-ink md:text-5xl">Reach the Project ASHA team.</h2><p className="mt-4 text-lg leading-8 text-asha-muted">For volunteering, partnerships, chapter support, event coordination, media, or general questions, use the official contact details below.</p></div>
+            <div className="mt-10 grid gap-5 md:grid-cols-3">
+              {contactCards.map((card) => {
+                const content = <><p className="font-hand text-lg text-asha-coral">{card.label}</p><h3 className="font-display mt-3 text-xl font-black text-asha-ink">{card.value}</h3><p className="mt-4 leading-7 text-asha-muted">{card.helper}</p></>;
+                return card.href ? <a key={card.label} href={card.href} target={card.href.startsWith("http") ? "_blank" : undefined} rel={card.href.startsWith("http") ? "noreferrer" : undefined} className="rounded-[2rem] border border-asha-line bg-white p-7 shadow-soft transition hover:-translate-y-1 hover:shadow-lift">{content}</a> : <article key={card.label} className="rounded-[2rem] border border-asha-line bg-white p-7 shadow-soft">{content}</article>;
+              })}
+            </div>
           </div>
         </Section>
         <Section>

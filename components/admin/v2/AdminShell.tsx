@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Bell, Search } from "lucide-react";
+import { useState } from "react";
+import { Bell, Search, ShieldCheck } from "lucide-react";
 import { adminNav } from "./adminData";
 
 export function AdminShell({
@@ -17,18 +19,18 @@ export function AdminShell({
   action?: React.ReactNode;
 }) {
   const pathname = usePathname();
+  const [query, setQuery] = useState("");
+  const matches = adminNav.filter((item) => item.name.toLowerCase().includes(query.toLowerCase()));
 
   return (
     <main className="flex min-h-screen bg-[#F5F9FF] text-[#0F172A]">
       <aside className="sticky top-0 h-screen w-72 border-r border-[#DDEBFF] bg-white">
         <div className="border-b border-[#E2E8F0] p-7">
           <div className="flex items-center gap-3">
-            <span className="grid h-11 w-11 place-items-center rounded-2xl bg-[#1F5EFF] font-black text-white shadow-[0_12px_30px_rgba(31,94,255,.22)]">
-              A
-            </span>
+            <Image src="/project-asha-logo.png" alt="Project ASHA" width={44} height={44} className="h-11 w-11 rounded-2xl object-cover shadow-[0_12px_30px_rgba(31,94,255,.22)]" />
             <div>
               <h1 className="text-xl font-black">ASHA Admin</h1>
-              <p className="text-sm font-semibold text-[#64748B]">Founder OS</p>
+              <p className="text-sm font-semibold text-[#64748B]">Private control room</p>
             </div>
           </div>
         </div>
@@ -52,6 +54,10 @@ export function AdminShell({
             );
           })}
         </nav>
+        <div className="absolute bottom-0 left-0 right-0 border-t border-[#E2E8F0] p-5 text-xs font-bold leading-5 text-[#64748B]">
+          <ShieldCheck size={16} className="mb-2 text-[#1F5EFF]" />
+          Internal administration area. It is not linked from the public website.
+        </div>
       </aside>
 
       <section className="min-w-0 flex-1 p-6 lg:p-8">
@@ -63,12 +69,15 @@ export function AdminShell({
               <p className="mt-2 text-[#475569]">{subtitle}</p>
             </div>
             <div className="flex flex-wrap items-center gap-3">
-              <label className="flex items-center gap-3 rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3">
+              <label className="relative flex items-center gap-3 rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3">
                 <Search size={18} className="text-[#94A3B8]" />
                 <input
+                  value={query}
+                  onChange={(event) => setQuery(event.target.value)}
                   placeholder="Search admin..."
                   className="w-48 bg-transparent text-sm font-semibold text-[#0F172A] outline-none placeholder:text-[#94A3B8]"
                 />
+                {query ? <span className="absolute left-0 top-[calc(100%+.5rem)] z-20 grid w-64 overflow-hidden rounded-2xl border border-[#E2E8F0] bg-white p-2 shadow-[0_14px_45px_rgba(15,23,42,.12)]">{matches.length ? matches.map((item) => <Link key={item.href} href={item.href} onClick={() => setQuery("")} className="rounded-xl px-3 py-2 text-sm font-black text-[#475569] hover:bg-[#F5F9FF] hover:text-[#1F5EFF]">{item.name}</Link>) : <span className="px-3 py-2 text-sm text-[#64748B]">No matches</span>}</span> : null}
               </label>
               <button className="grid h-12 w-12 place-items-center rounded-2xl bg-[#F5F9FF] text-[#1F5EFF] transition hover:bg-[#1F5EFF] hover:text-white">
                 <Bell size={18} />
@@ -97,9 +106,9 @@ export function AdminCard({
   );
 }
 
-export function AdminButton({ children }: { children: React.ReactNode }) {
+export function AdminButton({ children, onClick }: { children: React.ReactNode; onClick?: () => void }) {
   return (
-    <button className="rounded-2xl bg-[#1F5EFF] px-5 py-3 text-sm font-black text-white shadow-[0_14px_35px_rgba(31,94,255,.2)] transition hover:bg-[#184DD8]">
+    <button onClick={onClick} className="rounded-2xl bg-[#1F5EFF] px-5 py-3 text-sm font-black text-white shadow-[0_14px_35px_rgba(31,94,255,.2)] transition hover:bg-[#184DD8]">
       {children}
     </button>
   );

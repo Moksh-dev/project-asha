@@ -1,6 +1,6 @@
 import { AdminButton, AdminCard, AdminShell } from "@/components/admin/v2/AdminShell";
-import { dashboardMetrics, editableChecklist, recentActivity, volunteerRequests } from "@/components/admin/v2/adminData";
-import { ArrowUpRight, CheckCircle2 } from "lucide-react";
+import { dashboardMetrics, recentActivity, volunteerRequests } from "@/components/admin/v2/adminData";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Dashboard() {
   return (
@@ -25,24 +25,18 @@ export default function Dashboard() {
         <AdminCard>
           <div className="flex items-center justify-between">
             <div>
-              <h3 className="text-2xl font-black">Website editability map</h3>
-              <p className="mt-2 text-[#475569]">These public-site elements are structured to become editable from admin.</p>
+              <h3 className="text-2xl font-black">Website management</h3>
+              <p className="mt-2 text-[#475569]">Open the live website editor to review and update public content.</p>
             </div>
             <ArrowUpRight className="text-[#1F5EFF]" />
           </div>
-          <div className="mt-6 grid gap-3 md:grid-cols-2">
-            {editableChecklist.map((item) => (
-              <div key={item} className="flex items-center gap-3 rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] p-4">
-                <CheckCircle2 size={18} className="text-[#16A34A]" />
-                <span className="font-bold text-[#0F172A]">{item}</span>
-              </div>
-            ))}
-          </div>
+          <a href="/admin/website" className="mt-6 inline-flex rounded-2xl bg-[#1F5EFF] px-5 py-3 text-sm font-black text-white">Open website editor</a>
         </AdminCard>
 
         <AdminCard>
           <h3 className="text-2xl font-black">Recent activity</h3>
           <div className="mt-5 grid gap-3">
+            {recentActivity.length === 0 && <p className="rounded-2xl bg-[#F8FAFC] p-5 text-sm font-bold text-[#64748B]">No activity yet.</p>}
             {recentActivity.map((item) => (
               <div key={item} className="rounded-2xl bg-[#F5F9FF] p-4 text-sm font-bold text-[#475569]">
                 {item}
@@ -66,6 +60,7 @@ export default function Dashboard() {
               </tr>
             </thead>
             <tbody>
+              {volunteerRequests.length === 0 && <tr><td colSpan={5} className="px-5 py-10 text-center font-bold text-[#64748B]">No requests yet.</td></tr>}
               {volunteerRequests.map((request) => (
                 <tr key={request.email} className="border-t border-[#E2E8F0]">
                   <td className="px-5 py-4 font-black">{request.name}</td>

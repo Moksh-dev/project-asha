@@ -1,13 +1,9 @@
 import { AdminButton, AdminCard, AdminShell } from "@/components/admin/v2/AdminShell";
 import { organizationRows } from "@/components/admin/v2/adminData";
+import { teamGroups } from "@/components/v2/data";
 import { Building2, KeyRound, ShieldCheck, UserPlus } from "lucide-react";
 
-const people = [
-  { name: "Founder", role: "Founder and Vision Lead", level: "Leadership", access: "Full access" },
-  { name: "Co-Founder", role: "Strategy Lead", level: "Leadership", access: "Full access" },
-  { name: "National Operations", role: "Programs and Partnerships", level: "Core Team", access: "Website + requests" },
-  { name: "Chapter Lead - Delhi", role: "Regional Leadership", level: "Chapter Leads", access: "Chapter only" },
-];
+const people = teamGroups.flatMap((group) => group.people.map((person) => ({ ...person, level: group.title, access: "--" })));
 
 export default function TeamAdminPage() {
   return (
@@ -33,6 +29,7 @@ export default function TeamAdminPage() {
                 </tr>
               </thead>
               <tbody>
+                {organizationRows.length === 0 && <tr><td colSpan={4} className="px-5 py-10 text-center font-bold text-[#64748B]">No team structure has been added yet.</td></tr>}
                 {organizationRows.map((row) => (
                   <tr key={row.level} className="border-t border-[#E2E8F0]">
                     <td className="px-5 py-4 font-black">{row.level}</td>
@@ -70,6 +67,7 @@ export default function TeamAdminPage() {
       <AdminCard className="mt-6">
         <h3 className="text-2xl font-black">People directory</h3>
         <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          {people.length === 0 && <p className="rounded-2xl bg-[#F8FAFC] p-5 text-sm font-bold text-[#64748B]">No people have been added yet.</p>}
           {people.map((person) => (
             <article key={person.name} className="rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] p-5">
               <div className="grid h-12 w-12 place-items-center rounded-2xl bg-[#1F5EFF] font-black text-white">

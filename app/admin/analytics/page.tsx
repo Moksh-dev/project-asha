@@ -3,10 +3,10 @@ import { analyticsRows } from "@/components/admin/v2/adminData";
 import { Activity, BarChart3, MousePointerClick, TrendingUp } from "lucide-react";
 
 const analyticsCards = [
-  { label: "Website visitors", value: "12,480", icon: Activity },
-  { label: "Page views", value: "38,214", icon: BarChart3 },
-  { label: "Form conversions", value: "18.4%", icon: MousePointerClick },
-  { label: "Chapter growth", value: "+24%", icon: TrendingUp },
+  { label: "Website visitors", value: "--", icon: Activity },
+  { label: "Page views", value: "--", icon: BarChart3 },
+  { label: "Form conversions", value: "--", icon: MousePointerClick },
+  { label: "Chapter growth", value: "--", icon: TrendingUp },
 ];
 
 export default function AnalyticsPage() {
@@ -29,6 +29,7 @@ export default function AnalyticsPage() {
         <AdminCard>
           <h3 className="text-2xl font-black">Engagement overview</h3>
           <div className="mt-6 grid gap-5">
+            {analyticsRows.length === 0 && <p className="rounded-2xl bg-[#F8FAFC] p-5 text-sm font-bold text-[#64748B]">No analytics data yet. Connect your analytics provider to begin tracking.</p>}
             {analyticsRows.map((row) => (
               <div key={row.label}>
                 <div className="flex justify-between text-sm font-black">
@@ -44,12 +45,8 @@ export default function AnalyticsPage() {
         </AdminCard>
 
         <AdminCard>
-          <h3 className="text-2xl font-black">Analytics plan</h3>
-          <div className="mt-5 grid gap-3 text-sm font-bold text-[#475569]">
-            <p className="rounded-2xl bg-[#F5F9FF] p-4">Connect Vercel Analytics or Plausible for page views.</p>
-            <p className="rounded-2xl bg-[#F5F9FF] p-4">Store form submissions in Supabase for conversion tracking.</p>
-            <p className="rounded-2xl bg-[#F5F9FF] p-4">Track chapter growth by state, city, and monthly activity.</p>
-          </div>
+          <h3 className="text-2xl font-black">Data source</h3>
+          <p className="mt-5 rounded-2xl bg-[#F8FAFC] p-5 text-sm font-bold text-[#64748B]">No analytics provider connected.</p>
         </AdminCard>
       </div>
     </AdminShell>

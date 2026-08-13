@@ -39,7 +39,7 @@ export default function SettingsPage() {
                 </label>
 
                 <input
-                  defaultValue="Project A.S.H.A."
+                  defaultValue=""
                   className="w-full rounded-xl border border-slate-300 px-4 py-3"
                 />
               </div>
@@ -50,7 +50,7 @@ export default function SettingsPage() {
                 </label>
 
                 <input
-                  defaultValue="https://projectasha.org"
+                  defaultValue=""
                   className="w-full rounded-xl border border-slate-300 px-4 py-3"
                 />
               </div>
@@ -73,7 +73,7 @@ export default function SettingsPage() {
                 </label>
 
                 <input
-                  defaultValue="Founder"
+                  defaultValue=""
                   className="w-full rounded-xl border border-slate-300 px-4 py-3"
                 />
               </div>
@@ -84,7 +84,7 @@ export default function SettingsPage() {
                 </label>
 
                 <input
-                  defaultValue="founder@projectasha.org"
+                  defaultValue=""
                   className="w-full rounded-xl border border-slate-300 px-4 py-3"
                 />
               </div>

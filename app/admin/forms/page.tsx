@@ -1,14 +1,7 @@
 import { AdminButton, AdminCard, AdminShell, StatusBadge } from "@/components/admin/v2/AdminShell";
 import { volunteerRequests } from "@/components/admin/v2/adminData";
 
-const inbox = [
-  { name: "Volunteer Form", submissions: 126, owner: "Volunteer Team", status: "Active" },
-  { name: "Chapter Membership", submissions: 34, owner: "Chapter Ops", status: "Active" },
-  { name: "Partnership Form", submissions: 12, owner: "Partnerships", status: "Review" },
-  { name: "Report an Issue", submissions: 7, owner: "Safety Desk", status: "Active" },
-  { name: "Support Request", submissions: 17, owner: "Support", status: "Active" },
-  { name: "Contact Form", submissions: 89, owner: "Admin", status: "Active" },
-];
+const inbox: { name: string; submissions: number; owner: string; status: string }[] = [];
 
 export default function FormsPage() {
   return (
@@ -21,6 +14,7 @@ export default function FormsPage() {
         <AdminCard>
           <h3 className="text-2xl font-black">Forms and queues</h3>
           <div className="mt-5 grid gap-3">
+            {inbox.length === 0 && <p className="rounded-2xl bg-[#F8FAFC] p-5 text-sm font-bold text-[#64748B]">No form data yet.</p>}
             {inbox.map((form) => (
               <div key={form.name} className="rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] p-5">
                 <div className="flex items-center justify-between gap-4">
@@ -49,6 +43,7 @@ export default function FormsPage() {
                 </tr>
               </thead>
               <tbody>
+                {volunteerRequests.length === 0 && <tr><td colSpan={4} className="px-5 py-10 text-center font-bold text-[#64748B]">No requests yet.</td></tr>}
                 {volunteerRequests.map((request) => (
                   <tr key={request.email} className="border-t border-[#E2E8F0]">
                     <td className="px-5 py-4">

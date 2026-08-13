@@ -20,7 +20,7 @@ export default function TeamPage() {
                 {group.people.map((person, index) => (
                   <article key={`${group.title}-${person.role}-${person.name}`} className="group overflow-hidden rounded-[2rem] border border-asha-line bg-asha-surface shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
                     <div className="relative h-72 overflow-hidden bg-[linear-gradient(135deg,#1F5EFF,#1877FF_58%,#00AEF0)] p-6 text-white">
-                      {"image" in person ? (
+                      {"image" in person && person.image ? (
                         <>
                           <img src={person.image} alt={person.name} className="absolute inset-0 h-full w-full object-cover" />
                           <div className="absolute inset-0 bg-gradient-to-t from-asha-ink/80 via-asha-ink/10 to-transparent" />
