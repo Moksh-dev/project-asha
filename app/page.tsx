@@ -66,18 +66,6 @@ export default function Home() {
         </section>
 
         <Section>
-          <div className="mx-auto mb-14 max-w-7xl overflow-hidden rounded-[2rem] border border-asha-line bg-white py-5 shadow-soft">
-            <div className="tagline-track flex justify-center gap-4 px-5">
-              {taglineWords.map((word) => (
-                <span
-                  key={`band-${word}`}
-                  className="font-display rounded-full bg-gradient-to-r from-asha-green to-asha-coral px-6 py-3 text-lg font-black text-white shadow-soft"
-                >
-                  {word}
-                </span>
-              ))}
-            </div>
-          </div>
           <div className="mx-auto max-w-7xl">
             <SectionHeader
               eyebrow="Mission"

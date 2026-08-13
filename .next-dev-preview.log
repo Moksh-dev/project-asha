@@ -668,3 +668,63 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
  GET /get-involved 200 in 258ms (next.js: 3ms, application-code: 256ms)
 [browser] Encountered two children with the same key, `Project A.S.H.A. Chapter`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
 [browser] Encountered two children with the same key, `Project A.S.H.A. Chapter`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+○ Compiling /admin/media ...
+ GET /admin/media 200 in 17.1s (next.js: 16.4s, application-code: 684ms)
+ GET /admin/website 200 in 11.0s (next.js: 10.3s, application-code: 690ms)
+ GET /chapters 200 in 514ms (next.js: 37ms, application-code: 477ms)
+ GET /admin/chapters 200 in 105ms (next.js: 22ms, application-code: 82ms)
+ GET /get-involved 200 in 236ms (next.js: 26ms, application-code: 210ms)
+ GET /admin/team 200 in 413ms (next.js: 39ms, application-code: 374ms)
+[browser] Encountered two children with the same key, `Project A.S.H.A. Chapter`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[browser] Encountered two children with the same key, `Project A.S.H.A. Chapter`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+○ Compiling / ...
+ GET / 200 in 615ms (next.js: 5ms, application-code: 609ms)
+ GET / 200 in 129ms (next.js: 6ms, application-code: 123ms)
+ GET / 200 in 132ms (next.js: 6ms, application-code: 126ms)
+ GET / 200 in 132ms (next.js: 9ms, application-code: 123ms)
+ GET /chapters 200 in 588ms (next.js: 22ms, application-code: 566ms)
+ GET / 200 in 147ms (next.js: 5ms, application-code: 142ms)
+ GET /admin/chapters 200 in 814ms (next.js: 24ms, application-code: 790ms)
+ GET /get-involved 200 in 1125ms (next.js: 59ms, application-code: 1066ms)
+ GET /admin/team 200 in 1346ms (next.js: 24ms, application-code: 1322ms)
+ GET / 200 in 247ms (next.js: 6ms, application-code: 241ms)
+[browser] Encountered two children with the same key, `Project A.S.H.A. Chapter`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[browser] Encountered two children with the same key, `Project A.S.H.A. Chapter`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[browser] Image with src "/project-asha-logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+ GET /admin/chapters 200 in 1806ms (next.js: 7ms, application-code: 1799ms)
+ GET /chapters 200 in 1645ms (next.js: 52ms, application-code: 1593ms)
+ GET /admin/team 200 in 2.3s (next.js: 74ms, application-code: 2.2s)
+ GET /get-involved 200 in 1993ms (next.js: 34ms, application-code: 1959ms)
+[browser] Encountered two children with the same key, `Project A.S.H.A. Chapter`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[browser] Encountered two children with the same key, `Project A.S.H.A. Chapter`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+ GET /admin/chapters 200 in 21ms (next.js: 3ms, application-code: 18ms)
+ GET /admin/dashboard 200 in 29ms (next.js: 12ms, application-code: 17ms)
+ GET /admin/chapters 200 in 15ms (next.js: 3ms, application-code: 12ms)
+ GET /admin/team 200 in 29ms (next.js: 3ms, application-code: 26ms)
+[browser] Encountered two children with the same key, `Project A.S.H.A. Chapter`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+[browser] Encountered two children with the same key, `Project A.S.H.A. Chapter`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+ GET /admin/forms 200 in 811ms (next.js: 770ms, application-code: 41ms)
+ GET /admin/analytics 200 in 333ms (next.js: 310ms, application-code: 23ms)
+ GET /admin/forms 200 in 27ms (next.js: 9ms, application-code: 18ms)
+ GET /admin/analytics 200 in 26ms (next.js: 4ms, application-code: 23ms)
+ GET /chapters 200 in 45ms (next.js: 8ms, application-code: 38ms)
+ GET /about 200 in 608ms (next.js: 502ms, application-code: 106ms)
+ GET /admin/chapters 200 in 27ms (next.js: 7ms, application-code: 19ms)
+ GET /admin/analytics 200 in 77ms (next.js: 7ms, application-code: 70ms)
+ GET /about 200 in 21ms (next.js: 1527µs, application-code: 19ms)
+ GET /privacy-policy 200 in 374ms (next.js: 353ms, application-code: 21ms)
+ GET /chapters 200 in 32ms (next.js: 9ms, application-code: 22ms)
+ GET /events 200 in 806ms (next.js: 692ms, application-code: 114ms)
+ GET /admin/chapters 200 in 71ms (next.js: 8ms, application-code: 64ms)
+ GET /admin/analytics 200 in 103ms (next.js: 4ms, application-code: 99ms)
+ GET /events 200 in 36ms (next.js: 3ms, application-code: 33ms)
+ GET /about 200 in 48ms (next.js: 9ms, application-code: 39ms)
+ GET /about 200 in 26ms (next.js: 2ms, application-code: 24ms)
+ GET / 200 in 326ms (next.js: 309ms, application-code: 17ms)
+ GET /chapters 200 in 45ms (next.js: 16ms, application-code: 30ms)
+ GET /chapters 200 in 328ms (next.js: 183ms, application-code: 145ms)
+ GET /chapters 200 in 25ms (next.js: 2ms, application-code: 22ms)
+ GET /admin/chapters 200 in 62ms (next.js: 13ms, application-code: 49ms)
+ GET /admin/analytics 200 in 108ms (next.js: 9ms, application-code: 99ms)
+ GET /about 200 in 32ms (next.js: 9ms, application-code: 24ms)
