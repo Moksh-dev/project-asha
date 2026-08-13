@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { Linkedin, Menu, Search, X } from "lucide-react";
+import { ExternalLink, Linkedin, Menu, Search, X } from "lucide-react";
 import { useState } from "react";
 import { contactDetails, footerColumns, getCurrentYear, navLinks } from "./data";
 
@@ -48,7 +48,7 @@ export function PublicNav() {
             );
           })}
         </nav>
-        <div className="hidden items-center gap-2 lg:flex"><button type="button" onClick={() => setSearchOpen((value) => !value)} aria-label="Search website" className="grid h-10 w-10 place-items-center rounded-full bg-asha-cloud text-asha-green"><Search size={18} /></button><Link href="/get-involved#volunteer-form" className="rounded-full bg-gradient-to-r from-asha-green to-asha-coral px-5 py-3 text-sm font-black text-white shadow-coral transition hover:-translate-y-0.5">Start helping</Link></div>
+        <div className="hidden items-center gap-2 lg:flex"><button type="button" onClick={() => setSearchOpen((value) => !value)} aria-label="Search website" className="grid h-10 w-10 place-items-center rounded-full bg-asha-cloud text-asha-green"><Search size={18} /></button><a href="https://www.linkedin.com/company/project-a-s-h-a" target="_blank" rel="noreferrer" aria-label="Project ASHA on LinkedIn" className="grid h-10 w-10 place-items-center rounded-full bg-asha-cloud text-asha-green transition hover:bg-asha-green hover:text-white"><Linkedin size={17} /></a><Link href="/get-involved#volunteer-form" className="rounded-full bg-gradient-to-r from-asha-green to-asha-coral px-5 py-3 text-sm font-black text-white shadow-coral transition hover:-translate-y-0.5">Start helping</Link></div>
         <button
           type="button"
           aria-label="Open menu"
@@ -70,6 +70,7 @@ export function PublicNav() {
               {link.label}
             </Link>
           ))}
+          <a href="https://www.linkedin.com/company/project-a-s-h-a" target="_blank" rel="noreferrer" className="flex items-center justify-between rounded-2xl px-4 py-3 font-bold text-asha-muted hover:bg-asha-cloud hover:text-asha-green">Follow us on LinkedIn <ExternalLink size={16} /></a>
         </div>
       ) : null}
       {searchOpen ? <div className="mx-auto mt-3 max-w-xl rounded-3xl border border-asha-line bg-white p-4 shadow-soft"><input autoFocus value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search pages" className="w-full rounded-2xl bg-asha-cloud px-4 py-3 font-semibold text-asha-ink outline-none" />{query ? <div className="mt-3 grid gap-1">{results.length ? results.map((link) => <Link key={link.href} href={link.href} onClick={() => { setSearchOpen(false); setQuery(""); }} className="rounded-xl px-4 py-3 font-bold text-asha-muted hover:bg-asha-cloud hover:text-asha-green">{link.label}</Link>) : <p className="px-4 py-3 text-sm text-asha-muted">No matching pages.</p>}</div> : null}</div> : null}
