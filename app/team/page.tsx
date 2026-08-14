@@ -3,6 +3,8 @@ import { CTAButton, PageHero, Section, SectionHeader } from "@/components/v2/Pri
 import { teamGroups } from "@/components/v2/data";
 import { Linkedin, Mail } from "lucide-react";
 
+const futureLeadershipRoles = ["Operations Lead", "Programs Lead", "Partnerships Lead", "Communications Lead"];
+
 export default function TeamPage() {
   return (
     <PublicShell>
@@ -16,7 +18,13 @@ export default function TeamPage() {
           <Section key={group.title} className={group.title === "Leadership" ? "pt-0" : "bg-white"}>
             <div className="mx-auto max-w-7xl">
               <SectionHeader title={group.title} body="Profiles are designed for images, social links, short introductions, and expandable biographies as the team directory grows." />
-              <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+              {group.title === "Leadership" ? <div className="mx-auto max-w-5xl">
+                {group.people.slice(0, 1).map((person) => <article key={person.name} className="mx-auto max-w-md overflow-hidden rounded-[2rem] border border-asha-line bg-white shadow-soft"><div className="h-72 overflow-hidden bg-asha-green">{"image" in person && person.image ? <img src={person.image} alt={person.name} className="h-full w-full object-cover" /> : null}</div><div className="p-7"><p className="font-hand text-lg text-asha-coral">Founder & Executive Director</p><h2 className="font-display mt-3 text-2xl font-black text-asha-ink">{person.name}</h2><p className="mt-5 leading-8 text-asha-muted">{person.bio}</p></div></article>)}
+                <div className="mx-auto h-12 w-px bg-asha-line" />
+                {group.people.slice(1, 2).map((person) => <article key={person.name} className="mx-auto max-w-md overflow-hidden rounded-[2rem] border border-asha-line bg-white shadow-soft"><div className="h-64 overflow-hidden bg-asha-green">{"image" in person && person.image ? <img src={person.image} alt={person.name} className="h-full w-full object-cover" /> : null}</div><div className="p-7"><p className="font-hand text-lg text-asha-coral">Co-Founder</p><h2 className="font-display mt-3 text-2xl font-black text-asha-ink">{person.name}</h2><p className="mt-5 leading-8 text-asha-muted">{person.bio}</p></div></article>)}
+                <div className="mx-auto h-12 w-px bg-asha-line" />
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{futureLeadershipRoles.map((role) => <article key={role} className="rounded-[1.75rem] border border-dashed border-asha-line bg-asha-surface p-6 text-center"><span className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-asha-cloud text-xl font-black text-asha-green">+</span><h3 className="font-display mt-6 text-xl font-black text-asha-ink">{role}</h3><p className="mt-3 text-sm leading-6 text-asha-muted">Role details will be added as the leadership team grows.</p></article>)}</div>
+              </div> : <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
                 {group.people.map((person, index) => (
                   <article key={`${group.title}-${person.role}-${person.name}`} className="group overflow-hidden rounded-[2rem] border border-asha-line bg-asha-surface shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
                     <div className="relative h-72 overflow-hidden bg-[linear-gradient(135deg,#1F5EFF,#1877FF_58%,#00AEF0)] p-6 text-white">
@@ -48,7 +56,7 @@ export default function TeamPage() {
                     </div>
                   </article>
                 ))}
-              </div>
+              </div>}
             </div>
           </Section>
         ))}
