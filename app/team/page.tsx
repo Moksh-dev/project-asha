@@ -1,11 +1,27 @@
+"use client";
+
 import PublicShell from "@/components/v2/PublicShell";
 import { CTAButton, PageHero, Section, SectionHeader } from "@/components/v2/Primitives";
-import { teamGroups } from "@/components/v2/data";
+import { chapters, teamGroups } from "@/components/v2/data";
+import { useAddedChapters, useChapterEdits, useDeletedChapters } from "@/components/v2/liveContent";
 import { Linkedin, Mail } from "lucide-react";
 
 const futureLeadershipRoles = ["Operations Lead", "Programs Lead", "Partnerships Lead", "Communications Lead"];
 
 export default function TeamPage() {
+  const addedChapters = useAddedChapters();
+  const edits = useChapterEdits();
+  const deletedChapters = useDeletedChapters();
+  const liveChapters = [...addedChapters, ...chapters].filter((chapter) => !deletedChapters.includes(chapter.city)).map((chapter) => ({ ...chapter, ...edits[chapter.city] }));
+  const groups = teamGroups.map((group) => group.title !== "Chapter Leads" ? group : {
+    ...group,
+    people: liveChapters.map((chapter) => {
+      const original = group.people.find((person) => person.name === chapter.lead);
+      const fallbackImage = original && "image" in original ? original.image : undefined;
+      const image = /^(https?:\/\/|\/)/.test(chapter.image) ? chapter.image : fallbackImage;
+      return { name: chapter.lead, role: "Chapter lead", bio: `${chapter.city}, ${chapter.state}`, ...(image ? { image } : {}) };
+    }),
+  });
   return (
     <PublicShell>
       <main>
@@ -14,7 +30,7 @@ export default function TeamPage() {
           title="The people carrying Project ASHA forward."
           body="Founder and Co-Founder stories now live with the wider leadership structure: core team, national team, chapter leads, and chapter members."
         />
-        {teamGroups.map((group) => (
+        {groups.map((group) => (
           <Section key={group.title} className={group.title === "Leadership" ? "pt-0" : "bg-white"}>
             <div className="mx-auto max-w-7xl">
               <SectionHeader title={group.title} body="Profiles are designed for images, social links, short introductions, and expandable biographies as the team directory grows." />
@@ -30,7 +46,7 @@ export default function TeamPage() {
                     <div className="relative h-72 overflow-hidden bg-[linear-gradient(135deg,#1F5EFF,#1877FF_58%,#00AEF0)] p-6 text-white">
                       {"image" in person && person.image ? (
                         <>
-                          <img src={person.image} alt={person.name} className="absolute inset-0 h-full w-full object-cover" />
+                          <img src={person.image} alt={person.name} className="absolute inset-0 h-full w-full object-cover object-[center_28%]" />
                           <div className="absolute inset-0 bg-gradient-to-t from-asha-ink/80 via-asha-ink/10 to-transparent" />
                           <p className="font-hand absolute bottom-8 left-8 right-8 text-lg text-white">{person.role}</p>
                         </>

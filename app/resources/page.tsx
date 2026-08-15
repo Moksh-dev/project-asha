@@ -1,9 +1,13 @@
+"use client";
+
 import PublicShell from "@/components/v2/PublicShell";
 import { CTAButton, PageHero, Section } from "@/components/v2/Primitives";
 import { resources } from "@/components/v2/data";
+import { useLiveResources } from "@/components/v2/liveContent";
 import { Download, FileText } from "lucide-react";
 
 export default function ResourcesPage() {
+  const liveResources = useLiveResources(resources);
   return (
     <PublicShell>
       <main>
@@ -14,7 +18,7 @@ export default function ResourcesPage() {
         />
         <Section className="pt-0">
           <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {resources.map((resource) => (
+            {liveResources.map((resource) => (
               <article key={resource.href} className="rounded-[2rem] border border-asha-line bg-white p-7 shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
                 <FileText className="text-asha-green" />
                 <p className="mt-8 rounded-full bg-asha-cloud px-4 py-2 text-sm font-black text-asha-green">PDF guide</p>

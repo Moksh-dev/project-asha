@@ -1,152 +1,18 @@
-import Sidebar from "@/components/admin/Sidebar";
-import Topbar from "@/components/admin/Topbar";
+"use client";
 
-const blogs = [
-  {
-    title: "Ending Human Trafficking Starts With Awareness",
-    author: "Founder",
-    status: "Published",
-    date: "02 Jul 2026",
-  },
-  {
-    title: "Youth Can Change Society",
-    author: "Editorial Team",
-    status: "Draft",
-    date: "30 Jun 2026",
-  },
-  {
-    title: "Building Strong Chapters",
-    author: "Delhi Chapter",
-    status: "Published",
-    date: "28 Jun 2026",
-  },
-  {
-    title: "Volunteer Stories",
-    author: "Mumbai Chapter",
-    status: "Review",
-    date: "25 Jun 2026",
-  },
-];
+import { useState } from "react";
+import { AdminButton, AdminCard, AdminShell, StatusBadge } from "@/components/admin/v2/AdminShell";
+import { blogFeatures } from "@/components/v2/data";
+import { addBlog, deleteBlog, LiveArticle, saveBlogEdit, useLiveBlogs } from "@/components/v2/liveContent";
 
-export default function BlogsPage() {
-  return (
-    <main className="flex min-h-screen bg-slate-100">
-
-      <Sidebar />
-
-      <section className="flex-1 p-8">
-
-        <Topbar />
-
-        <div className="mt-8 flex items-center justify-between">
-
-          <div>
-
-            <h1 className="text-4xl font-bold text-white">
-              Blogs
-            </h1>
-
-            <p className="mt-2 text-slate-300">
-              Create, edit and publish blog articles.
-            </p>
-
-          </div>
-
-          <button className="rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700">
-            + New Blog
-          </button>
-
-        </div>
-
-        <div className="mt-10 overflow-hidden rounded-3xl bg-white shadow-sm">
-
-          <table className="w-full">
-
-            <thead className="bg-slate-100">
-
-              <tr>
-
-                <th className="px-6 py-4 text-left">
-                  Title
-                </th>
-
-                <th className="px-6 py-4 text-left">
-                  Author
-                </th>
-
-                <th className="px-6 py-4 text-left">
-                  Date
-                </th>
-
-                <th className="px-6 py-4 text-left">
-                  Status
-                </th>
-
-                <th className="px-6 py-4 text-right">
-                  Action
-                </th>
-
-              </tr>
-
-            </thead>
-
-            <tbody>
-
-              {blogs.map((blog) => (
-
-                <tr
-                  key={blog.title}
-                  className="border-t"
-                >
-
-                  <td className="px-6 py-5 font-semibold">
-                    {blog.title}
-                  </td>
-
-                  <td className="px-6 py-5">
-                    {blog.author}
-                  </td>
-
-                  <td className="px-6 py-5">
-                    {blog.date}
-                  </td>
-
-                  <td className="px-6 py-5">
-
-                    <span
-                      className={`rounded-full px-3 py-1 text-sm font-semibold ${
-                        blog.status === "Published"
-                          ? "bg-green-100 text-green-700"
-                          : blog.status === "Draft"
-                          ? "bg-yellow-100 text-yellow-700"
-                          : "bg-blue-100 text-blue-700"
-                      }`}
-                    >
-                      {blog.status}
-                    </span>
-
-                  </td>
-
-                  <td className="px-6 py-5 text-right">
-
-                    <button className="rounded-lg bg-slate-100 px-4 py-2 hover:bg-slate-200">
-                      Edit
-                    </button>
-
-                  </td>
-
-                </tr>
-
-              ))}
-
-            </tbody>
-
-          </table>
-
-        </div>
-
-      </section>
-
-    </main>
-  );
+export default function BlogsAdminPage() {
+  const liveBlogs = useLiveBlogs(blogFeatures); const [editing, setEditing] = useState<LiveArticle | null>(null); const [creating, setCreating] = useState(false); const [title, setTitle] = useState(""); const [excerpt, setExcerpt] = useState(""); const [url, setUrl] = useState(""); const [date, setDate] = useState(""); const [notice, setNotice] = useState("");
+  const clear = () => { setEditing(null); setCreating(false); setTitle(""); setExcerpt(""); setUrl(""); setDate(""); };
+  const edit = (article: LiveArticle) => { setEditing(article); setCreating(false); setTitle(article.title); setExcerpt(article.excerpt); setUrl(article.url); setDate(article.date); };
+  const save = () => { if (!title.trim() || !excerpt.trim() || !url.trim() || !date.trim()) return setNotice("Add a title, source, article link, and description before publishing."); const value = { title: title.trim(), excerpt: excerpt.trim(), url: url.trim(), date: date.trim() }; if (editing) saveBlogEdit(editing.url, value); else addBlog(value); clear(); setNotice("Article published to the live Blog page."); };
+  const remove = () => { if (!editing || !window.confirm(`Delete ${editing.title} from the live Blog page?`)) return; deleteBlog(editing.url); clear(); setNotice("Article removed from the live website."); };
+  return <AdminShell title="Blog editor" subtitle="Create, edit, and publish articles on the public Blog page." action={<AdminButton onClick={() => { clear(); setCreating(true); }}>New article</AdminButton>}>
+    {notice && <p className="mb-6 rounded-2xl bg-[#DCFCE7] px-5 py-4 text-sm font-black text-[#15803D]">{notice}</p>}{(creating || editing) && <AdminCard className="mb-6"><h3 className="text-xl font-black">{editing ? `Edit ${editing.title}` : "Add a blog article"}</h3><p className="mt-2 text-sm text-[#64748B]">Save publishes this article directly to the public Blog page.</p><div className="mt-5 grid gap-4 md:grid-cols-2"><input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Article title" className="rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3 font-semibold outline-none focus:border-[#1F5EFF]" /><input value={date} onChange={(e) => setDate(e.target.value)} placeholder="Author or source" className="rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3 font-semibold outline-none focus:border-[#1F5EFF]" /><input value={url} onChange={(e) => setUrl(e.target.value)} placeholder="Article link" className="rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3 font-semibold outline-none focus:border-[#1F5EFF] md:col-span-2" /><textarea value={excerpt} onChange={(e) => setExcerpt(e.target.value)} rows={3} placeholder="Short summary" className="resize-none rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3 font-semibold outline-none focus:border-[#1F5EFF] md:col-span-2" /></div><div className="mt-5 flex flex-wrap gap-3"><button onClick={save} className="rounded-xl bg-[#1F5EFF] px-5 py-3 text-sm font-black text-white">Save & publish</button>{editing && <button onClick={remove} className="rounded-xl bg-[#FEE2E2] px-5 py-3 text-sm font-black text-[#B91C1C]">Delete article</button>}<button onClick={clear} className="rounded-xl bg-[#F5F9FF] px-5 py-3 text-sm font-black text-[#475569]">Cancel</button></div></AdminCard>}
+    <AdminCard className="overflow-hidden p-0"><div className="px-6 py-5"><h3 className="text-2xl font-black">Published articles</h3></div><div className="overflow-x-auto"><table className="w-full min-w-[700px] text-left text-sm"><thead className="border-y border-[#E2E8F0] bg-[#F8FAFC] text-[#475569]"><tr><th className="px-6 py-4">Article</th><th className="px-6 py-4">Source</th><th className="px-6 py-4">Status</th><th className="px-6 py-4">Edit</th></tr></thead><tbody>{liveBlogs.map((article) => <tr key={article.url} className="border-b border-[#E2E8F0]"><td className="px-6 py-4 font-black">{article.title}</td><td className="px-6 py-4 text-[#64748B]">{article.date}</td><td className="px-6 py-4"><StatusBadge value="Published" /></td><td className="px-6 py-4"><button onClick={() => edit(article)} className="rounded-xl bg-[#F5F9FF] px-4 py-2 text-xs font-black text-[#1F5EFF]">Edit</button></td></tr>)}</tbody></table></div></AdminCard>
+  </AdminShell>;
 }

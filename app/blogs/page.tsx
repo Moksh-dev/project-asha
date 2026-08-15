@@ -1,8 +1,12 @@
+"use client";
+
 import PublicShell from "@/components/v2/PublicShell";
 import { PageHero, Section } from "@/components/v2/Primitives";
 import { blogFeatures } from "@/components/v2/data";
+import { useLiveBlogs } from "@/components/v2/liveContent";
 
 export default function BlogsPage() {
+  const blogs = useLiveBlogs(blogFeatures);
   return (
     <PublicShell><main>
 
@@ -13,7 +17,7 @@ export default function BlogsPage() {
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-          {blogFeatures.map((blog) => (
+          {blogs.map((blog) => (
 
             <article
               key={blog.url}

@@ -1,140 +1,22 @@
-import Sidebar from "@/components/admin/Sidebar";
-import Topbar from "@/components/admin/Topbar";
+"use client";
 
-const resources = [
-  {
-    title: "Volunteer Handbook.pdf",
-    category: "Guide",
-    size: "2.4 MB",
-    updated: "Today",
-  },
-  {
-    title: "Brand Guidelines.pdf",
-    category: "Branding",
-    size: "6.1 MB",
-    updated: "Yesterday",
-  },
-  {
-    title: "Chapter Starter Kit.pdf",
-    category: "Training",
-    size: "8.3 MB",
-    updated: "Last Week",
-  },
-  {
-    title: "Awareness Posters.zip",
-    category: "Media",
-    size: "18 MB",
-    updated: "2 Weeks Ago",
-  },
-];
+import { useState } from "react";
+import { AdminButton, AdminCard, AdminShell, StatusBadge } from "@/components/admin/v2/AdminShell";
+import { resources } from "@/components/v2/data";
+import { addResource, deleteResource, LiveResource, saveResourceEdit, useLiveResources } from "@/components/v2/liveContent";
 
-export default function ResourcesPage() {
-  return (
-    <main className="flex min-h-screen bg-slate-100">
-
-      <Sidebar />
-
-      <section className="flex-1 p-8">
-
-        <Topbar />
-
-        <div className="mt-8 flex items-center justify-between">
-
-          <div>
-
-            <h1 className="text-4xl font-bold text-white">
-              Resources
-            </h1>
-
-            <p className="mt-2 text-slate-300">
-              Manage downloadable files and training materials.
-            </p>
-
-          </div>
-
-          <button className="rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700">
-            Upload Resource
-          </button>
-
-        </div>
-
-        <div className="mt-10 overflow-hidden rounded-3xl bg-white shadow-sm">
-
-          <table className="w-full">
-
-            <thead className="bg-slate-100">
-
-              <tr>
-
-                <th className="px-6 py-4 text-left">
-                  Resource
-                </th>
-
-                <th className="px-6 py-4 text-left">
-                  Category
-                </th>
-
-                <th className="px-6 py-4 text-left">
-                  Size
-                </th>
-
-                <th className="px-6 py-4 text-left">
-                  Updated
-                </th>
-
-                <th className="px-6 py-4 text-right">
-                  Action
-                </th>
-
-              </tr>
-
-            </thead>
-
-            <tbody>
-
-              {resources.map((resource) => (
-
-                <tr
-                  key={resource.title}
-                  className="border-t"
-                >
-
-                  <td className="px-6 py-5 font-semibold">
-                    {resource.title}
-                  </td>
-
-                  <td className="px-6 py-5">
-                    {resource.category}
-                  </td>
-
-                  <td className="px-6 py-5">
-                    {resource.size}
-                  </td>
-
-                  <td className="px-6 py-5">
-                    {resource.updated}
-                  </td>
-
-                  <td className="px-6 py-5 text-right">
-
-                    <button className="rounded-lg bg-slate-100 px-4 py-2 hover:bg-slate-200">
-                      Download
-                    </button>
-
-                  </td>
-
-                </tr>
-
-              ))}
-
-            </tbody>
-
-          </table>
-
-        </div>
-
-      </section>
-
-    </main>
-  );
+export default function ResourcesAdminPage() {
+  const liveResources = useLiveResources(resources);
+  const [editing, setEditing] = useState<LiveResource | null>(null);
+  const [creating, setCreating] = useState(false);
+  const [title, setTitle] = useState(""); const [description, setDescription] = useState(""); const [href, setHref] = useState(""); const [notice, setNotice] = useState("");
+  const clear = () => { setEditing(null); setCreating(false); setTitle(""); setDescription(""); setHref(""); };
+  const openEdit = (resource: LiveResource) => { setEditing(resource); setCreating(false); setTitle(resource.title); setDescription(resource.description); setHref(resource.href); };
+  const save = () => { if (!title.trim() || !description.trim() || !href.trim()) return setNotice("Add a title, description, and public document link before publishing."); const value = { title: title.trim(), description: description.trim(), href: href.trim() }; if (editing) saveResourceEdit(editing.href, value); else addResource(value); clear(); setNotice("Resource published to the live Resources page."); };
+  const remove = () => { if (!editing || !window.confirm(`Delete ${editing.title} from the live Resources page?`)) return; deleteResource(editing.href); clear(); setNotice("Resource removed from the live website."); };
+  return <AdminShell title="Resource library" subtitle="Create, edit, and remove documents that appear on the public Resources page." action={<AdminButton onClick={() => { clear(); setCreating(true); }}>New resource</AdminButton>}>
+    {notice && <p className="mb-6 rounded-2xl bg-[#DCFCE7] px-5 py-4 text-sm font-black text-[#15803D]">{notice}</p>}
+    {(creating || editing) && <AdminCard className="mb-6"><h3 className="text-xl font-black">{editing ? `Edit ${editing.title}` : "Add a resource"}</h3><p className="mt-2 text-sm text-[#64748B]">Save publishes this document directly to the public Resources page.</p><div className="mt-5 grid gap-4"><input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Resource title" className="rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3 font-semibold outline-none focus:border-[#1F5EFF]" /><input value={href} onChange={(e) => setHref(e.target.value)} placeholder="Public document link or file path" className="rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3 font-semibold outline-none focus:border-[#1F5EFF]" /><textarea value={description} onChange={(e) => setDescription(e.target.value)} rows={3} placeholder="Short description" className="resize-none rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] px-4 py-3 font-semibold outline-none focus:border-[#1F5EFF]" /></div><div className="mt-5 flex flex-wrap gap-3"><button onClick={save} className="rounded-xl bg-[#1F5EFF] px-5 py-3 text-sm font-black text-white">Save & publish</button>{editing && <button onClick={remove} className="rounded-xl bg-[#FEE2E2] px-5 py-3 text-sm font-black text-[#B91C1C]">Delete resource</button>}<button onClick={clear} className="rounded-xl bg-[#F5F9FF] px-5 py-3 text-sm font-black text-[#475569]">Cancel</button></div></AdminCard>}
+    <AdminCard className="overflow-hidden p-0"><div className="px-6 py-5"><h3 className="text-2xl font-black">Published resources</h3></div><div className="overflow-x-auto"><table className="w-full min-w-[700px] text-left text-sm"><thead className="border-y border-[#E2E8F0] bg-[#F8FAFC] text-[#475569]"><tr><th className="px-6 py-4">Resource</th><th className="px-6 py-4">Public link</th><th className="px-6 py-4">Status</th><th className="px-6 py-4">Edit</th></tr></thead><tbody>{liveResources.map((resource) => <tr key={resource.href} className="border-b border-[#E2E8F0]"><td className="px-6 py-4 font-black">{resource.title}</td><td className="max-w-xs truncate px-6 py-4 text-[#64748B]">{resource.href}</td><td className="px-6 py-4"><StatusBadge value="Published" /></td><td className="px-6 py-4"><button onClick={() => openEdit(resource)} className="rounded-xl bg-[#F5F9FF] px-4 py-2 text-xs font-black text-[#1F5EFF]">Edit</button></td></tr>)}</tbody></table></div></AdminCard>
+  </AdminShell>;
 }

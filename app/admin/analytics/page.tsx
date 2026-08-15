@@ -29,7 +29,7 @@ export default function AnalyticsPage() {
         <AdminCard>
           <h3 className="text-2xl font-black">Engagement overview</h3>
           <div className="mt-6 grid gap-5">
-            {analyticsRows.length === 0 && <p className="rounded-2xl bg-[#F8FAFC] p-5 text-sm font-bold text-[#64748B]">No analytics data yet. Connect your analytics provider to begin tracking.</p>}
+            {analyticsRows.length === 0 && <p className="rounded-2xl bg-[#F8FAFC] p-5 text-sm font-bold text-[#64748B]">Vercel Web Analytics is collecting your public-site visits. Detailed visitor totals remain protected in the Vercel dashboard until a secure server connection is configured.</p>}
             {analyticsRows.map((row) => (
               <div key={row.label}>
                 <div className="flex justify-between text-sm font-black">
@@ -46,7 +46,11 @@ export default function AnalyticsPage() {
 
         <AdminCard>
           <h3 className="text-2xl font-black">Data source</h3>
-          <p className="mt-5 rounded-2xl bg-[#F8FAFC] p-5 text-sm font-bold text-[#64748B]">No analytics provider connected.</p>
+          <div className="mt-5 rounded-2xl bg-[#F0FDF4] p-5 text-sm font-bold text-[#166534]">
+            <p>Vercel Web Analytics is installed on this website.</p>
+            <a href="https://vercel.com/dashboard/analytics" target="_blank" rel="noreferrer" className="mt-3 inline-block text-[#1F5EFF] underline">Open live analytics in Vercel</a>
+          </div>
+          <p className="mt-4 text-sm leading-6 text-[#64748B]">To show the private Vercel totals here as well, add a Vercel API token as a server-only environment variable. The tracking component alone cannot safely send those private totals to a public browser.</p>
         </AdminCard>
       </div>
     </AdminShell>
