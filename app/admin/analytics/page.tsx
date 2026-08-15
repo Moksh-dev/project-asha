@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import { AdminCard, AdminShell } from "@/components/admin/v2/AdminShell";
 import { analyticsRows } from "@/components/admin/v2/adminData";
 import { Activity, BarChart3, MousePointerClick, TrendingUp } from "lucide-react";
@@ -10,13 +13,23 @@ const analyticsCards = [
 ];
 
 export default function AnalyticsPage() {
+  const [visitors, setVisitors] = useState<string>("Loading...");
+  const [pageviews, setPageviews] = useState<string>("Loading...");
+  const [source, setSource] = useState("Connecting securely to Vercel Web Analytics...");
+  useEffect(() => {
+    fetch("/api/admin/analytics").then((response) => response.json()).then((data) => {
+      if (typeof data.visitors === "number") { setVisitors(data.visitors.toLocaleString()); setPageviews(typeof data.pageviews === "number" ? data.pageviews.toLocaleString() : "--"); setSource("Live total from Vercel Web Analytics."); }
+      else setSource(data.error ?? "Vercel analytics is not configured yet.");
+    }).catch(() => setSource("Vercel analytics could not be reached. Please try again."));
+  }, []);
+  const cards = analyticsCards.map((card) => card.label === "Website visitors" ? { ...card, value: visitors } : card.label === "Page views" ? { ...card, value: pageviews } : card);
   return (
     <AdminShell
       title="Analytics"
       subtitle="Track public site activity, volunteer interest, chapter growth, form conversions, and engagement."
     >
       <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-        {analyticsCards.map(({ label, value, icon: Icon }) => (
+        {cards.map(({ label, value, icon: Icon }) => (
           <AdminCard key={label}>
             <Icon className="text-[#1F5EFF]" />
             <p className="mt-5 text-sm font-black uppercase tracking-[0.16em] text-[#64748B]">{label}</p>
@@ -47,7 +60,7 @@ export default function AnalyticsPage() {
         <AdminCard>
           <h3 className="text-2xl font-black">Data source</h3>
           <div className="mt-5 rounded-2xl bg-[#F0FDF4] p-5 text-sm font-bold text-[#166534]">
-            <p>Vercel Web Analytics is installed on this website.</p>
+            <p>{source}</p>
             <a href="https://vercel.com/dashboard/analytics" target="_blank" rel="noreferrer" className="mt-3 inline-block text-[#1F5EFF] underline">Open live analytics in Vercel</a>
           </div>
           <p className="mt-4 text-sm leading-6 text-[#64748B]">To show the private Vercel totals here as well, add a Vercel API token as a server-only environment variable. The tracking component alone cannot safely send those private totals to a public browser.</p>
