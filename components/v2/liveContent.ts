@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 export type HomepageContent = { eyebrow: string; heading: string; description: string; cta: string };
 export type AddedChapter = { city: string; state: string; lead: string; summary: string; image: string; events: string[]; instagram?: string };
 export type LiveResource = { title: string; description: string; href: string };
-export type LiveArticle = { title: string; excerpt: string; url: string; date: string };
+export type LiveArticle = { title: string; excerpt: string; url: string; date: string; image?: string };
 
 const homeKey = "project-asha:homepage";
 const chapterKey = "project-asha:chapters";

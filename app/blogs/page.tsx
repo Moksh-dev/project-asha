@@ -42,6 +42,8 @@ export default function BlogsPage() {
 
           ))}
 
+          {blogs.length === 0 ? <p className="rounded-3xl bg-white p-8 text-lg font-semibold text-asha-muted md:col-span-2 lg:col-span-3">Blog stories will appear here when they are published. News coverage is available on the Press page.</p> : null}
+
         </div>
 
       </div></Section>
