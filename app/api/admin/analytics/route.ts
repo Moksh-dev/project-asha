@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+
 function countFrom(payload: unknown): number | null {
   if (typeof payload === "number") return payload;
   if (!payload || typeof payload !== "object") return null;
@@ -21,14 +23,18 @@ export async function GET() {
   if (!token || !projectId) return NextResponse.json({ configured: false }, { status: 503 });
   const url = new URL("https://api.vercel.com/v1/query/web-analytics/visits/count");
   url.searchParams.set("projectId", projectId);
-  const response = await fetch(url, { headers: { Authorization: `Bearer ${token}` }, next: { revalidate: 300 } });
-  const payload: unknown = await response.json().catch(() => null);
-  if (!response.ok) return NextResponse.json({ configured: true, error: "Vercel analytics could not be read yet." }, { status: response.status });
-  const data = payload && typeof payload === "object" ? (payload as { data?: { visitors?: unknown; pageviews?: unknown } }).data : undefined;
-  return NextResponse.json({
-    configured: true,
-    visitors: typeof data?.visitors === "number" ? data.visitors : countFrom(payload),
-    pageviews: typeof data?.pageviews === "number" ? data.pageviews : null,
-    updatedAt: new Date().toISOString(),
-  });
+  try {
+    const response = await fetch(url, { headers: { Authorization: `Bearer ${token}` }, cache: "no-store" });
+    const payload: unknown = await response.json().catch(() => null);
+    if (!response.ok) return NextResponse.json({ configured: true, error: "Vercel analytics could not be read yet." }, { status: response.status });
+    const data = payload && typeof payload === "object" ? (payload as { data?: { visitors?: unknown; pageviews?: unknown } }).data : undefined;
+    return NextResponse.json({
+      configured: true,
+      visitors: typeof data?.visitors === "number" ? data.visitors : countFrom(payload),
+      pageviews: typeof data?.pageviews === "number" ? data.pageviews : null,
+      updatedAt: new Date().toISOString(),
+    });
+  } catch {
+    return NextResponse.json({ configured: true, error: "Vercel analytics could not be reached. Please try again." }, { status: 502 });
+  }
 }
