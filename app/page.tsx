@@ -8,6 +8,7 @@ import { chapters, events, focusAreas, impactWords, partnerTypes, processSteps }
 import { ArrowRight, HeartHandshake, MapPin, Sparkles } from "lucide-react";
 
 const taglineWords = ["Awareness", "Safety", "Hope", "Action"];
+const featuredChapters = chapters.filter((chapter) => chapter.city === "Haryana" || chapter.city === "West Bengal");
 
 export default function Home() {
   const homepage = useHomepageContent();
@@ -130,7 +131,7 @@ export default function Home() {
               <CTAButton href="/chapters">Explore chapters</CTAButton>
             </div>
             <div className="grid gap-5 md:grid-cols-2">
-              {chapters.slice(0, 2).map((chapter) => (
+              {featuredChapters.map((chapter) => (
                 <article key={chapter.city} className="grid gap-5 rounded-[2rem] border border-asha-line bg-asha-surface p-5 shadow-soft md:grid-cols-[.8fr_1fr]">
                   <VisualTile label={chapter.city} gradient={chapter.image} />
                   <div className="p-3">

@@ -5,6 +5,10 @@ import { CalendarDays, MapPin } from "lucide-react";
 const eventPhotos = [
   { image: "/content-images/freedom-walk-oakland.png", alt: "Freedom Walk in Oakland", caption: "Freedom Walk in Oakland, California brought the community together to raise awareness for survivors, stand alongside a shared commitment to ending human trafficking, and amplify survivor voices." },
   { image: "/content-images/youth-safety-conversation.png", alt: "Youth safety conversation", caption: "Young people in conversation about safety, awareness, and the importance of making prevention education accessible." },
+  { image: "/content-images/bravemaker-screenings.png", alt: "BraveMaker film screenings", caption: "Project A.S.H.A. co-founders Afnaan Islam and Archismita Mukherjee attended three BraveMaker film screenings hosted by Love Never Fails in Redwood City." },
+  { image: "/content-images/open-mind-school.png", alt: "Open Mind School presentation", caption: "Project A.S.H.A. presented to the staff at Open Mind School on human trafficking awareness, warning signs, online safety, and strengthening prevention and student safety." },
+  { image: "/content-images/ncapda-kits.png", alt: "NCAPDA opioid rescue kit assembly", caption: "Project A.S.H.A. Core Team members and the Founder assembled opioid overdose rescue kits with partner organization NCAPDA." },
+  { image: "/content-images/aclu-advocacy.png", alt: "ACLU advocacy visit", caption: "Founder advocacy with the American Civil Liberties Union on immigration and human rights, engaging with congressional and representative offices and connecting with issues affecting safety, dignity, and well-being." },
 ];
 
 export default function EventsPage() {

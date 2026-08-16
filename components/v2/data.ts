@@ -84,7 +84,7 @@ export const chapters = [
     city: "Faisalabad", state: "Pakistan", lead: "Sukaina Haidar", summary: "A Project A.S.H.A. chapter building safer, better-informed communities in Faisalabad.", image: "/chapter-leads/sukaina-haidar.png", events: ["Instagram link coming soon"],
   },
   {
-    city: "Rajasthan", state: "India", lead: "Kanishka Singh", summary: "A Project A.S.H.A. chapter supporting prevention education and youth action across Rajasthan.", image: "linear-gradient(135deg, #2563EB, #00AEF0)", events: ["Instagram link coming soon"],
+    city: "Rajasthan", state: "India", lead: "Kanishka Singh", summary: "A Project A.S.H.A. chapter supporting prevention education and youth action across Rajasthan.", image: "/chapter-leads/kanishka-singh.png", events: ["Instagram link coming soon"],
   },
   {
     city: "Buffalo", state: "Illinois, United States", lead: "Jia Locascio", summary: "A Project A.S.H.A. chapter connecting young people and communities in Buffalo through awareness and action.", image: "/chapter-leads/jia-locascio.png", events: ["Instagram link coming soon"],
@@ -178,6 +178,7 @@ export const teamGroups = [
         "Ruhshona Rustamova": "/chapter-leads/ruhshona-rustamova.png",
         "Sukaina Haidar": "/chapter-leads/sukaina-haidar.png",
         "Jia Locascio": "/chapter-leads/jia-locascio.png",
+        "Kanishka Singh": "/chapter-leads/kanishka-singh.png",
       } as Record<string, string | undefined>)[lead],
     })),
   },
@@ -226,7 +227,10 @@ export const resources = [
   },
 ];
 
-export const blogFeatures: { url: string; title: string; excerpt: string; date: string }[] = [];
+export const blogFeatures: { url: string; title: string; excerpt: string; date: string }[] = [
+  { url: "/blogs/we-measure-literacy-part-1.pdf", title: "We Measure Literacy: Part 1", excerpt: "An educational article examining how literacy and awareness shape prevention, safety, and informed action.", date: "Project A.S.H.A." },
+  { url: "/blogs/the-brink-of-injustice.pdf", title: "The Brink of Injustice: Where Is Their Voice?", excerpt: "A reflection on justice, representation, and the importance of listening to voices that are too often unheard.", date: "Project A.S.H.A." },
+];
 
 export const pressArticles = [
   { url: "https://www.sfgate.com/news/bayarea/article/regional-high-school-students-launch-human-22346376.php", title: "Regional High School Students Launch Human Trafficking Awareness Organization", excerpt: "SFGATE highlights Project A.S.H.A.'s student-led work to build awareness, education, and prevention in the community.", date: "SFGATE", image: "/content-images/sfgate-coverage.png" },
