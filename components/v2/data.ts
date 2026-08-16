@@ -71,11 +71,23 @@ export const chapters = [
   {
     city: "Tamil Nadu",
     state: "India",
-    lead: "Pradhaniya",
+    lead: "Prisha Shetty",
     summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.",
-    image: "linear-gradient(135deg, #1F5EFF, #67C7FF)",
+    image: "/chapter-leads/prisha-shetty.png",
     events: ["Instagram link coming soon"],
     instagram: "https://www.instagram.com/projectasha.tamilnadu/?hl=en",
+  },
+  {
+    city: "Uzbekistan", state: "Uzbekistan", lead: "Ruhshona Rustamova", summary: "A Project A.S.H.A. chapter advancing youth awareness and community action in Uzbekistan.", image: "/chapter-leads/ruhshona-rustamova.png", events: ["Instagram link coming soon"],
+  },
+  {
+    city: "Faisalabad", state: "Pakistan", lead: "Sukaina Haidar", summary: "A Project A.S.H.A. chapter building safer, better-informed communities in Faisalabad.", image: "/chapter-leads/sukaina-haidar.png", events: ["Instagram link coming soon"],
+  },
+  {
+    city: "Rajasthan", state: "India", lead: "Kanishka Singh", summary: "A Project A.S.H.A. chapter supporting prevention education and youth action across Rajasthan.", image: "linear-gradient(135deg, #2563EB, #00AEF0)", events: ["Instagram link coming soon"],
+  },
+  {
+    city: "Buffalo", state: "Illinois, United States", lead: "Jia Locascio", summary: "A Project A.S.H.A. chapter connecting young people and communities in Buffalo through awareness and action.", image: "/chapter-leads/jia-locascio.png", events: ["Instagram link coming soon"],
   },
   {
     city: "Bengaluru",
@@ -125,12 +137,6 @@ export const chapters = [
   {
     city: "New York City", state: "United States", lead: "Project A.S.H.A. Chapter", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #2563EB, #00AEF0)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/project_a.s.h.a_nys/?hl=en"
   },
-  {
-    city: "Indore", state: "India", lead: "Project A.S.H.A. Chapter", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #67C7FF)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/project.asha_indore/?hl=en"
-  },
-  {
-    city: "Maryland", state: "United States", lead: "Project A.S.H.A. Chapter", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #8BDCFF)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/project.a.s.h.a_maryland/?hl=en"
-  },
 ];
 
 export const teamGroups = [
@@ -168,6 +174,10 @@ export const teamGroups = [
         "Korinne Brooks": "/chapter-leads/korinne-brooks.png",
         "Lauren Crispino": "/chapter-leads/lauren-crispino.png",
         "Aarna Mallidi": "/chapter-leads/aarna-mallidi.png",
+        "Prisha Shetty": "/chapter-leads/prisha-shetty.png",
+        "Ruhshona Rustamova": "/chapter-leads/ruhshona-rustamova.png",
+        "Sukaina Haidar": "/chapter-leads/sukaina-haidar.png",
+        "Jia Locascio": "/chapter-leads/jia-locascio.png",
       } as Record<string, string | undefined>)[lead],
     })),
   },
@@ -219,6 +229,7 @@ export const resources = [
 export const blogFeatures: { url: string; title: string; excerpt: string; date: string }[] = [];
 
 export const pressArticles = [
+  { url: "https://www.sfgate.com/news/bayarea/article/regional-high-school-students-launch-human-22346376.php", title: "Regional High School Students Launch Human Trafficking Awareness Organization", excerpt: "SFGATE highlights Project A.S.H.A.'s student-led work to build awareness, education, and prevention in the community.", date: "SFGATE", image: "/content-images/sfgate-coverage.png" },
   { url: "https://localnewsmatters.org/2026/07/15/east-bay-teens-anti-human-trafficking-effort-expands-globally-tackling-often-taboo-topic/", title: "High School Students Launch Human Trafficking Prevention Initiative", excerpt: "Regional coverage of Project A.S.H.A.'s youth-led trafficking prevention work.", date: "Local News Matters", image: "/content-images/image6.jpg" },
   { url: "https://www.independentnews.com/news/livermore_news/students-build-anti-trafficking-awareness-organization/article_250e8056-9d71-40bc-a5d2-a9ce466b7967.html", title: "Students Build Anti-Trafficking Awareness Organization", excerpt: "Independent News coverage of students building awareness and prevention education.", date: "The Independent", image: "/content-images/image1.jpg" },
   { url: "https://patch.com/california/livermore/livermore-student-founds-human-trafficking-awareness-nonprofit", title: "Livermore Student Founds Human Trafficking Awareness Nonprofit", excerpt: "A feature on the beginning and mission of Project A.S.H.A.", date: "Patch", image: "/content-images/image7.jpg" },
@@ -328,7 +339,7 @@ export const formTopics = [
   "General contact",
 ];
 
-export const chapterStates = ["All", "India", "United States", "Canada", "Hong Kong", "Australia"];
+export const chapterStates = ["All", "India", "United States", "Canada", "Hong Kong", "Australia", "Pakistan", "Uzbekistan", "Illinois, United States"];
 
 export const impactWords = ["Awareness", "Safety", "Hope", "Action"];
 

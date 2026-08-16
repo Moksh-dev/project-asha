@@ -3,12 +3,8 @@ import { CTAButton, PageHero, Section } from "@/components/v2/Primitives";
 import { CalendarDays, MapPin } from "lucide-react";
 
 const eventPhotos = [
-  { image: "/content-images/image10.png", alt: "Project A.S.H.A. founders at the United Nations", caption: "Founder and Co-Founder represented Project A.S.H.A. at the United Nations Headquarters in New York." },
-  { image: "/content-images/image6.jpg", alt: "Project A.S.H.A. featured on Fox 2 News", caption: "Project A.S.H.A. founders shared the initiative's student-led mission to fight trafficking on Fox 2 News." },
-  { image: "/content-images/image3.png", alt: "BraveMaker film screenings", caption: "Co-founders at BraveMaker film screenings hosted by Love Never Fails in Redwood City." },
-  { image: "/content-images/image4.png", alt: "Hong Kong chapter presentation", caption: "The Hong Kong Chapter delivers an educational presentation to middle-school students." },
-  { image: "/content-images/image2.png", alt: "NCAPDA opioid rescue kit assembly", caption: "Core Team members and Founder assemble opioid overdose rescue kits with NCAPDA." },
-  { image: "/content-images/image5.jpg", alt: "ACLU advocacy visit", caption: "Founder advocacy with the ACLU on immigration, human rights, and community safety." },
+  { image: "/content-images/freedom-walk-oakland.png", alt: "Freedom Walk in Oakland", caption: "Freedom Walk in Oakland, California brought the community together to raise awareness for survivors, stand alongside a shared commitment to ending human trafficking, and amplify survivor voices." },
+  { image: "/content-images/youth-safety-conversation.png", alt: "Youth safety conversation", caption: "Young people in conversation about safety, awareness, and the importance of making prevention education accessible." },
 ];
 
 export default function EventsPage() {
@@ -25,9 +21,9 @@ export default function EventsPage() {
         <Section className="pt-0">
           <article className="mx-auto mb-12 max-w-7xl rounded-[2rem] border border-asha-line bg-asha-ink p-8 text-white shadow-lift md:p-10">
             <div className="flex items-center gap-3 text-asha-gold"><CalendarDays size={22} /><span className="text-sm font-black uppercase tracking-wider">Featured event</span></div>
-            <h2 className="font-display mt-8 max-w-5xl text-3xl font-black leading-tight md:text-5xl">Representing Project A.S.H.A. at the United Nations Headquarters</h2>
-            <p className="mt-5 max-w-3xl leading-8 text-white/75">Founder and Co-Founder represented Project A.S.H.A. at the United Nations Headquarters in New York.</p>
-            <div className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-white/75"><MapPin size={16} />Global youth-led advocacy</div>
+            <h2 className="font-display mt-8 max-w-5xl text-3xl font-black leading-tight md:text-5xl">Freedom Walk in Oakland</h2>
+            <p className="mt-5 max-w-3xl leading-8 text-white/75">A community gathering to raise awareness for survivors, strengthen solidarity, and affirm that every voice matters.</p>
+            <div className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-white/75"><MapPin size={16} />Oakland, California</div>
           </article>
           <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-2 lg:grid-cols-3">
             {eventPhotos.map((photo) => <figure key={photo.image} className="overflow-hidden rounded-[2rem] border border-asha-line bg-white shadow-soft"><img src={photo.image} alt={photo.alt} className="h-72 w-full object-cover" /><figcaption className="p-6 leading-7 text-asha-muted">{photo.caption}</figcaption></figure>)}

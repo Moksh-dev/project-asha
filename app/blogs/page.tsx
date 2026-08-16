@@ -10,8 +10,8 @@ export default function BlogsPage() {
   return (
     <PublicShell><main>
 
-      <PageHero eyebrow="Blog & features" title="Stories and educational articles." body="Articles, podcast features, and media mentions will be added here as they are shared by the Project A.S.H.A. team." />
-      <section className="px-5 pb-8 md:px-8"><div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-5 rounded-[2rem] bg-asha-ink p-7 text-white md:flex-row md:items-center"><div><p className="font-hand text-asha-gold">Contribute</p><h2 className="font-display mt-2 text-2xl font-black">Interested in writing for Project A.S.H.A.?</h2><p className="mt-2 text-white/75">Submit your interest through our blog contributor form.</p></div><a href="https://docs.google.com/forms/d/e/1FAIpQLSfVsWCWdAxJr6YZE6032-Itx3NOcMbBiuo3oLg77tDrBpY0uw/viewform?usp=publish-editor" target="_blank" rel="noreferrer" className="shrink-0 rounded-full border-2 border-[#1F5EFF] bg-white px-6 py-3 text-sm font-black !text-[#1F5EFF] shadow-soft transition hover:bg-[#EAF3FF] hover:!text-[#174BD6]">Blog interest form</a></div></section>
+      <PageHero eyebrow="Blog & features" title="Stories and educational articles." body="Read and contribute stories that advance awareness, safety, hope, and action." />
+      <section className="px-5 pb-8 md:px-8"><div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-5 rounded-[2rem] bg-asha-ink p-7 text-white md:flex-row md:items-center"><div><p className="font-hand text-asha-gold">Contribute</p><h2 className="font-display mt-2 text-2xl font-black">Interested in writing for Project A.S.H.A.?</h2><p className="mt-2 text-white/75">Submit your interest through our blog contributor form.</p></div><a href="https://docs.google.com/forms/d/1CuOj0NtkYWJDocfqKHr4-3M4Su2Vzmxpb_qALf43gVg/preview" target="_blank" rel="noreferrer" className="shrink-0 rounded-full border-2 border-[#1F5EFF] bg-white px-6 py-3 text-sm font-black !text-[#1F5EFF] shadow-soft transition hover:bg-[#EAF3FF] hover:!text-[#174BD6]">Blog interest form</a></div></section>
 
       <Section className="pt-0"><div className="mx-auto max-w-7xl">
 
