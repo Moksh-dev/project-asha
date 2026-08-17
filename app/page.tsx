@@ -4,10 +4,9 @@ import PublicShell from "@/components/v2/PublicShell";
 import { useHomepageContent } from "@/components/v2/liveContent";
 import Reveal, { Stagger, StaggerItem } from "@/components/v2/Reveal";
 import { CTAButton, IconCard, Section, SectionHeader, VisualTile } from "@/components/v2/Primitives";
-import { chapters, events, focusAreas, impactWords, partnerTypes, processSteps } from "@/components/v2/data";
-import { ArrowRight, HeartHandshake, MapPin, Sparkles } from "lucide-react";
+import { chapterVisuals, chapters, events, focusAreas, partnerTypes, processSteps } from "@/components/v2/data";
+import { ArrowRight, HeartHandshake, MapPin } from "lucide-react";
 
-const taglineWords = ["Awareness", "Safety", "Hope", "Action"];
 const featuredChapters = chapters.filter((chapter) => chapter.city === "Haryana" || chapter.city === "West Bengal");
 
 export default function Home() {
@@ -15,14 +14,14 @@ export default function Home() {
   return (
     <PublicShell>
       <main>
-        <section className="relative min-h-[92vh] overflow-hidden px-5 pb-16 pt-36 md:px-8 md:pt-44">
+        <section className="relative min-h-[72vh] overflow-hidden px-5 pb-16 pt-36 md:px-8 md:pt-44">
           <div className="absolute inset-0 -z-10 asha-grid opacity-70" />
-          <div className="mx-auto grid max-w-7xl items-end gap-12 lg:grid-cols-[1.1fr_.9fr]">
+          <div className="mx-auto max-w-7xl">
             <Reveal>
               <p className="font-hand mb-6 inline-flex rounded-full border border-asha-line bg-white px-4 py-2 text-base text-asha-green shadow-soft">
                 {homepage.eyebrow}
               </p>
-              <h1 className="font-display max-w-5xl text-balance text-4xl font-black leading-[1.02] text-asha-ink md:text-6xl lg:text-7xl">
+              <h1 className="font-display max-w-5xl text-balance text-5xl font-black uppercase leading-[.9] tracking-[-.055em] text-asha-ink md:text-7xl lg:text-8xl">
                 {homepage.heading}
               </h1>
               <p className="mt-8 max-w-2xl text-xl leading-9 text-asha-muted">
@@ -31,36 +30,6 @@ export default function Home() {
               <div className="mt-10 flex flex-wrap gap-4">
                 <CTAButton href="/get-involved" tone="coral">{homepage.cta}</CTAButton>
                 <CTAButton href="/about" tone="light">Our story</CTAButton>
-              </div>
-              <div className="mt-10 overflow-hidden rounded-full border border-asha-line bg-white/80 px-4 py-3 shadow-soft backdrop-blur">
-                <div className="tagline-track flex gap-3">
-                  {taglineWords.map((word) => (
-                    <span
-                      key={word}
-                      className="tagline-word rounded-full bg-asha-cloud px-4 py-2 text-sm font-black text-asha-green"
-                    >
-                      {word}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </Reveal>
-            <Reveal variant="scale" delay={0.1}>
-              <div className="relative rounded-[2.5rem] bg-white p-5 text-white shadow-lift">
-                <div className="rounded-[2rem] border border-white/25 bg-[linear-gradient(135deg,#1F5EFF,#1877FF_52%,#00AEF0)] p-7">
-                  <Sparkles className="text-white/80" />
-                  <p className="font-card-message mt-20 text-3xl leading-tight md:text-4xl">
-                    Prevention begins with knowledge.
-                  </p>
-                  <div className="mt-8 grid grid-cols-2 gap-3">
-                    {impactWords.map((word) => (
-                      <span key={word} className="rounded-2xl bg-white/12 px-4 py-3 text-sm font-black backdrop-blur">
-                        {word}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="animated-line mt-8 h-1 rounded-full bg-gradient-to-r from-white/30 via-white to-white/30" />
-                </div>
               </div>
             </Reveal>
           </div>
@@ -133,7 +102,7 @@ export default function Home() {
             <div className="grid gap-5 md:grid-cols-2">
               {featuredChapters.map((chapter) => (
                 <article key={chapter.city} className="grid gap-5 rounded-[2rem] border border-asha-line bg-asha-surface p-5 shadow-soft md:grid-cols-[.8fr_1fr]">
-                  <VisualTile label={chapter.city} gradient={chapter.image} />
+                  <VisualTile label={chapter.city} gradient={chapterVisuals[chapter.city]} />
                   <div className="p-3">
                     <MapPin size={20} className="text-asha-coral" />
                     <h3 className="font-display mt-5 text-2xl font-black text-asha-ink">{chapter.city}</h3>

@@ -139,6 +139,28 @@ export const chapters = [
   },
 ];
 
+// Location imagery belongs to the Chapters page only. Team uses the separate
+// chapter-lead portraits held on each chapter record.
+export const chapterVisuals: Record<string, string> = {
+  "Rajasthan": "/chapter-visuals/rajasthan.png",
+  "Haryana": "/chapter-visuals/haryana.png",
+  "Tamil Nadu": "/chapter-visuals/tamil-nadu.png",
+  "Faisalabad": "/chapter-visuals/faisalabad.png",
+  "Uzbekistan": "/chapter-visuals/uzbekistan.png",
+  "Buffalo": "/chapter-visuals/buffalo.png",
+  "Bengaluru": "/chapter-visuals/bengaluru.png",
+  "Telangana": "/chapter-visuals/telangana.png",
+  "West Bengal": "/chapter-visuals/west-bengal.png",
+  "Hong Kong": "/chapter-visuals/hong-kong.png",
+  "Canada": "/chapter-visuals/canada.png",
+  "Australia": "/chapter-visuals/australia.png",
+  "Southern California": "/chapter-visuals/southern-california.png",
+  "Virginia": "/chapter-visuals/virginia.png",
+  "Jersey City": "/chapter-visuals/jersey-city.png",
+  "New Jersey": "/chapter-visuals/new-jersey.png",
+  "New York City": "/chapter-visuals/new-york-city.png",
+};
+
 export const teamGroups = [
   {
     title: "Leadership",
@@ -146,7 +168,7 @@ export const teamGroups = [
       {
         name: "Archismita Mukherjee",
         role: "Founder & Executive Director",
-        bio: "Project A.S.H.A. was founded on her belief that prevention is education, and that young people should learn how to stay safe before harm occurs.",
+        bio: "I created Project A.S.H.A. because I saw how often human trafficking and youth safety are talked about after harm happens, instead of before. Young people are increasingly vulnerable to exploitation both online and in person, yet conversations around digital grooming, manipulation, coercion, and recognizing unsafe situations are still far too limited. I care deeply about creating stronger conversations around the safety of women and girls and the vulnerabilities they face. Youth are some of the most powerful changemakers in the world, and through Project A.S.H.A., we are creating a movement where young people speak up, educate, advocate, and take action. Project A.S.H.A. is on the path to becoming the largest youth-led human trafficking prevention initiative, making youth empowerment the foundation of a safer future.",
         image: "/content-images/image1.jpg",
       },
       {
@@ -154,6 +176,12 @@ export const teamGroups = [
         role: "Co-Founder",
         bio: "Inspired to turn awareness into action, Afnaan advocates for vulnerable communities and the power of young people to create meaningful change.",
         image: "/content-images/image9.png",
+      },
+      {
+        name: "Moksh Goel",
+        role: "Technical Lead",
+        bio: "Technical Lead supporting Project A.S.H.A.'s digital presence and website experience.",
+        image: "/team/moksh-goel.png",
       },
     ],
   },
@@ -216,11 +244,6 @@ export const resources = [
     href: "/resources/how-you-can-help.pdf",
   },
   {
-    title: "Safety Literacy",
-    description: "Why knowing how to recognize risks, resist manipulation, and seek help is as important as academic literacy.",
-    href: "/resources/safety-literacy.pdf",
-  },
-  {
     title: "Resources",
     description: "A collection of support resources and useful information for awareness, learning, and outreach.",
     href: "/resources/support-resources.pdf",
@@ -228,15 +251,17 @@ export const resources = [
 ];
 
 export const blogFeatures: { url: string; title: string; excerpt: string; date: string }[] = [
+  { url: "/resources/safety-literacy.pdf", title: "Safety Literacy", excerpt: "Why knowing how to recognize risks, resist manipulation, and seek help is as important as academic literacy.", date: "Project A.S.H.A." },
   { url: "/blogs/we-measure-literacy-part-1.pdf", title: "We Measure Literacy: Part 1", excerpt: "An educational article examining how literacy and awareness shape prevention, safety, and informed action.", date: "Project A.S.H.A." },
   { url: "/blogs/the-brink-of-injustice.pdf", title: "The Brink of Injustice: Where Is Their Voice?", excerpt: "A reflection on justice, representation, and the importance of listening to voices that are too often unheard.", date: "Project A.S.H.A." },
 ];
 
 export const pressArticles = [
-  { url: "https://www.sfgate.com/news/bayarea/article/regional-high-school-students-launch-human-22346376.php", title: "Regional High School Students Launch Human Trafficking Awareness Organization", excerpt: "SFGATE highlights Project A.S.H.A.'s student-led work to build awareness, education, and prevention in the community.", date: "SFGATE", image: "/content-images/sfgate-coverage.png" },
+  { url: "https://www.instagram.com/project.a.s.h.a/", title: "Youth Safety Podcast Conversation", excerpt: "A Project A.S.H.A. conversation on safety, awareness, and making prevention education accessible for young people.", date: "Podcast feature", image: "/content-images/podcast-youth-safety.png" },
+  { url: "https://www.sfgate.com/news/bayarea/article/regional-high-school-students-launch-human-22346376.php", title: "Regional High School Students Launch Human Trafficking Awareness Organization", excerpt: "SFGATE highlights Project A.S.H.A.'s student-led work to build awareness, education, and prevention in the community.", date: "SFGATE", image: "/content-images/press-sfgate.png" },
   { url: "https://localnewsmatters.org/2026/07/15/east-bay-teens-anti-human-trafficking-effort-expands-globally-tackling-often-taboo-topic/", title: "High School Students Launch Human Trafficking Prevention Initiative", excerpt: "Regional coverage of Project A.S.H.A.'s youth-led trafficking prevention work.", date: "Local News Matters", image: "/content-images/image6.jpg" },
-  { url: "https://www.independentnews.com/news/livermore_news/students-build-anti-trafficking-awareness-organization/article_250e8056-9d71-40bc-a5d2-a9ce466b7967.html", title: "Students Build Anti-Trafficking Awareness Organization", excerpt: "Independent News coverage of students building awareness and prevention education.", date: "The Independent", image: "/content-images/image1.jpg" },
-  { url: "https://patch.com/california/livermore/livermore-student-founds-human-trafficking-awareness-nonprofit", title: "Livermore Student Founds Human Trafficking Awareness Nonprofit", excerpt: "A feature on the beginning and mission of Project A.S.H.A.", date: "Patch", image: "/content-images/image7.jpg" },
+  { url: "https://www.independentnews.com/news/livermore_news/students-build-anti-trafficking-awareness-organization/article_250e8056-9d71-40bc-a5d2-a9ce466b7967.html", title: "Students Build Anti-Trafficking Awareness Organization", excerpt: "Independent News coverage of students building awareness and prevention education.", date: "The Independent", image: "/content-images/press-independent.png" },
+  { url: "https://patch.com/california/livermore/livermore-student-founds-human-trafficking-awareness-nonprofit", title: "Livermore Student Founds Human Trafficking Awareness Nonprofit", excerpt: "A feature on the beginning and mission of Project A.S.H.A.", date: "Patch", image: "/content-images/press-patch.png" },
 ];
 
 export const galleryItems = [
