@@ -36,7 +36,7 @@ export const focusAreas = [
     icon: School,
   },
   {
-    title: "Community Awareness",
+    title: "Knowing your rights",
     body: "Presentations and partnerships that help communities identify warning signs and know where to seek help.",
     icon: HandHeart,
   },
