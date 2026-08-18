@@ -134,9 +134,6 @@ export const chapters = [
   {
     city: "New Jersey", state: "United States", lead: "Aarna Mallidi", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #00AEF0)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/projectasha.nj/?hl=en"
   },
-  {
-    city: "New York City", state: "United States", lead: "Project A.S.H.A. Chapter", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #2563EB, #00AEF0)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/project_a.s.h.a_nys/?hl=en"
-  },
 ];
 
 // Location imagery belongs to the Chapters page only. Team uses the separate
@@ -158,7 +155,7 @@ export const chapterVisuals: Record<string, string> = {
   "Virginia": "/chapter-visuals/virginia.png",
   "Jersey City": "/chapter-visuals/jersey-city.png",
   "New Jersey": "/chapter-visuals/new-jersey.png",
-  "New York City": "/chapter-visuals/new-york-city.png",
+  "Westchester, New York": "/chapter-visuals/new-york-city.png",
 };
 
 export const teamGroups = [
@@ -182,6 +179,18 @@ export const teamGroups = [
         role: "Technical Lead",
         bio: "Technical Lead supporting Project A.S.H.A.'s digital presence and website experience.",
         image: "/team/moksh-goel.png",
+      },
+      {
+        name: "Agrima Chatterjee",
+        role: "Graphic Design Specialist",
+        bio: "Graphic Design Specialist supporting Project A.S.H.A.'s visual communication and design work.",
+        image: "/team/agrima-chatterjee.png",
+      },
+      {
+        name: "Mananya Pahuja",
+        role: "Digital Media Strategist",
+        bio: "Digital Media Strategist supporting Project A.S.H.A.'s digital storytelling and online presence.",
+        image: "/team/mananya-pahuja.png",
       },
     ],
   },
