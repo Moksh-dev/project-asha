@@ -18,9 +18,6 @@ export default function Home() {
           <div className="absolute inset-0 -z-10 asha-grid opacity-70" />
           <div className="mx-auto max-w-7xl">
             <Reveal>
-              <p className="font-hand mb-6 inline-flex rounded-full border border-asha-line bg-white px-4 py-2 text-base text-asha-green shadow-soft">
-                {homepage.eyebrow}
-              </p>
               <h1 className="font-display max-w-5xl text-balance text-5xl font-black uppercase leading-[.9] tracking-[-.055em] text-asha-ink md:text-7xl lg:text-8xl">
                 {homepage.heading}
               </h1>
