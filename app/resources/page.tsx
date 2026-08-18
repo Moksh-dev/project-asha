@@ -13,8 +13,8 @@ export default function ResourcesPage() {
       <main>
         <PageHero
           eyebrow="Resources"
-          title="Resources for You"
-          body="Resources & Awareness Materials."
+          title="Toolkits for volunteers, chapters, and awareness leaders."
+          body="Download Project A.S.H.A.'s guides for prevention education, safety literacy, and community support."
         />
         <Section className="pt-0">
           <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -34,9 +34,9 @@ export default function ResourcesPage() {
         </Section>
         <Section className="bg-white">
           <div className="mx-auto max-w-7xl rounded-[2rem] bg-asha-cloud p-8 md:p-12">
-            <h2 className="font-display max-w-2xl text-3xl font-black text-asha-ink md:text-5xl">Do you need support right now?</h2>
+            <h2 className="font-display max-w-2xl text-3xl font-black text-asha-ink md:text-5xl">Need resources for a school, college, or NGO event?</h2>
             <div className="mt-8">
-              <CTAButton href="https://forms.gle/cpN75Jgdg7D4NGMr6" tone="coral">Complete the support form</CTAButton>
+              <CTAButton href="/get-involved#support-request" tone="coral">Request support</CTAButton>
             </div>
           </div>
         </Section>

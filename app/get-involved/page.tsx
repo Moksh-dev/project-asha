@@ -39,14 +39,10 @@ export default function GetInvolvedPage() {
               <HelpCircle />
               <h2 className="font-display mt-8 text-3xl font-black">Frequently Asked Questions</h2>
               <div className="mt-8 grid gap-4">
-              {[
-                ["Can 18+ join Project A.S.H.A.?", <>Yes, you are more than welcome to join. The minimum age to join is 13 years old.</>],
-                ["How can I start a chapter?", <>Please fill out the <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFnc5Mj_u6wcPB2H7ghqvzT5m1OCtvYktXWzH8VNUuvfoebQ/viewform" target="_blank" rel="noreferrer" className="font-bold text-asha-gold underline">Project A.S.H.A. Interest Form</a>.</>],
-                ["If I need resources or want to be connected to support, where should I go?", <>Check out our <a href="/resources" className="font-bold text-asha-gold underline">Resources page</a>, where you can find reader PDFs and helpful resources, and fill out the <a href="https://forms.gle/cpN75Jgdg7D4NGMr6" target="_blank" rel="noreferrer" className="font-bold text-asha-gold underline">support form</a> if you would like to be connected.</>],
-              ].map(([q, answer]) => (
-                  <details key={q as string} className="rounded-2xl border border-white/10 bg-white/[0.06] p-5">
+              {["Can students join?", "Can an institution partner?", "Can I start a chapter?"].map((q) => (
+                  <details key={q} className="rounded-2xl border border-white/10 bg-white/[0.06] p-5">
                     <summary className="cursor-pointer font-black">{q}</summary>
-                    <p className="mt-3 leading-7 text-white/68">{answer}</p>
+                    <p className="mt-3 leading-7 text-white/68">Yes. Share your details through the relevant form and the team can review the next step.</p>
                   </details>
                 ))}
               </div>
