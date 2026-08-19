@@ -36,7 +36,7 @@ export default function EventsPage() {
             </div>
           </article>
           <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2">
-            {eventPhotos.map((photo) => <figure key={photo.image} className="flex min-h-[460px] flex-col overflow-hidden rounded-[2rem] border border-asha-line bg-white shadow-soft"><img src={photo.image} alt={photo.alt} className="h-72 w-full shrink-0 object-cover object-center" /><figcaption className="flex-1 p-6 leading-7 text-asha-muted">{photo.caption}</figcaption></figure>)}
+            {eventPhotos.map((photo) => <figure key={photo.image} className="flex min-h-[460px] flex-col overflow-hidden rounded-[2rem] border border-asha-line bg-white shadow-soft"><img src={photo.image} alt={photo.alt} className={`h-72 w-full shrink-0 object-cover ${photo.image === "/content-images/bravemaker-photo.png" ? "object-[center_22%]" : "object-center"}`} /><figcaption className="flex-1 p-6 leading-7 text-asha-muted">{photo.caption}</figcaption></figure>)}
           </div>
         </Section>
       </main>
