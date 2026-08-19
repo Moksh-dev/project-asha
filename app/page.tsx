@@ -80,11 +80,11 @@ export default function Home() {
             <Stagger className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {partnerTypes.map(({ name, subtitle, body, icon: Icon, href }) => (
                 <StaggerItem key={name}>
-                  <a href={href} target="_blank" rel="noreferrer" className="group block h-full rounded-[1.75rem] border border-asha-line bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:bg-asha-green hover:text-white">
+                  <a href={href} target="_blank" rel="noreferrer" className="group block aspect-square h-full rounded-[1.75rem] border border-asha-line bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:bg-asha-green hover:text-white">
                     <Icon size={24} />
                     <p className="mt-8 text-xl font-black">{name}</p>
                     {subtitle ? <p className="mt-2 font-bold text-asha-coral transition group-hover:text-asha-gold">{subtitle}</p> : null}
-                    <p className={`${subtitle ? "mt-3" : "mt-4"} leading-7 text-asha-muted transition group-hover:text-white/80`}>{body}</p>
+                    <p className={`${subtitle ? "mt-3" : "mt-4"} text-sm leading-6 text-asha-muted transition group-hover:text-white/80`}>{body}</p>
                   </a>
                 </StaggerItem>
               ))}
