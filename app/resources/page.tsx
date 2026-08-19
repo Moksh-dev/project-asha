@@ -13,7 +13,7 @@ export default function ResourcesPage() {
       <main>
         <PageHero
           eyebrow="Resources"
-          title="Toolkits for volunteers, chapters, and awareness leaders."
+          title="Resources for you"
           body="Download Project A.S.H.A.'s guides for prevention education, safety literacy, and community support."
         />
         <Section className="pt-0">

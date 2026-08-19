@@ -6,6 +6,8 @@ import { chapters, teamGroups } from "@/components/v2/data";
 import { useAddedChapters, useChapterEdits, useDeletedChapters } from "@/components/v2/liveContent";
 import { Linkedin, Mail } from "lucide-react";
 
+const leadershipOrder = ["Afnaan Islam", "Mananya Pahuja", "Agrima Chatterjee", "Moksh Goel"];
+
 export default function TeamPage() {
   const addedChapters = useAddedChapters();
   const edits = useChapterEdits();
@@ -26,16 +28,16 @@ export default function TeamPage() {
         <PageHero
           eyebrow="Team"
           title="The people carrying Project ASHA forward."
-          body="Founder and Co-Founder stories now live with the wider leadership structure: core team, national team, chapter leads, and chapter members."
+          body="Meet the people turning our mission into action, building chapters, creating change, and carrying Project A.S.H.A. into communities across the world."
         />
         {groups.map((group) => (
           <Section key={group.title} className={group.title === "Leadership" ? "pt-0" : "bg-white"}>
             <div className="mx-auto max-w-7xl">
-              <SectionHeader title={group.title} body="Profiles are designed for images, social links, short introductions, and expandable biographies as the team directory grows." />
+              {group.title !== "Leadership" ? <SectionHeader title={group.title} body="Profiles are designed for images, social links, short introductions, and expandable biographies as the team directory grows." /> : null}
               {group.title === "Leadership" ? <div className="mx-auto max-w-5xl">
                 {group.people.slice(0, 1).map((person) => <article key={person.name} className="mx-auto grid max-w-5xl overflow-hidden rounded-[2rem] border border-asha-line bg-white shadow-soft md:grid-cols-[minmax(250px,.78fr)_1.22fr]"><div className="min-h-80 overflow-hidden bg-asha-green md:min-h-full">{"image" in person && person.image ? <img src={person.image} alt={person.name} className="h-full w-full object-cover object-center" /> : null}</div><div className="flex flex-col justify-center p-7 text-center md:p-10 md:text-left"><p className="font-hand text-lg text-asha-coral">Founder & Executive Director</p><h2 className="font-display mt-3 text-3xl font-black text-asha-ink md:text-4xl">{person.name}</h2><p className="mt-6 max-w-2xl leading-8 text-asha-muted">{person.bio}</p></div></article>)}
                 <div className="mx-auto h-12 w-px bg-asha-line" />
-                <div className="grid gap-5 md:grid-cols-2">{group.people.slice(1).map((person) => <article key={person.name} className="flex min-h-[390px] flex-col overflow-hidden rounded-[1.75rem] border border-asha-line bg-white text-center shadow-soft"><div className="h-56 shrink-0 overflow-hidden bg-asha-green">{"image" in person && person.image ? <img src={person.image} alt={person.name} className={`h-full w-full object-cover ${person.name === "Moksh Goel" ? "object-[center_12%]" : person.name === "Afnaan Islam" ? "object-[center_20%]" : "object-center"}`} /> : null}</div><div className="flex flex-1 flex-col justify-center p-6"><p className="font-hand text-lg text-asha-coral">{person.role}</p><h2 className="font-display mt-3 text-2xl font-black text-asha-ink">{person.name}</h2><p className="mt-5 leading-7 text-asha-muted">{person.bio}</p></div></article>)}</div>
+                <div className="grid gap-5 md:grid-cols-2">{leadershipOrder.map((name) => group.people.find((person) => person.name === name)).filter((person): person is typeof group.people[number] => Boolean(person)).map((person) => <article key={person.name} className="flex min-h-[480px] flex-col overflow-hidden rounded-[1.75rem] border border-asha-line bg-white text-center shadow-soft"><div className="h-72 shrink-0 overflow-hidden bg-asha-green md:h-80">{"image" in person && person.image ? <img src={person.image} alt={person.name} className={`h-full w-full object-cover ${person.name === "Moksh Goel" ? "object-[center_12%]" : person.name === "Afnaan Islam" ? "object-[center_20%]" : "object-center"}`} /> : null}</div><div className="flex flex-1 flex-col justify-center p-6"><p className="font-hand text-lg text-asha-coral">{person.role}</p><h2 className="font-display mt-3 text-2xl font-black text-asha-ink">{person.name}</h2><p className="mt-5 leading-7 text-asha-muted">{person.bio}</p></div></article>)}</div>
               </div> : <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
                 {group.people.map((person, index) => (
                   <article key={`${group.title}-${person.role}-${person.name}`} className="group overflow-hidden rounded-[2rem] border border-asha-line bg-asha-surface shadow-soft transition hover:-translate-y-1 hover:shadow-lift">

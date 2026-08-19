@@ -11,8 +11,11 @@ const eventPhotos = [
 ];
 
 const sliderPhotos = [
-  { image: "/content-images/event-freedom-walk-slide.png", alt: "Freedom Walk awareness material", caption: "Awareness material shared during a community gathering focused on survivor solidarity and trafficking prevention." },
-  { image: "/content-images/event-youth-safety-slide.png", alt: "Youth safety conversation", caption: "A youth-led conversation about safety, awareness, and making prevention education accessible." },
+  {
+    image: "/content-images/freedom-walk-oakland-walk.png",
+    alt: "Freedom Walk in Oakland, California",
+    caption: <><strong>Freedom Walk in Oakland, California</strong>, coming together to raise awareness for survivors and stand alongside a community committed to ending human trafficking. We joined in amplifying survivor voices, advocating for greater awareness and action, and reminding our community that <strong>every voice matters and every survivor deserves to be heard</strong>.</>,
+  },
 ];
 
 export default function EventsPage() {
@@ -27,11 +30,14 @@ export default function EventsPage() {
           <CTAButton href="/get-involved" tone="coral">Get involved</CTAButton>
         </PageHero>
         <Section className="pt-0">
-          <article className="mx-auto mb-12 max-w-7xl rounded-[2rem] border border-asha-line bg-asha-ink p-8 text-white shadow-lift md:p-10">
-            <div className="flex items-center gap-3 text-asha-gold"><CalendarDays size={22} /><span className="text-sm font-black uppercase tracking-wider">Featured event</span></div>
-            <h2 className="font-display mt-8 max-w-5xl text-3xl font-black leading-tight md:text-5xl">Freedom Walk in Oakland</h2>
-            <p className="mt-5 max-w-3xl leading-8 text-white/75">A community gathering to raise awareness for survivors, strengthen solidarity, and affirm that every voice matters.</p>
-            <div className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-white/75"><MapPin size={16} />Oakland, California</div>
+          <article className="mx-auto mb-12 grid max-w-7xl overflow-hidden rounded-[2rem] border border-asha-line bg-asha-ink text-white shadow-lift md:grid-cols-[.9fr_1.1fr]">
+            <img src="/content-images/united-nations-highlight.png" alt="Project A.S.H.A. Founder and Co-Founder at the United Nations Headquarters" className="h-80 w-full object-cover object-center md:h-full" />
+            <div className="p-8 md:p-10">
+              <div className="flex items-center gap-3 text-asha-gold"><CalendarDays size={22} /><span className="text-sm font-black uppercase tracking-wider">Featured event</span></div>
+              <h2 className="font-display mt-8 text-3xl font-black leading-tight md:text-5xl">United Nations Headquarters</h2>
+              <p className="mt-5 max-w-3xl leading-8 text-white/75">Project A.S.H.A.’s Founder & Co-Founder represented youth-led advocacy on an international stage at United Nations Headquarters in New York, bringing the voices of young changemakers into global conversations on safety and youth empowerment.</p>
+              <div className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-white/75"><MapPin size={16} />New York, United States</div>
+            </div>
           </article>
           <EventSlider slides={sliderPhotos} />
           <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-2 lg:grid-cols-3">

@@ -176,8 +176,8 @@ export const teamGroups = [
       },
       {
         name: "Moksh Goel",
-        role: "Technical Lead",
-        bio: "Technical Lead supporting Project A.S.H.A.'s digital presence and website experience.",
+        role: "IT Head",
+        bio: "IT Head supporting Project A.S.H.A.'s digital presence and website experience.",
         image: "/team/moksh-goel.png",
       },
       {
@@ -266,11 +266,11 @@ export const blogFeatures: { url: string; title: string; excerpt: string; date: 
 ];
 
 export const pressArticles = [
-  { url: "https://www.instagram.com/project.a.s.h.a/", title: "Youth Safety Podcast Conversation", excerpt: "A Project A.S.H.A. conversation on safety, awareness, and making prevention education accessible for young people.", date: "Podcast feature", image: "/content-images/podcast-youth-safety.png" },
-  { url: "https://www.sfgate.com/news/bayarea/article/regional-high-school-students-launch-human-22346376.php", title: "Regional High School Students Launch Human Trafficking Awareness Organization", excerpt: "SFGATE highlights Project A.S.H.A.'s student-led work to build awareness, education, and prevention in the community.", date: "SFGATE", image: "/content-images/press-sfgate.png" },
-  { url: "https://localnewsmatters.org/2026/07/15/east-bay-teens-anti-human-trafficking-effort-expands-globally-tackling-often-taboo-topic/", title: "High School Students Launch Human Trafficking Prevention Initiative", excerpt: "Regional coverage of Project A.S.H.A.'s youth-led trafficking prevention work.", date: "Local News Matters", image: "/content-images/image6.jpg" },
   { url: "https://www.independentnews.com/news/livermore_news/students-build-anti-trafficking-awareness-organization/article_250e8056-9d71-40bc-a5d2-a9ce466b7967.html", title: "Students Build Anti-Trafficking Awareness Organization", excerpt: "Independent News coverage of students building awareness and prevention education.", date: "The Independent", image: "/content-images/press-independent.png" },
   { url: "https://patch.com/california/livermore/livermore-student-founds-human-trafficking-awareness-nonprofit", title: "Livermore Student Founds Human Trafficking Awareness Nonprofit", excerpt: "A feature on the beginning and mission of Project A.S.H.A.", date: "Patch", image: "/content-images/press-patch.png" },
+  { url: "https://www.youtube.com/watch?v=huy_xmbNpvc", title: "Youth Safety Podcast Conversation", excerpt: "A Project A.S.H.A. conversation on safety, awareness, and making prevention education accessible for young people.", date: "Podcast feature", image: "/content-images/podcast-youth-safety.png" },
+  { url: "https://localnewsmatters.org/2026/07/15/east-bay-teens-anti-human-trafficking-effort-expands-globally-tackling-often-taboo-topic/", title: "High School Students Launch Human Trafficking Prevention Initiative", excerpt: "Regional coverage of Project A.S.H.A.'s youth-led trafficking prevention work.", date: "Local News Matters", image: "/content-images/image6.jpg" },
+  { url: "https://www.sfgate.com/news/bayarea/article/regional-high-school-students-launch-human-22346376.php", title: "Regional High School Students Launch Human Trafficking Awareness Organization", excerpt: "SFGATE highlights Project A.S.H.A.'s student-led work to build awareness, education, and prevention in the community.", date: "SFGATE", image: "/content-images/press-sfgate.png" },
 ];
 
 export const galleryItems = [
