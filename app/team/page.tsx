@@ -44,7 +44,7 @@ export default function TeamPage() {
                     <div className="relative h-72 overflow-hidden bg-[linear-gradient(135deg,#1F5EFF,#1877FF_58%,#00AEF0)] p-6 text-white">
                       {"image" in person && person.image ? (
                         <>
-                          <img src={person.image} alt={person.name} className="absolute inset-0 h-full w-full object-cover object-center" />
+                          <img src={person.image} alt={person.name} className={`absolute inset-0 h-full w-full object-cover ${person.name === "Lauren Crispino" ? "object-[center_22%]" : "object-center"}`} />
                           <div className="absolute inset-0 bg-gradient-to-t from-asha-ink/80 via-asha-ink/10 to-transparent" />
                           <p className="font-hand absolute bottom-8 left-8 right-8 text-lg text-white">{person.role}</p>
                         </>
