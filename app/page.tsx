@@ -17,7 +17,7 @@ export default function Home() {
         <section className="relative min-h-[72vh] overflow-hidden px-5 pb-16 pt-36 md:px-8 md:pt-44">
           <div className="absolute inset-0 -z-10 asha-grid opacity-70" />
           <div className="mx-auto max-w-7xl">
-            <Reveal>
+            <Reveal className="mx-auto flex max-w-6xl flex-col items-center text-center">
               <p className="font-hand mb-6 inline-flex rounded-full border border-asha-line bg-white px-4 py-2 text-base text-asha-green shadow-soft">
                 {homepage.eyebrow}
               </p>
@@ -27,7 +27,7 @@ export default function Home() {
               <p className="mt-8 max-w-2xl text-xl leading-9 text-asha-muted">
                 {homepage.description}
               </p>
-              <div className="mt-10 flex flex-wrap gap-4">
+              <div className="mt-10 flex flex-wrap justify-center gap-4">
                 <CTAButton href="/get-involved" tone="coral">{homepage.cta}</CTAButton>
                 <CTAButton href="/about" tone="light">Our story</CTAButton>
               </div>

@@ -78,16 +78,16 @@ export const chapters = [
     instagram: "https://www.instagram.com/projectasha.tamilnadu/?hl=en",
   },
   {
-    city: "Uzbekistan", state: "Uzbekistan", lead: "Ruhshona Rustamova", summary: "A Project A.S.H.A. chapter advancing youth awareness and community action in Uzbekistan.", image: "/chapter-leads/ruhshona-rustamova.png", events: ["Instagram link coming soon"],
+    city: "Uzbekistan", state: "Uzbekistan", lead: "Ruhshona Rustamova", summary: "A Project A.S.H.A. chapter advancing youth awareness and community action in Uzbekistan.", image: "/chapter-leads/ruhshona-rustamova.png", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/project.a.s.h.a.uz/?hl=en",
   },
   {
     city: "Faisalabad", state: "Pakistan", lead: "Sukaina Haidar", summary: "A Project A.S.H.A. chapter building safer, better-informed communities in Faisalabad.", image: "/chapter-leads/sukaina-haidar.png", events: ["Instagram link coming soon"],
   },
   {
-    city: "Rajasthan", state: "India", lead: "Kanishka Singh", summary: "A Project A.S.H.A. chapter supporting prevention education and youth action across Rajasthan.", image: "/chapter-leads/kanishka-singh.png", events: ["Instagram link coming soon"],
+    city: "Rajasthan", state: "India", lead: "Kanishka Singh", summary: "A Project A.S.H.A. chapter supporting prevention education and youth action across Rajasthan.", image: "/chapter-leads/kanishka-singh.png", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/a.s.h.a_rajasthan/?hl=en",
   },
   {
-    city: "Buffalo", state: "Illinois, United States", lead: "Jia Locascio", summary: "A Project A.S.H.A. chapter connecting young people and communities in Buffalo through awareness and action.", image: "/chapter-leads/jia-locascio.png", events: ["Instagram link coming soon"],
+    city: "Buffalo", state: "Illinois, United States", lead: "Jia Locascio", summary: "A Project A.S.H.A. chapter connecting young people and communities in Buffalo through awareness and action.", image: "/chapter-leads/jia-locascio.png", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/bgprojectasha/?hl=en",
   },
   {
     city: "Bengaluru",
@@ -111,25 +111,25 @@ export const chapters = [
     city: "West Bengal", state: "India", lead: "Arushi Chatterjee", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #00AEF0)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/projecta.s.h.a_westbengal/?hl=en"
   },
   {
-    city: "Hong Kong", state: "Hong Kong", lead: "Julia", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #67C7FF)", events: ["Instagram link coming soon"]
+    city: "Hong Kong", state: "Hong Kong", lead: "Julia", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #67C7FF)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/projectasha_hk/?hl=en"
   },
   {
     city: "Canada", state: "Canada", lead: "Yogitha Machina", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #2563EB, #00AEF0)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/a.s.h.a_canada/?hl=en"
   },
   {
-    city: "Australia", state: "Australia", lead: "May Thandar", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #8BDCFF)", events: ["Instagram link coming soon"]
+    city: "Australia", state: "Australia", lead: "May Thandar", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #8BDCFF)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/a.s.h.australia/?hl=en"
   },
   {
     city: "Southern California", state: "United States", lead: "Ava Mendez", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #00AEF0)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/asha.projectsc/?hl=en"
   },
   {
-    city: "Virginia", state: "United States", lead: "Korinne Brooks", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #67C7FF)", events: ["Instagram link coming soon"]
+    city: "Virginia", state: "United States", lead: "Korinne Brooks", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #67C7FF)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/a.s.h.a_project.virginia/?hl=en"
   },
   {
     city: "Jersey City", state: "United States", lead: "Yemilet Shaik", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #2563EB, #00AEF0)", events: ["Instagram link coming soon"]
   },
   {
-    city: "Westchester, New York", state: "United States", lead: "Lauren Crispino", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #8BDCFF)", events: ["Instagram link coming soon"]
+    city: "Westchester, New York", state: "United States", lead: "Lauren Crispino", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #8BDCFF)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/project_a.s.h.a_nys/?hl=en"
   },
   {
     city: "New Jersey", state: "United States", lead: "Aarna Mallidi", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #00AEF0)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/projectasha.nj/?hl=en"
