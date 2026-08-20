@@ -4,9 +4,9 @@ import PublicShell from "@/components/v2/PublicShell";
 import { CTAButton, PageHero, Section, SectionHeader } from "@/components/v2/Primitives";
 import { chapters, teamGroups } from "@/components/v2/data";
 import { useAddedChapters, useChapterEdits, useDeletedChapters } from "@/components/v2/liveContent";
-import { Linkedin, Mail } from "lucide-react";
 
 const leadershipOrder = ["Afnaan Islam", "Mananya Pahuja", "Agrima Chatterjee", "Moksh Goel"];
+type TeamPerson = { name: string; role: string; bio: string; image?: string };
 
 export default function TeamPage() {
   const addedChapters = useAddedChapters();
@@ -22,6 +22,7 @@ export default function TeamPage() {
       return { name: chapter.lead, role: "Chapter lead", bio: `${chapter.city}, ${chapter.state}`, ...(image ? { image } : {}) };
     }),
   });
+  const peopleWithPortraitsFirst = (people: TeamPerson[]) => [...people].sort((a, b) => Number(Boolean(b.image)) - Number(Boolean(a.image)));
   return (
     <PublicShell>
       <main>
@@ -39,7 +40,7 @@ export default function TeamPage() {
                 <div className="mx-auto h-12 w-px bg-asha-line" />
                 <div className="grid gap-5 md:grid-cols-2">{leadershipOrder.map((name) => group.people.find((person) => person.name === name)).filter((person): person is typeof group.people[number] => Boolean(person)).map((person) => <article key={person.name} className="flex min-h-[480px] flex-col overflow-hidden rounded-[1.75rem] border border-asha-line bg-white text-center shadow-soft"><div className="h-72 shrink-0 overflow-hidden bg-asha-green md:h-80">{"image" in person && person.image ? <img src={person.image} alt={person.name} className={`h-full w-full object-cover ${person.name === "Moksh Goel" ? "object-[center_12%]" : person.name === "Afnaan Islam" ? "object-[center_20%]" : "object-center"}`} /> : null}</div><div className="flex flex-1 flex-col justify-center p-6"><p className="font-hand text-lg text-asha-coral">{person.role}</p><h2 className="font-display mt-3 text-2xl font-black text-asha-ink">{person.name}</h2><p className="mt-5 leading-7 text-asha-muted">{person.bio}</p></div></article>)}</div>
               </div> : <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-                {group.people.map((person, index) => (
+                {peopleWithPortraitsFirst(group.people).map((person, index) => (
                   <article key={`${group.title}-${person.role}-${person.name}`} className="group overflow-hidden rounded-[2rem] border border-asha-line bg-asha-surface shadow-soft transition hover:-translate-y-1 hover:shadow-lift">
                     <div className="relative h-72 overflow-hidden bg-[linear-gradient(135deg,#1F5EFF,#1877FF_58%,#00AEF0)] p-6 text-white">
                       {"image" in person && person.image ? (
@@ -59,14 +60,6 @@ export default function TeamPage() {
                     <div className="p-7">
                       <h2 className="font-display text-2xl font-black text-asha-ink">{person.name}</h2>
                       <p className="mt-4 leading-8 text-asha-muted">{person.bio}</p>
-                      <div className="mt-6 flex gap-2">
-                        <button className="grid h-11 w-11 place-items-center rounded-full bg-asha-cloud text-asha-green transition hover:bg-asha-green hover:text-white" aria-label={`${person.name} LinkedIn`}>
-                          <Linkedin size={18} />
-                        </button>
-                        <button className="grid h-11 w-11 place-items-center rounded-full bg-asha-cloud text-asha-green transition hover:bg-asha-green hover:text-white" aria-label={`${person.name} email`}>
-                          <Mail size={18} />
-                        </button>
-                      </div>
                     </div>
                   </article>
                 ))}

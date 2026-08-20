@@ -49,7 +49,7 @@ export const focusAreas = [
 
 export const partnerTypes = [
   { name: "Love Never Fails", subtitle: "Restoring Hope. Rebuilding Lives.", body: "A survivor-centered nonprofit advancing trafficking prevention, safe housing, trauma-informed care, and advocacy.", icon: HandHeart, href: "https://www.loveneverfailsus.com/" },
-  { name: "Her Story Foundation", body: "A survivor empowerment organization strengthening trafficking prevention, awareness, and advocacy.", icon: HandHeart, href: "https://www.herstoryfoundation.org/" },
+  { name: "Her Story Foundation", body: "A survivor empowerment organization strengthening trafficking prevention, awareness, and advocacy.", icon: HandHeart, href: "https://www.instagram.com/her.storyfoundation?igsh=NTc4MTIwNjQ2YQ==" },
   { name: "Project Nayika", subtitle: "Empowering India's Children.", body: "An India-based initiative supporting children with safety education, essential supplies, and direct community care.", icon: HandHeart, href: "https://www.instagram.com/projectnayika/" },
   { name: "NCAPDA", subtitle: "Preventing Prescription Drug Abuse.", body: "A national coalition addressing prescription drug abuse, exploitation risks, and youth protection.", icon: HandHeart, href: "https://ncapda.org/" },
   { name: "VIHAAN", body: "An India-based organization advancing grassroots anti-trafficking awareness and youth-led community impact.", icon: HandHeart, href: "https://vihaan-wms.org/" },
@@ -259,7 +259,6 @@ export const resources = [
 ];
 
 export const blogFeatures: { url: string; title: string; excerpt: string; date: string }[] = [
-  { url: "/resources/safety-literacy.pdf", title: "Safety Literacy", excerpt: "Why knowing how to recognize risks, resist manipulation, and seek help is as important as academic literacy.", date: "Project A.S.H.A." },
   { url: "/blogs/we-measure-literacy-part-1.pdf", title: "We Measure Literacy: Part 1", excerpt: "An educational article examining how literacy and awareness shape prevention, safety, and informed action.", date: "Project A.S.H.A." },
   { url: "/blogs/the-brink-of-injustice.pdf", title: "The Brink of Injustice: Where Is Their Voice?", excerpt: "A reflection on justice, representation, and the importance of listening to voices that are too often unheard.", date: "Project A.S.H.A." },
 ];
@@ -268,7 +267,8 @@ export const pressArticles = [
   { url: "https://www.independentnews.com/news/livermore_news/students-build-anti-trafficking-awareness-organization/article_250e8056-9d71-40bc-a5d2-a9ce466b7967.html", title: "Students Build Anti-Trafficking Awareness Organization", excerpt: "Independent News coverage of students building awareness and prevention education.", date: "The Independent", image: "/content-images/press-independent.png" },
   { url: "https://patch.com/california/livermore/livermore-student-founds-human-trafficking-awareness-nonprofit", title: "Livermore Student Founds Human Trafficking Awareness Nonprofit", excerpt: "A feature on the beginning and mission of Project A.S.H.A.", date: "Patch", image: "/content-images/press-patch.png" },
   { url: "https://www.youtube.com/watch?v=huy_xmbNpvc", title: "Youth Safety Podcast Conversation", excerpt: "A Project A.S.H.A. conversation on safety, awareness, and making prevention education accessible for young people.", date: "Podcast feature", image: "/content-images/podcast-youth-safety.png" },
-  { url: "https://localnewsmatters.org/2026/07/15/east-bay-teens-anti-human-trafficking-effort-expands-globally-tackling-often-taboo-topic/", title: "High School Students Launch Human Trafficking Prevention Initiative", excerpt: "Regional coverage of Project A.S.H.A.'s youth-led trafficking prevention work.", date: "Local News Matters", image: "/content-images/image6.jpg" },
+  { url: "https://localnewsmatters.org/2026/07/15/east-bay-teens-anti-human-trafficking-effort-expands-globally-tackling-often-taboo-topic/", title: "High School Students Launch Human Trafficking Prevention Initiative", excerpt: "Regional coverage of Project A.S.H.A.'s youth-led trafficking prevention work.", date: "Local News Matters", image: "/content-images/local-news-matters.png" },
+  { url: "https://www.ktvu.com/", title: "Fox KTVU Bay Area", excerpt: "Project A.S.H.A. goes LIVE on Fox News KTVU Channel 2, bringing youth-led advocacy for human trafficking prevention and safety to national television.", date: "FOX KTVU 2", image: "/content-images/fox-ktvu-bay-area.png" },
   { url: "https://www.sfgate.com/news/bayarea/article/regional-high-school-students-launch-human-22346376.php", title: "Regional High School Students Launch Human Trafficking Awareness Organization", excerpt: "SFGATE highlights Project A.S.H.A.'s student-led work to build awareness, education, and prevention in the community.", date: "SFGATE", image: "/content-images/press-sfgate.png" },
 ];
 

@@ -15,19 +15,6 @@ export default function AboutPage() {
           <CTAButton href="/team" tone="coral">Meet the team</CTAButton>
         </PageHero>
 
-        <Section className="bg-white">
-          <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-2">
-            <Reveal>
-              <h2 className="font-display text-3xl font-black leading-tight text-asha-ink md:text-5xl">Why Project ASHA started</h2>
-            </Reveal>
-            <Reveal delay={0.1}>
-              <p className="text-xl leading-9 text-asha-muted">
-                While researching human trafficking for a classroom mock presentation, our founder saw how few schools provide meaningful prevention education. What began as an assignment became a youth-led initiative making education accessible, empowering, and actionable.
-              </p>
-            </Reveal>
-          </div>
-        </Section>
-
         <Section>
           <div className="mx-auto max-w-5xl">
             <SectionHeader eyebrow="Growth journey" title="From a concern to a coordinated platform." />
