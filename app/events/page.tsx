@@ -1,6 +1,9 @@
+"use client";
+
 import PublicShell from "@/components/v2/PublicShell";
 import { CTAButton, PageHero, Section } from "@/components/v2/Primitives";
 import { CalendarDays, MapPin } from "lucide-react";
+import { useLiveEvents } from "@/components/v2/liveContent";
 
 const eventPhotos = [
   {
@@ -15,6 +18,9 @@ const eventPhotos = [
 ];
 
 export default function EventsPage() {
+  const liveEvents = useLiveEvents([{ title: "United Nations Headquarters", caption: "Project A.S.H.A.’s Founder & Co-Founder represented youth-led advocacy on an international stage at United Nations Headquarters in New York, bringing the voices of young changemakers into global conversations on safety and youth empowerment.", image: "/content-images/united-nations-highlight.png", isHighlight: true, location: "New York, United States" }, ...eventPhotos.map((item) => ({ title: item.alt, caption: typeof item.caption === "string" ? item.caption : "Freedom Walk in Oakland, California", image: item.image, isHighlight: false, location: undefined }))]);
+  const highlight = liveEvents.find((event) => event.isHighlight);
+  const regularEvents = liveEvents.filter((event) => !event.isHighlight);
   return (
     <PublicShell>
       <main>
@@ -26,17 +32,17 @@ export default function EventsPage() {
           <CTAButton href="/get-involved" tone="coral">Get involved</CTAButton>
         </PageHero>
         <Section className="pt-0">
-          <article className="mx-auto mb-12 grid max-w-7xl overflow-hidden rounded-[2rem] border border-asha-line bg-asha-ink text-white shadow-lift md:grid-cols-[.9fr_1.1fr]">
-            <img src="/content-images/united-nations-highlight.png" alt="Project A.S.H.A. Founder and Co-Founder at the United Nations Headquarters" className="h-80 w-full object-cover object-center md:h-full" />
+          {highlight ? <article className="mx-auto mb-12 grid max-w-7xl overflow-hidden rounded-[2rem] border border-asha-line bg-asha-ink text-white shadow-lift md:grid-cols-[.9fr_1.1fr]">
+            <img src={highlight.image} alt={highlight.title} className="h-80 w-full object-cover object-center md:h-full" />
             <div className="p-8 md:p-10">
               <div className="flex items-center gap-3 text-asha-gold"><CalendarDays size={22} /><span className="text-sm font-black uppercase tracking-wider">Featured event</span></div>
-              <h2 className="font-display mt-8 text-3xl font-black leading-tight md:text-5xl">United Nations Headquarters</h2>
-              <p className="mt-5 max-w-3xl leading-8 text-white/75">Project A.S.H.A.’s Founder & Co-Founder represented youth-led advocacy on an international stage at United Nations Headquarters in New York, bringing the voices of young changemakers into global conversations on safety and youth empowerment.</p>
-              <div className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-white/75"><MapPin size={16} />New York, United States</div>
+              <h2 className="font-display mt-8 text-3xl font-black leading-tight md:text-5xl">{highlight.title}</h2>
+              <p className="mt-5 max-w-3xl leading-8 text-white/75">{highlight.caption}</p>
+              {highlight.location ? <div className="mt-8 inline-flex items-center gap-2 text-sm font-bold text-white/75"><MapPin size={16} />{highlight.location}</div> : null}
             </div>
-          </article>
+          </article> : null}
           <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2">
-            {eventPhotos.map((photo) => <figure key={photo.image} className="flex min-h-[460px] flex-col overflow-hidden rounded-[2rem] border border-asha-line bg-white shadow-soft"><img src={photo.image} alt={photo.alt} className={`h-72 w-full shrink-0 object-cover ${photo.image === "/content-images/bravemaker-photo.png" ? "object-[center_22%]" : "object-center"}`} /><figcaption className="flex-1 p-6 leading-7 text-asha-muted">{photo.caption}</figcaption></figure>)}
+            {regularEvents.map((event) => <figure key={event.id ?? event.image} className="flex min-h-[460px] flex-col overflow-hidden rounded-[2rem] border border-asha-line bg-white shadow-soft"><img src={event.image} alt={event.title} className={`h-72 w-full shrink-0 object-cover ${event.image.includes("bravemaker") ? "object-[center_22%]" : "object-center"}`} /><figcaption className="flex-1 p-6 leading-7 text-asha-muted">{event.caption}</figcaption></figure>)}
           </div>
         </Section>
       </main>

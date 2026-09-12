@@ -3,17 +3,27 @@
 import PublicShell from "@/components/v2/PublicShell";
 import { CTAButton, PageHero, Section, SectionHeader } from "@/components/v2/Primitives";
 import { chapters, teamGroups } from "@/components/v2/data";
-import { useAddedChapters, useChapterEdits, useDeletedChapters } from "@/components/v2/liveContent";
+import { useLiveChapters, useLiveTeamMembers } from "@/components/v2/liveContent";
 
 const leadershipOrder = ["Afnaan Islam", "Mananya Pahuja", "Agrima Chatterjee", "Moksh Goel"];
 type TeamPerson = { name: string; role: string; bio: string; image?: string };
 
 export default function TeamPage() {
-  const addedChapters = useAddedChapters();
-  const edits = useChapterEdits();
-  const deletedChapters = useDeletedChapters();
-  const liveChapters = [...addedChapters, ...chapters].filter((chapter) => !deletedChapters.includes(chapter.city)).map((chapter) => ({ ...chapter, ...edits[chapter.city] }));
-  const groups = teamGroups.map((group) => group.title !== "Chapter Leads" ? group : {
+  const liveChapters = useLiveChapters(chapters);
+  const livePeople = useLiveTeamMembers(teamGroups.flatMap((group) => group.people.map((person) => ({ ...person, group_name: group.title }))));
+  const groups = [
+    ...Array.from(new Set(livePeople.filter((person) => person.group_name !== "Chapter Leads").map((person) => person.group_name))).map((title) => ({ title, people: livePeople.filter((person) => person.group_name === title) })),
+    {
+      title: "Chapter Leads",
+      people: liveChapters.map((chapter) => {
+        const original = teamGroups.find((group) => group.title === "Chapter Leads")?.people.find((person) => person.name === chapter.lead);
+        const fallbackImage = original && "image" in original ? original.image : undefined;
+        const image = /^(https?:\/\/|\/)/.test(chapter.image) ? chapter.image : fallbackImage;
+        return { name: chapter.lead, role: "Chapter lead", bio: `${chapter.city}, ${chapter.state}`, ...(image ? { image } : {}) };
+      }),
+    },
+  ];
+  /* const groups = teamGroups.map((group) => group.title !== "Chapter Leads" ? group : {
     ...group,
     people: liveChapters.map((chapter) => {
       const original = group.people.find((person) => person.name === chapter.lead);
@@ -21,7 +31,7 @@ export default function TeamPage() {
       const image = /^(https?:\/\/|\/)/.test(chapter.image) ? chapter.image : fallbackImage;
       return { name: chapter.lead, role: "Chapter lead", bio: `${chapter.city}, ${chapter.state}`, ...(image ? { image } : {}) };
     }),
-  });
+  }); */
   const peopleWithPortraitsFirst = (people: TeamPerson[]) => [...people].sort((a, b) => Number(Boolean(b.image)) - Number(Boolean(a.image)));
   return (
     <PublicShell>

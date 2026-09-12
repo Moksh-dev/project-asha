@@ -2,13 +2,13 @@ import { supabase } from "./supabase";
 
 export async function getSection(page: string, section: string) {
   const { data, error } = await supabase
-    .from("website_content")
+    .from("page_sections")
     .select("*")
-    .eq("page", page)
-    .eq("section", section);
+    .eq("page_slug", page)
+    .eq("section_key", section)
+    .eq("status", "published");
 
-  console.log("DATA:", data);
-  console.log("ERROR:", error);
+  if (error) return [];
 
   return data ?? [];
 }

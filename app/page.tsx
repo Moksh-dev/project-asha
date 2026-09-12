@@ -1,8 +1,9 @@
 "use client";
 
 import PublicShell from "@/components/v2/PublicShell";
-import { useHomepageContent } from "@/components/v2/liveContent";
+import { useHomepageContent, useLivePartners } from "@/components/v2/liveContent";
 import Reveal, { Stagger, StaggerItem } from "@/components/v2/Reveal";
+import FoldText from "@/components/v2/FoldText";
 import { CTAButton, IconCard, Section, SectionHeader, VisualTile } from "@/components/v2/Primitives";
 import { chapterVisuals, chapters, events, focusAreas, partnerTypes, processSteps } from "@/components/v2/data";
 import { ArrowRight, HeartHandshake, MapPin } from "lucide-react";
@@ -11,6 +12,7 @@ const featuredChapters = chapters.filter((chapter) => chapter.city === "Haryana"
 
 export default function Home() {
   const homepage = useHomepageContent();
+  const livePartners = useLivePartners(partnerTypes);
   return (
     <PublicShell>
       <main>
@@ -19,7 +21,7 @@ export default function Home() {
           <div className="mx-auto max-w-7xl">
             <Reveal className="mx-auto flex max-w-6xl flex-col items-center text-center">
               <h1 className="font-display max-w-5xl text-balance text-5xl font-black uppercase leading-[.9] tracking-[-.055em] text-asha-ink md:text-7xl lg:text-8xl">
-                {homepage.heading}
+                <FoldText text={homepage.heading} splitBy="word" hinge="top" trigger="mount" duration={0.65} stagger={0.06} ease="power3.out" perspective={700} creaseShading={0.55} />
               </h1>
               <p className="mt-8 max-w-2xl text-xl leading-9 text-asha-muted">
                 {homepage.description}
@@ -75,7 +77,9 @@ export default function Home() {
           <div className="mx-auto max-w-7xl">
             <SectionHeader eyebrow="Partnerships" title="Built for institutions that want real impact." />
             <Stagger className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {partnerTypes.map(({ name, subtitle, body, icon: Icon, href }) => (
+              {livePartners.map(({ name, subtitle, body, href }) => {
+                const Icon = HeartHandshake;
+                return (
                 <StaggerItem key={name}>
                   <a href={href} target="_blank" rel="noreferrer" className="group block min-h-[390px] h-full rounded-[1.75rem] border border-asha-line bg-white p-6 shadow-soft transition hover:-translate-y-1 hover:bg-asha-green hover:text-white">
                     <Icon size={24} />
@@ -84,7 +88,7 @@ export default function Home() {
                     <p className={`${subtitle ? "mt-3" : "mt-4"} text-sm leading-6 text-asha-muted transition group-hover:text-white/80`}>{body}</p>
                   </a>
                 </StaggerItem>
-              ))}
+              );})}
             </Stagger>
           </div>
         </Section>

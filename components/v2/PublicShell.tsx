@@ -6,6 +6,7 @@ import Image from "next/image";
 import { ExternalLink, Linkedin, Menu, Search, X } from "lucide-react";
 import { useState } from "react";
 import { contactDetails, footerColumns, getCurrentYear, navLinks } from "./data";
+import DynamicPageSections from "./DynamicPageSections";
 
 const footerTagline = ["Awareness", "Safety", "Hope", "Action"];
 
@@ -127,6 +128,7 @@ export default function PublicShell({ children }: { children: React.ReactNode })
     <>
       <PublicNav />
       {children}
+      <DynamicPageSections />
       <PublicFooter />
     </>
   );

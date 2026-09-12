@@ -14,14 +14,18 @@ import { chapters, teamGroups } from "@/components/v2/data";
 export const adminNav = [
   { name: "Dashboard", href: "/admin/dashboard", icon: LayoutDashboard },
   { name: "Website CMS", href: "/admin/website", icon: Globe2 },
+  { name: "Page Sections", href: "/admin/site-content", icon: FilePenLine },
   { name: "Chapters", href: "/admin/chapters", icon: Network },
+  { name: "Events", href: "/admin/events", icon: FilePenLine },
   { name: "Resources", href: "/admin/resources", icon: FilePenLine },
   { name: "Blog", href: "/admin/blogs", icon: FilePenLine },
   { name: "Press", href: "/admin/press", icon: FilePenLine },
+  { name: "Partners", href: "/admin/partners", icon: Users },
   { name: "Organization", href: "/admin/team", icon: Users },
   { name: "Applications", href: "/admin/forms", icon: ClipboardList },
   { name: "Analytics", href: "/admin/analytics", icon: BarChart3 },
   { name: "Media", href: "/admin/media", icon: Image },
+  { name: "Supabase setup", href: "/admin/setup", icon: Settings },
   { name: "Settings", href: "/admin/settings", icon: Settings },
 ];
 
