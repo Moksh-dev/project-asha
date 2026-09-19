@@ -20,15 +20,22 @@ export async function POST() {
   if (access.identity.role !== "admin") return NextResponse.json({ error: "Only an Admin can run the one-time migration." }, { status: 403 });
   const supabase = createSupabaseAdminClient();
   const uploaded = [] as string[];
+  const failures: string[] = [];
   for (const absolute of await files(publicRoot)) {
     const storagePath = path.relative(publicRoot, absolute).replaceAll("\\", "/");
     const contents = await readFile(absolute);
     const { error } = await supabase.storage.from("public-media").upload(storagePath, contents, { contentType: mime(absolute), upsert: true });
-    if (!error) { uploaded.push(storagePath); await supabase.from("media_assets").upsert({ bucket: "public-media", storage_path: storagePath, file_name: path.basename(absolute), mime_type: mime(absolute), size_bytes: contents.length, created_by: access.identity.id }, { onConflict: "storage_path" }); }
+    if (error) { failures.push(`${storagePath}: ${error.message}`); continue; }
+    uploaded.push(storagePath);
+    const { error: assetError } = await supabase.from("media_assets").upsert({ bucket: "public-media", storage_path: storagePath, file_name: path.basename(absolute), mime_type: mime(absolute), size_bytes: contents.length, created_by: access.identity.id }, { onConflict: "storage_path" });
+    if (assetError) failures.push(`${storagePath}: ${assetError.message}`);
   }
+  if (failures.length) return NextResponse.json({ error: "The import stopped before content was seeded.", details: failures.slice(0, 5) }, { status: 400 });
   const publicUrl = (localPath: string | undefined) => localPath?.startsWith("/") ? supabase.storage.from("public-media").getPublicUrl(localPath.slice(1)).data.publicUrl : localPath ?? null;
-  await supabase.from("site_settings").upsert({ key: "homepage", value: { eyebrow: "Youth-led action for safer communities", heading: "Hope that moves from awareness to action.", description: "Project A.S.H.A. is a youth-led initiative dedicated to combating human trafficking through education, advocacy, and community awareness.", cta: "Get involved" }, updated_by: access.identity.id });
-  await supabase.from("chapters").upsert(chapters.map((chapter, index) => ({ slug: chapter.city.toLowerCase().replace(/[^a-z0-9]+/g, "-"), city: chapter.city, state: chapter.state, lead_name: chapter.lead, summary: chapter.summary, image_url: publicUrl(chapter.image), instagram_url: chapter.instagram ?? null, events: chapter.events, sort_order: index, status: "published", updated_by: access.identity.id })), { onConflict: "slug" });
+  const ensure = async (result: PromiseLike<{ error: { message: string } | null }>) => { const { error } = await result; if (error) throw new Error(error.message); };
+  try {
+  await ensure(supabase.from("site_settings").upsert({ key: "homepage", value: { eyebrow: "Youth-led action for safer communities", heading: "Hope that moves from awareness to action.", description: "Project A.S.H.A. is a youth-led initiative dedicated to combating human trafficking through education, advocacy, and community awareness.", cta: "Get involved" }, updated_by: access.identity.id }));
+  await ensure(supabase.from("chapters").upsert(chapters.map((chapter, index) => ({ slug: chapter.city.toLowerCase().replace(/[^a-z0-9]+/g, "-"), city: chapter.city, state: chapter.state, lead_name: chapter.lead, summary: chapter.summary, image_url: publicUrl(chapter.image), instagram_url: chapter.instagram ?? null, events: chapter.events, sort_order: index, status: "published", updated_by: access.identity.id })), { onConflict: "slug" }));
   await supabase.from("resources").delete().neq("id", "00000000-0000-0000-0000-000000000000");
   await supabase.from("resources").insert(resources.map((resource, index) => ({ title: resource.title, description: resource.description, external_url: publicUrl(resource.href), sort_order: index, status: "published", updated_by: access.identity.id })));
   await supabase.from("articles").delete().in("kind", ["blog", "press"]);
@@ -47,6 +54,7 @@ export async function POST() {
   await supabase.from("partners").insert(partnerTypes.map((partner, index) => ({ name: partner.name, subtitle: partner.subtitle ?? null, description: partner.body, external_url: partner.href, sort_order: index, status: "published", updated_by: access.identity.id })));
   await supabase.from("team_members").delete().neq("id", "00000000-0000-0000-0000-000000000000");
   await supabase.from("team_members").insert(teamGroups.flatMap((group, groupIndex) => group.people.map((person, index) => ({ name: person.name, role: person.role, group_name: group.title, bio: person.bio, portrait_url: publicUrl("image" in person ? person.image : undefined), sort_order: groupIndex * 100 + index, status: "published", updated_by: access.identity.id }))));
-  await supabase.from("content_activity").insert({ actor_id: access.identity.id, action: "migrated", content_type: "website", summary: `Migrated ${uploaded.length} public assets and seeded the current website content.` });
+  await ensure(supabase.from("content_activity").insert({ actor_id: access.identity.id, action: "migrated", content_type: "website", summary: `Migrated ${uploaded.length} public assets and seeded the current website content.` }));
+  } catch (error) { return NextResponse.json({ error: error instanceof Error ? error.message : "The content seed failed." }, { status: 400 }); }
   return NextResponse.json({ uploaded: uploaded.length, message: "Migration completed." });
 }

@@ -113,7 +113,16 @@ export const chapters = [
     city: "Hong Kong", state: "Hong Kong", lead: "Julia", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #67C7FF)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/projectasha_hk/?hl=en"
   },
   {
-    city: "Canada", state: "Canada", lead: "Yogitha Machina", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #2563EB, #00AEF0)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/a.s.h.a_canada/?hl=en"
+    city: "Canada", state: "Canada", lead: "Talia Watad", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "/chapter-leads/talia-watad.png", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/projectasha.ca/"
+  },
+  {
+    city: "Turkiye", state: "Turkiye", lead: "Maya Sahinkaya", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "/chapter-leads/maya-sahinkaya.png", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/project.asha.turkiye/"
+  },
+  {
+    city: "South Africa", state: "South Africa", lead: "Enma Lotriet", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "/chapter-leads/enma-lotriet.png", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/project_asha_south_africa/"
+  },
+  {
+    city: "Bangladesh", state: "Bangladesh", lead: "Annesha Biswas", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "/chapter-leads/annesha-biswas.png", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/project_a.s.h.a_bangladesh/"
   },
   {
     city: "Australia", state: "Australia", lead: "May Thandar", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #8BDCFF)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/a.s.h.australia/?hl=en"
@@ -149,6 +158,9 @@ export const chapterVisuals: Record<string, string> = {
   "West Bengal": "/chapter-visuals/west-bengal.png",
   "Hong Kong": "/chapter-visuals/hong-kong.png",
   "Canada": "/chapter-visuals/canada.png",
+  "Turkiye": "/chapter-leads/maya-sahinkaya.png",
+  "South Africa": "/chapter-leads/enma-lotriet.png",
+  "Bangladesh": "/chapter-leads/annesha-biswas.png",
   "Australia": "/chapter-visuals/australia.png",
   "Southern California": "/chapter-visuals/southern-california.png",
   "Virginia": "/chapter-visuals/virginia.png",
@@ -376,7 +388,7 @@ export const formTopics = [
   "General contact",
 ];
 
-export const chapterStates = ["All", "India", "United States", "Canada", "Hong Kong", "Australia", "Pakistan", "Uzbekistan", "Illinois, United States"];
+export const chapterStates = ["All", "India", "United States", "Canada", "Hong Kong", "Australia", "Pakistan", "Uzbekistan", "Turkiye", "South Africa", "Bangladesh", "Illinois, United States"];
 
 export const impactWords = ["Awareness", "Safety", "Hope", "Action"];
 

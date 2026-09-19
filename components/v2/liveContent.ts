@@ -44,7 +44,17 @@ export function useHomepageContent() {
 export async function saveHomepageContent(value: HomepageContent) { await saveAdminContent("site_settings", { key: "homepage", value }); }
 
 const chapterMapper = (row: Record<string, unknown>): AddedChapter => ({ id: row.id as string, city: row.city as string, state: row.state as string, lead: row.lead_name as string, summary: row.summary as string, image: (row.image_url as string) || "linear-gradient(135deg, #1F5EFF, #00AEF0)", events: Array.isArray(row.events) ? row.events as string[] : [], instagram: row.instagram_url as string | undefined });
-export function useLiveChapters(base: AddedChapter[]) { return usePublishedRows("chapters", base, chapterMapper); }
+export function useLiveChapters(base: AddedChapter[]) {
+  const published = usePublishedRows("chapters", [] as AddedChapter[], chapterMapper);
+  if (!published.length) return base;
+
+  // A database seed may predate a content release. Keep newly shipped chapter
+  // records visible while allowing existing Supabase records to remain the
+  // source of truth for chapters already stored there.
+  const publishedByCity = new Map(published.map((chapter) => [chapter.city, chapter]));
+  const localOnly = base.filter((chapter) => !publishedByCity.has(chapter.city));
+  return [...published, ...localOnly];
+}
 export function useAddedChapters() { return useLiveChapters([]); }
 export function useChapterEdits() { return {} as Record<string, Partial<AddedChapter>>; }
 export function useDeletedChapters() { return [] as string[]; }
