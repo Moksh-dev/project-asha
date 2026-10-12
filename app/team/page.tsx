@@ -11,8 +11,8 @@ type TeamPerson = { name: string; role: string; bio: string; image?: string };
 // These portrait assignments only affect the Team directory. Chapter cards use
 // their own visual treatment and should not be changed by this correction.
 const teamPortraitOverrides: Record<string, string> = {
-  "Enma Lotriet": "/chapter-leads/annesha-biswas.png",
-  "Annesha Biswas": "/chapter-leads/enma-lotriet.png",
+  "Emma Lotriet": "/chapter-leads/enma-lotriet.png",
+  "Annesha Biswas": "/chapter-leads/annesha-biswas.png",
 };
 
 export default function TeamPage() {
