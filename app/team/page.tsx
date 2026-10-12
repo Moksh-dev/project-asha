@@ -2,18 +2,13 @@
 
 import PublicShell from "@/components/v2/PublicShell";
 import { CTAButton, PageHero, Section, SectionHeader } from "@/components/v2/Primitives";
-import { chapters, teamGroups } from "@/components/v2/data";
+import { chapterLeadPortraits, chapters, teamGroups } from "@/components/v2/data";
 import { useLiveChapters, useLiveTeamMembers } from "@/components/v2/liveContent";
 
 const leadershipOrder = ["Afnaan Islam", "Mananya Pahuja", "Agrima Chatterjee", "Moksh Goel"];
 type TeamPerson = { name: string; role: string; bio: string; image?: string };
 
-// These portrait assignments only affect the Team directory. Chapter cards use
-// their own visual treatment and should not be changed by this correction.
-const teamPortraitOverrides: Record<string, string> = {
-  "Emma Lotriet": "/chapter-leads/enma-lotriet.png",
-  "Annesha Biswas": "/chapter-leads/annesha-biswas.png",
-};
+const isImagePath = (value?: string) => Boolean(value && /^(https?:\/\/|\/)/.test(value));
 
 export default function TeamPage() {
   const liveChapters = useLiveChapters(chapters);
@@ -23,22 +18,11 @@ export default function TeamPage() {
     {
       title: "Chapter Leads",
       people: liveChapters.map((chapter) => {
-        const original = teamGroups.find((group) => group.title === "Chapter Leads")?.people.find((person) => person.name === chapter.lead);
-        const fallbackImage = original && "image" in original ? original.image : undefined;
-        const image = teamPortraitOverrides[chapter.lead] ?? (/^(https?:\/\/|\/)/.test(chapter.image) ? chapter.image : fallbackImage);
+        const image = chapterLeadPortraits[chapter.lead] ?? (isImagePath(chapter.image) ? chapter.image : undefined);
         return { name: chapter.lead, role: "Chapter lead", bio: `${chapter.city}, ${chapter.state}`, ...(image ? { image } : {}) };
       }),
     },
   ];
-  /* const groups = teamGroups.map((group) => group.title !== "Chapter Leads" ? group : {
-    ...group,
-    people: liveChapters.map((chapter) => {
-      const original = group.people.find((person) => person.name === chapter.lead);
-      const fallbackImage = original && "image" in original ? original.image : undefined;
-      const image = /^(https?:\/\/|\/)/.test(chapter.image) ? chapter.image : fallbackImage;
-      return { name: chapter.lead, role: "Chapter lead", bio: `${chapter.city}, ${chapter.state}`, ...(image ? { image } : {}) };
-    }),
-  }); */
   const peopleWithPortraitsFirst = (people: TeamPerson[]) => [...people].sort((a, b) => Number(Boolean(b.image)) - Number(Boolean(a.image)));
   return (
     <PublicShell>

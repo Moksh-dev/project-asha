@@ -110,16 +110,13 @@ export const chapters = [
     city: "West Bengal", state: "India", lead: "Arushi Chatterjee", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #00AEF0)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/projecta.s.h.a_westbengal/?hl=en"
   },
   {
-    city: "Hong Kong", state: "Hong Kong", lead: "Julia", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #67C7FF)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/projectasha_hk/?hl=en"
-  },
-  {
     city: "Canada", state: "Canada", lead: "Talia Watad", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "/chapter-leads/talia-watad.png", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/projectasha.ca/"
   },
   {
     city: "Turkiye", state: "Turkiye", lead: "Maya Sahinkaya", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "/chapter-leads/maya-sahinkaya.png", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/project.asha.turkiye/"
   },
   {
-    city: "South Africa", state: "South Africa", lead: "Enma Lotriet", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "/chapter-leads/enma-lotriet.png", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/project_asha_south_africa/"
+    city: "South Africa", state: "South Africa", lead: "Emma Lotriet", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "/chapter-leads/emma-lotriet.png", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/project_asha_south_africa/"
   },
   {
     city: "Bangladesh", state: "Bangladesh", lead: "Annesha Biswas", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "/chapter-leads/annesha-biswas.png", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/project_a.s.h.a_bangladesh/"
@@ -139,9 +136,6 @@ export const chapters = [
   {
     city: "Westchester, New York", state: "United States", lead: "Lauren Crispino", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #8BDCFF)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/project_a.s.h.a_nys/?hl=en"
   },
-  {
-    city: "New Jersey", state: "United States", lead: "Aarna Mallidi", summary: "A Project A.S.H.A. chapter led locally through youth awareness and community engagement.", image: "linear-gradient(135deg, #1F5EFF, #00AEF0)", events: ["Instagram link coming soon"], instagram: "https://www.instagram.com/projectasha.nj/?hl=en"
-  },
 ];
 
 // Location imagery belongs to the Chapters page only. Team uses the separate
@@ -156,17 +150,37 @@ export const chapterVisuals: Record<string, string> = {
   "Bengaluru": "/chapter-visuals/bengaluru.png",
   "Telangana": "/chapter-visuals/telangana.png",
   "West Bengal": "/chapter-visuals/west-bengal.png",
-  "Hong Kong": "/chapter-visuals/hong-kong.png",
   "Canada": "/chapter-visuals/canada.png",
-  "Turkiye": "/chapter-leads/maya-sahinkaya.png",
-  "South Africa": "/chapter-leads/enma-lotriet.png",
-  "Bangladesh": "/chapter-leads/annesha-biswas.png",
+  "Turkiye": "/chapter-visuals/turkiye.png",
+  "South Africa": "/chapter-visuals/south-africa.png",
+  "Bangladesh": "/chapter-visuals/bangladesh.png",
   "Australia": "/chapter-visuals/australia.png",
   "Southern California": "/chapter-visuals/southern-california.png",
   "Virginia": "/chapter-visuals/virginia.png",
   "Jersey City": "/chapter-visuals/jersey-city.png",
-  "New Jersey": "/chapter-visuals/new-jersey.png",
   "Westchester, New York": "/chapter-visuals/new-york-city.png",
+};
+
+// Team-page chapter portraits are kept in one map so replacing a photo never
+// requires editing the chapter data or the page-rendering logic.
+export const chapterLeadPortraits: Record<string, string> = {
+  "Radhika Kapoor": "/chapter-leads/radhika-kapoor.png",
+  "Saidiya Kodali": "/chapter-leads/saidiya-kodali.png",
+  "Bhuvana Kavya Yallapragada": "/chapter-leads/bhuvana-kavya-yallapragada.png",
+  "Arushi Chatterjee": "/chapter-leads/arushi-chatterjee.png",
+  "Yogitha Machina": "/chapter-leads/yogitha-machina.png",
+  "Ava Mendez": "/chapter-leads/ava-mendez.png",
+  "Korinne Brooks": "/chapter-leads/korinne-brooks.png",
+  "Lauren Crispino": "/chapter-leads/lauren-crispino.png",
+  "Prisha Shetty": "/chapter-leads/prisha-shetty.png",
+  "Ruhshona Rustamova": "/chapter-leads/ruhshona-rustamova.png",
+  "Sukaina Haidar": "/chapter-leads/sukaina-haidar.png",
+  "Jia Locascio": "/chapter-leads/jia-locascio.png",
+  "Kanishka Singh": "/chapter-leads/kanishka-singh.png",
+  "Maya Sahinkaya": "/chapter-leads/maya-sahinkaya-team.png",
+  "Talia Watad": "/chapter-leads/talia-watad-team.png",
+  "Emma Lotriet": "/chapter-leads/emma-lotriet-team.png",
+  "Annesha Biswas": "/chapter-leads/annesha-biswas.png",
 };
 
 export const teamGroups = [
@@ -211,23 +225,7 @@ export const teamGroups = [
       name: lead,
       role: city,
       bio: "Chapter lead",
-      image: ({
-        "Radhika Kapoor": "/chapter-leads/radhika-kapoor.png",
-        "Saidiya Kodali": "/chapter-leads/saidiya-kodali.png",
-        "Bhuvana Kavya Yallapragada": "/chapter-leads/bhuvana-kavya-yallapragada.png",
-        "Arushi Chatterjee": "/chapter-leads/arushi-chatterjee.png",
-        Julia: "/chapter-leads/julia.png",
-        "Yogitha Machina": "/chapter-leads/yogitha-machina.png",
-        "Ava Mendez": "/chapter-leads/ava-mendez.png",
-        "Korinne Brooks": "/chapter-leads/korinne-brooks.png",
-        "Lauren Crispino": "/chapter-leads/lauren-crispino.png",
-        "Aarna Mallidi": "/chapter-leads/aarna-mallidi.png",
-        "Prisha Shetty": "/chapter-leads/prisha-shetty.png",
-        "Ruhshona Rustamova": "/chapter-leads/ruhshona-rustamova.png",
-        "Sukaina Haidar": "/chapter-leads/sukaina-haidar.png",
-        "Jia Locascio": "/chapter-leads/jia-locascio.png",
-        "Kanishka Singh": "/chapter-leads/kanishka-singh.png",
-      } as Record<string, string | undefined>)[lead],
+      image: chapterLeadPortraits[lead],
     })),
   },
 ];
@@ -388,7 +386,7 @@ export const formTopics = [
   "General contact",
 ];
 
-export const chapterStates = ["All", "India", "United States", "Canada", "Hong Kong", "Australia", "Pakistan", "Uzbekistan", "Turkiye", "South Africa", "Bangladesh", "Illinois, United States"];
+export const chapterStates = ["All", "India", "United States", "Canada", "Australia", "Pakistan", "Uzbekistan", "Turkiye", "South Africa", "Bangladesh", "Illinois, United States"];
 
 export const impactWords = ["Awareness", "Safety", "Hope", "Action"];
 
